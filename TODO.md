@@ -27,3 +27,20 @@ Selectable PageTS (7er Feature)
 ## DOKU
 
 - [ ] IDE Settings (PSR2)
+- [ ] mention AdditionalConfiguration_custom.php
+
+
+## Requirements
+
+- [ ] System locales de_DE.utf8 / de_AT.utf8
+
+## First steps
+- composer install
+- Set sitename
+- Set default email
+- Set default email name
+- Set productive install tool and save it in password manager
+- Set activated languages and update languages
+- make shure productive host can handle utf8 file system and correct system locales are set
+- recommend APC (customer)
+
