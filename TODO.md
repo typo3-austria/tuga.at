@@ -1,7 +1,7 @@
 # t3base sup7even
 
 ## Theme general
-- [ ] Extension Icon (7-implement)
+- [x] Extension Icon (7-implement)
 ## TypoScript
 - [ ] page.headTag
 	- [ ] X-UA-Comp… Tag
