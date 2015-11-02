@@ -22,3 +22,8 @@ Selectable PageTS (7er Feature)
 - [ ] Dummytree
 - [ ] sys_template
 	- [ ] Include just thm (no csc anymore directly)
+	
+	
+## DOKU
+
+- [ ] IDE Settings (PSR2)
