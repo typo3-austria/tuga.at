@@ -8,12 +8,11 @@
     "name": "SUP7/TYPO3-project-7",
     "require": {
         "typo3/cms": "dev-master as 7.5.0",
-        "typo3/static-info-tables": "^6.3.1",
+        "typo3-ter/static-info-tables": "^6.3.1",
         "typo3-ter/realurl": "1.13.4",
         "typo3-ter/typo3-console": "1.2.3",
         "typo3-ter/autoloader": "1.9.4",
 		"fluidtypo3/vhs": "^2.3.3",
-		"typo3-ter/formhandler": "^2.0.1",
         "lochmueller/sourceopt": "dev-master"
     }
 }
