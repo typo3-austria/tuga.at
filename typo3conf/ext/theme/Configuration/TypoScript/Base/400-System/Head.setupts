@@ -1,3 +1,3 @@
-page.headTag = <head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--[if IE]><link rel="shortcut icon" href="/typo3conf/ext/theme/Resources/Public/Icons/favicon.ico"><![endif]-->
+page.headTag = <head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
 
 page.headerData.100 < lib.Seo.TitleTag
