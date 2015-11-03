@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="ccontent">
+		<header/>
+		<body>
+			<trans-unit id="tsconfig.registerPageTSConfigFile.label"><source><![CDATA[Custom CE Provider]]></source></trans-unit>
+		</body>
+	</file>
+</xliff>
