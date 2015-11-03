@@ -1,0 +1,27 @@
+robots = PAGE
+robots {
+  typeNum = 9201
+  config {
+    disableAllHeaderCode = 1
+    additionalHeaders = Content-type:text/plain
+  }
+
+
+  10 = TEXT
+  10 {
+    wrap (
+# General
+User-Agent: *
+Allow: /
+Disallow: /typo3/
+Disallow: /typo3temp/
+Disallow: /*?id=*
+
+# Google specific settings
+User-agent: googlebot
+Disallow: /*?tx_indexedsearch
+
+#Sitemap: /?eID=dd_googlesitemap
+    )
+  }
+}
