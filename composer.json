@@ -21,7 +21,7 @@
     },
 	"autoload": {
 		"psr-4": {
-			"SUP7\\Theme\\": "typo3conf/ext/theme/Classes"
+			"SUP7\\Theme\\": "typo3conf/ext/theme/Classes",
 			"SUP7\\Ccontent\\": "typo3conf/ext/ccontent/Classes"
 		}
 	}
