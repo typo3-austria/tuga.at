@@ -1,0 +1,31 @@
+page.meta {
+
+	viewport = width=device-width, initial-scale=1.0
+	SKYPE_TOOLBAR = SKYPE_TOOLBAR_PARSER_COMPATIBLE
+
+	description = TEXT
+	description {
+		data = register:newsTeaser
+#		ifEmpty.data = register:yourExtension
+		ifEmpty.ifEmpty.field = description
+		htmlSpecialChars = 1
+	}
+
+	keywords.field = keywords
+	keywords.override.data = register:newsKeywords
+
+	robots = TEXT
+	robots {
+
+		stdWrap.cObject = COA
+		stdWrap.cObject {
+			10 = TEXT
+			10.value = INDEX,FOLLOW
+			10.if.isFalse.field = no_search
+
+			20 = TEXT
+			20.value = NOINDEX,FOLLOW
+			20.if.isTrue.field = no_search
+		}
+	}
+}
