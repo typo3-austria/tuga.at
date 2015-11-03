@@ -1,5 +1,12 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:sourceopt/Configuration/TypoScript/constants.txt">
 
 sourceopt {
+  removeGenerator = 0
   removeComments = 1
 }
+
+[globalVar = TSFE : beUserLogin > 0]
+  sourceopt {
+    removeComments = 0
+  }
+[global]
