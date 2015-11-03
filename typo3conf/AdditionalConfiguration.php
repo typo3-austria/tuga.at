@@ -1,10 +1,10 @@
 <?php
-if (!defined ('TYPO3_MODE')) {
-die ('Access denied.');
-}
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+
+defined('TYPO3_MODE') || die('Access denied.');
 
     // get complete context
-$context = \TYPO3\CMS\Core\Utility\GeneralUtility::getApplicationContext()->__toString();
+$context = GeneralUtility::getApplicationContext()->__toString();
 
     // check for "Production/Live/Server123" etc
 if ($context) {
@@ -12,7 +12,7 @@ if ($context) {
 }
 
     // project specific configuration
-$customChanges = array(
+$customChanges = [
     'BE' => [
         'sessionTimeout' => 3600*2,
         'maxFileSize' => 10240*2,
@@ -40,33 +40,41 @@ $customChanges = array(
         'defaultMailFromAddress' => '',
         'defaultMailFromName' => '',
     ],
-);
+];
 
 $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive($GLOBALS['TYPO3_CONF_VARS'], (array)$customChanges);
 
-
-// include the most general file e.g. "AdditionalConfiguration_Staging.php
+/*
+ * include the most general file e.g. "AdditionalConfiguration_Staging.php
+ */
 $file = realpath(__DIR__) . '/AdditionalConfiguration_' . $contextMainPart . '.php';
 if (is_file($file)) {
     include_once($file);
     $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive($GLOBALS['TYPO3_CONF_VARS'], (array)$customChanges);
 }
 
-// check for a more specific configuration as well e.g. "AdditionalConfiguration_Development_Profiling.php"
+/*
+ * check for a more specific configuration as well e.g. "AdditionalConfiguration_Development_Profiling.php"
+ */
 $file = realpath(__DIR__) . '/AdditionalConfiguration_' . $contextMainPart . '_' . $contextSubPart1 . '.php';
 if (is_file($file)) {
     include_once($file);
     $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive($GLOBALS['TYPO3_CONF_VARS'], (array)$customChanges);
 }
 
-// check for a more specific configuration as well, e.g. "AdditionalConfiguration_Production_Live_Server4.php"
-$file = realpath(__DIR__) . '/AdditionalConfiguration_' . $contextMainPart . '_' . $contextSubPart1 . '_' . $contextSubPart2 . '.php';
+/*
+ * check for a more specific configuration as well, e.g. "AdditionalConfiguration_Production_Live_Server4.php"
+ */
+$file = realpath(__DIR__) . '/AdditionalConfiguration_' . $contextMainPart . '_' . $contextSubPart1
+    . '_' . $contextSubPart2 . '.php';
 if (is_file($file)) {
     include_once($file);
     $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive($GLOBALS['TYPO3_CONF_VARS'], (array)$customChanges);
 }
 
-// load custom configuration, that is not placed in git, e.g. for local development only changes
+/*
+ * load custom configuration, that is not placed in git, e.g. for local development only changes
+ */
 if ($contextMainPart === 'Development') {
     $file = realpath(__DIR__) . '/AdditionalConfiguration_custom.php';
     if (is_file($file)) {
@@ -75,10 +83,11 @@ if ($contextMainPart === 'Development') {
     }
 }
 
+/*
+ * add composer autoloader
+ */
 $composerAutoloader = realpath(__DIR__ . '/../vendor/autoload.php');
 
 if (!empty($composerAutoloader) && is_file($composerAutoloader)) {
     include_once($composerAutoloader);
 }
-
-?>

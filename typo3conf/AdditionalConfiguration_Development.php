@@ -1,26 +1,24 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-	die ('Access denied.');
-}
+defined('TYPO3_MODE') || die('Access denied.');
 
 // Override configuration of LocalConfiguration
-$customChanges = array(
-	'BE' => array(
-		'debug' => TRUE,
-		'installToolPassword' => '$P$C8R5CmXAuzvklF.d5eGuTS7eQquuQN1',
-		'sessionTimeout' => 3600*24*7,
-	),
-	'FE' => array(
-		'debug' => TRUE,
-	),
-	'SYS' => array(
-		'devIPmask' => '*',
-		'displayErrors' => TRUE,
-		'enableDeprecationLog' => 'file',
-		'sqlDebug' => 1,
-		'systemLogLevel' => 0,
-	),
-);
+$customChanges = [
+    'BE' => [
+        'debug' => true,
+        'installToolPassword' => '$P$C8R5CmXAuzvklF.d5eGuTS7eQquuQN1',
+        'sessionTimeout' => 3600*24*7,
+    ],
+    'FE' => [
+        'debug' => true,
+    ],
+    'SYS' => [
+        'devIPmask' => '*',
+        'displayErrors' => true,
+        'enableDeprecationLog' => 'file',
+        'sqlDebug' => 1,
+        'systemLogLevel' => 0,
+    ],
+];
 
 $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive($GLOBALS['TYPO3_CONF_VARS'], $customChanges);
 
@@ -61,5 +59,3 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive($GLOBALS['TYPO3_CONF_VARS'
 // News caches
 //$GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['cache_news_classes']['backend'] = 'TYPO3\CMS\Core\Cache\Backend\NullBackend';
 //$GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['cache_news_category']['backend'] = 'TYPO3\CMS\Core\Cache\Backend\NullBackend';
-
-?>
