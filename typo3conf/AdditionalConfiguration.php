@@ -3,10 +3,13 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 defined('TYPO3_MODE') || die('Access denied.');
 
-    // get complete context
+// get complete context
 $context = GeneralUtility::getApplicationContext()->__toString();
 
-    // check for "Production/Live/Server123" etc
+// alternative: set $context (please keep in mind that you also have to set the correct context for cli tasks)
+//$context = 'Development/Production';
+
+// check for "Production/Live/Server123" etc
 if ($context) {
     list($contextMainPart, $contextSubPart1, $contextSubPart2) = explode('/', $context);
 }
