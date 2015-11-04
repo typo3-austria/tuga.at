@@ -1,15 +1,14 @@
 robots = PAGE
 robots {
-  typeNum = 9201
-  config {
-    disableAllHeaderCode = 1
-    additionalHeaders = Content-type:text/plain
-  }
+	typeNum = 9201
+	config {
+		disableAllHeaderCode = 1
+		additionalHeaders = Content-type:text/plain
+	}
 
-
-  10 = TEXT
-  10 {
-    wrap (
+	10 = TEXT
+	10 {
+		wrap (
 # General
 User-Agent: *
 Allow: /
@@ -22,6 +21,6 @@ User-agent: googlebot
 Disallow: /*?tx_indexedsearch
 
 #Sitemap: /?eID=dd_googlesitemap
-    )
-  }
+		)
+	}
 }
