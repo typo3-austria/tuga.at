@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0359c575d877acb6602e4612abf20a19",
-    "content-hash": "bc420826bbd83eed8acba36470d951a2",
+    "hash": "c74998d53b652b923317e6a055849f53",
+    "content-hash": "9f8529cafe88264195b7cec0a7f9584d",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -924,12 +924,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "f06f1444303c9d77e8b994b8915da3244b8be1dd"
+                "reference": "436d0e74a016073c131d7030500b37f89e8328aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/f06f1444303c9d77e8b994b8915da3244b8be1dd",
-                "reference": "f06f1444303c9d77e8b994b8915da3244b8be1dd",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/436d0e74a016073c131d7030500b37f89e8328aa",
+                "reference": "436d0e74a016073c131d7030500b37f89e8328aa",
                 "shasum": ""
             },
             "require": {
@@ -1114,7 +1114,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-11-04 07:17:06"
+            "time": "2015-11-04 08:20:01"
         },
         {
             "name": "typo3/cms-composer-installers",

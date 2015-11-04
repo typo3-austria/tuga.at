@@ -3,15 +3,7 @@
         {
             "type": "composer",
             "url": "http://composer.typo3.org/"
-        },
-		{
-			"type": "git",
-			"url": "https://bitbucket.org/jousch/sr_language_menu"
-		},
-		{
-			"type": "git",
-			"url": "https://git.typo3.org/TYPO3CMS/Extensions/static_info_tables.git"
-		}
+        }
     ],
     "name": "SUP7/TYPO3-project-7",
 	"scripts": {
