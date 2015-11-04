@@ -1,0 +1,53 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme/Configuration/TypoScript/Base" extensions="constantsts">
+
+
+Tree {
+	System {
+		L10n {
+			locale_all = de_DE.UTF-8
+			language = de
+			directionalityOfText = ltr
+			sys_language_uid = 0
+			languageMode = 	content_fallback
+			languageOverlay = 1
+		}
+		TitleTag {
+			Sitename =
+		}
+	}
+    Seo {
+        GoogleSiteVerification =
+    }
+	Uid {
+
+	}
+	Ext {
+
+	}
+	GA {
+		ID =
+		Domain =
+	}
+}
+
+[globalVar = GP:L=1]
+	Tree {
+		System {
+			L10n {
+				locale_all = en_US.UTF-8
+				language = en
+				directionalityOfText = ltr
+				sys_language_uid = 1
+				languageMode = content_fallback
+				languageOverlay = 1
+			}
+		}
+	}
+
+[applicationContext = Development*]
+	Tree {
+        Uid {
+
+        }
+	}
+[global]

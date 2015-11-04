@@ -1,0 +1,36 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Tree/Base/constants.txt">
+
+Tree {
+	System {
+		L10n {
+
+		}
+		TitleTag {
+			Sitename = 
+		}
+	}
+    Seo {
+        GoogleSiteVerification =
+    }
+	Uid {
+
+	}
+	Ext {
+
+	}
+	GA {
+        ID =
+        Domain =
+    }
+}
+
+[globalVar = GP:L=1]
+
+# DEV-SERVER
+[applicationContext = Development*]
+	Tree {
+		Uid {
+
+		}
+	}
+[global]
