@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0890fdcce6c8d4d519582fe197aa474e",
-    "content-hash": "c03ef523c5c4f87ab0d1f523cac7c47e",
+    "hash": "0359c575d877acb6602e4612abf20a19",
+    "content-hash": "bc420826bbd83eed8acba36470d951a2",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -156,6 +156,121 @@
                 "viewhelper"
             ],
             "time": "2015-05-20 11:13:08"
+        },
+        {
+            "name": "georgringer/news",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-extensions/news.git",
+                "reference": "b5856599653e996b221a1fd7643c7b190c3802ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-extensions/news/zipball/b5856599653e996b221a1fd7643c7b190c3802ee",
+                "reference": "b5856599653e996b221a1fd7643c7b190c3802ee",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": ">=7.5.0,<8.0"
+            },
+            "replace": {
+                "news": "self.version",
+                "typo3-ter/news": "self.version"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.4.*@dev",
+                "phpunit/phpunit": "~4.8.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                },
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeorgRinger\\News\\": "Classes"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "GeorgRinger\\News\\Tests\\": "Tests",
+                    "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/",
+                    "TYPO3\\CMS\\Fluid\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/fluid/Tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "mkdir -p .Build/Web/typo3conf/ext/",
+                    "[ -L .Build/Web/typo3conf/ext/news ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/news"
+                ]
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "role": "Developer",
+                    "homepage": "http://montagmorgen.at"
+                }
+            ],
+            "description": "Versatile news extension, based on extbase & fluid for TYPO3 CMS",
+            "homepage": "http://montagmorgen.at",
+            "keywords": [
+                "TYPO3",
+                "extension",
+                "news"
+            ],
+            "support": {
+                "source": "https://github.com/TYPO3-extensions/news/tree/master",
+                "issues": "https://github.com/TYPO3-extensions/news/issues"
+            },
+            "time": "2015-11-04 08:08:53"
+        },
+        {
+            "name": "helhum/realurl",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helhum/realurl.git",
+                "reference": "d1759325899a0f09a91ca5e4195f1029dbe2138a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/helhum/realurl/zipball/d1759325899a0f09a91ca5e4195f1029dbe2138a",
+                "reference": "d1759325899a0f09a91ca5e4195f1029dbe2138a",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": ">=6.2.6,<8.0"
+            },
+            "replace": {
+                "realurl": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tx\\Realurl\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "RealURL: speaking paths for TYPO3",
+            "homepage": "http://typo3.org",
+            "time": "2015-10-07 15:56:20"
         },
         {
             "name": "lochmueller/sourceopt",
@@ -676,45 +791,11 @@
             "time": "2015-10-29 13:27:46"
         },
         {
-            "name": "typo3-ter/realurl",
-            "version": "1.13.4",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/realurl/1.13.4/t3x/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "php": ">= 5.3.2, <= 5.999.999",
-                "typo3/cms": ">= 4.5.40, <= 7.9.999"
-            },
-            "conflict": {
-                "typo3-ter/cooluri": "*",
-                "typo3-ter/simulatestatic": "*"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "authors": [
-                {
-                    "name": "Dmitry Dulepov",
-                    "email": "dmitry.dulepov@gmail.com",
-                    "company": "",
-                    "username": "dmitry"
-                }
-            ],
-            "description": "Creates nice looking URLs for TYPO3 pages: converts http://example.com/index.phpid12345&L2 to http://example.com/path/to/your/page/. Please, ask for free support in TYPO3 mailing lists or contact the maintainer for paid support.",
-            "time": "2015-08-28 13:59:43"
-        },
-        {
             "name": "typo3-ter/static-info-tables",
-            "version": "6.3.1",
+            "version": "6.3.4",
             "dist": {
                 "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/static_info_tables/6.3.1/t3x/",
+                "url": "http://typo3.org/extensions/repository/download/static_info_tables/6.3.4/t3x/",
                 "reference": null,
                 "shasum": null
             },
@@ -745,7 +826,7 @@
                 }
             ],
             "description": "Data and API for countries, languages and currencies.",
-            "time": "2015-10-09 23:26:43"
+            "time": "2015-11-03 16:09:32"
         },
         {
             "name": "typo3-ter/typo3-console",
@@ -843,12 +924,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "58aae535953944437c8d41bedc16ee367893a618"
+                "reference": "f06f1444303c9d77e8b994b8915da3244b8be1dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/58aae535953944437c8d41bedc16ee367893a618",
-                "reference": "58aae535953944437c8d41bedc16ee367893a618",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/f06f1444303c9d77e8b994b8915da3244b8be1dd",
+                "reference": "f06f1444303c9d77e8b994b8915da3244b8be1dd",
                 "shasum": ""
             },
             "require": {
@@ -900,12 +981,10 @@
                 "typo3/cms-info": "self.version",
                 "typo3/cms-info-pagetsconfig": "self.version",
                 "typo3/cms-install": "self.version",
-                "typo3/cms-jumpurl": "self.version",
                 "typo3/cms-lang": "self.version",
                 "typo3/cms-linkvalidator": "self.version",
                 "typo3/cms-lowlevel": "self.version",
                 "typo3/cms-opendocs": "self.version",
-                "typo3/cms-openid": "self.version",
                 "typo3/cms-recordlist": "self.version",
                 "typo3/cms-recycler": "self.version",
                 "typo3/cms-reports": "self.version",
@@ -980,7 +1059,6 @@
                     "TYPO3\\CMS\\Linkvalidator\\": "typo3/sysext/linkvalidator/Classes/",
                     "TYPO3\\CMS\\Lowlevel\\": "typo3/sysext/lowlevel/Classes/",
                     "TYPO3\\CMS\\Opendocs\\": "typo3/sysext/opendocs/Classes/",
-                    "TYPO3\\CMS\\Openid\\": "typo3/sysext/openid/Classes/",
                     "TYPO3\\CMS\\Recordlist\\": "typo3/sysext/recordlist/Classes/",
                     "TYPO3\\CMS\\Recycler\\": "typo3/sysext/recycler/Classes/",
                     "TYPO3\\CMS\\Reports\\": "typo3/sysext/reports/Classes/",
@@ -1036,7 +1114,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-11-02 12:25:53"
+            "time": "2015-11-04 07:17:06"
         },
         {
             "name": "typo3/cms-composer-installers",
@@ -1112,7 +1190,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "typo3/cms": 20,
-        "lochmueller/sourceopt": 20
+        "lochmueller/sourceopt": 20,
+        "georgringer/news": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
