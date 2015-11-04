@@ -25,18 +25,26 @@ $EM_CONF[$_EXTKEY] = array(
     'constraints' => array(
         'depends' => array(
             // todo clear dependencies
-            'typo3' => '7.5.0-7.6.99',
-            'news' => '3.1.0',
-            'vhs' => '',
-            'formhandler' => '',
+            'ccontent' => '0.0.0-0.0.0',
+            'news' => '3.2.2-0.0.0',
             'realurl' => '2.0.2-0.0.0',
-            'ccontent' => '',
-            'static_info_tables' => '',
-            'gridelements' => '',
+            'sourceopt' => '0.9.1-0.0.0',
+            'static_info_tables' => '6.3.4-0.0.0',
+            'typo3' => '7.5.0-7.6.99',
+            'typo3_console' => '1.2.3-0.0.0',
+            'vhs' => '2.3.3-0.0.0',
         ),
         'conflicts' => array(
         ),
         'suggests' => array(
+            'dd_googlesitemap' => '',
+            'formhandler' => '',
+            'gridelements' => '4.0.0-0.0.0',
+            'rlmp_language_detection' => '7.0.0-7.99.99',
+            'rx_shariff' => '3.0.0-3.99.99',
+            'sr_language_menu' => '6.3.0-6.3.99',
+            'yag' => '4.0.6-4.99.99',
+
         ),
     ),
     'suggests' => array(
