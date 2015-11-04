@@ -33,6 +33,7 @@ $EM_CONF[$_EXTKEY] = array(
             'typo3' => '7.5.0-7.6.99',
             'typo3_console' => '1.2.3-0.0.0',
             'vhs' => '2.3.3-0.0.0',
+            'scheduler' => '0.0.0-0.0.0',
         ),
         'conflicts' => array(
         ),
