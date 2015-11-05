@@ -17,3 +17,11 @@ if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('realurl', true
         'after:nav_title'
     );
 }
+
+// Add pagetree icons
+// @TODO Isn't actually shown in backend pagetree (only in page properties)
+$GLOBALS['TCA']['pages']['columns']['module']['config']['items'][] = [
+    0 => 'LLL:EXT:theme/Resources/Private/Language/BackendGeneral.xlf:icon.pagetree.sup7even',
+    1 => 'sup7even',
+    2 => 'apps-pagetree-page-supseven'
+];
