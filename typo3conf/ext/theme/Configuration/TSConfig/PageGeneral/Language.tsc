@@ -8,3 +8,6 @@ mod {
 		web_layout.defLangBinding = 1
 	}
 }
+
+// Disallow localization mixtures
+mod.web_layout.allowInconsistentLanguageHandling = 0
