@@ -29,6 +29,9 @@ $customChanges = [
     ],
     'EXT' => [
         'extConf' => [
+            'ccontent' => serialize([
+                'setPageTSconfig' => 1,
+            ]),
             'realurl' => serialize([
                 'configFile' => 'typo3conf/ext/theme/Resources/Private/Extensions/Realurl/ManualConfiguration.php',
                 'enableAutoConf' => 1,
