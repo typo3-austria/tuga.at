@@ -29,13 +29,18 @@ $customChanges = [
     ],
     'EXT' => [
         'extConf' => [
-
+            'realurl' => serialize([
+                'configFile' => 'typo3conf/ext/theme/Resources/Private/Extensions/Realurl/ManualConfiguration.php',
+                'enableAutoConf' => 1,
+                'enableDevLog' => 0,
+                'enableChashUrlDebug' => 0,
+            ]),
         ]
     ],
-    'FE' => array(
+    'FE' => [
         'disableNoCacheParameter' => true,
         'hidePagesIfNotTranslatedByDefault' => true,
-    ),
+    ],
     'GFX' => [
         'jpg_quality' => 86,
     ],
