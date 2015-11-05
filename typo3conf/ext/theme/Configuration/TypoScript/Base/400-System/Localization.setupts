@@ -1,0 +1,9 @@
+config {
+	locale_all = {$tree.sys.l10n.locale_all}
+	language = {$tree.sys.l10n.language}
+	sys_language_uid = {$tree.sys.l10n.sys_language_uid}
+	sys_language_mode = {$tree.sys.l10n.languageMode}
+
+#	sys_language_overlay = {$tree.sys.l10n.languageOverlay}
+#	sys_language_softMergeIfNotBlank = tt_content:image, tt_content:header, pages:title, pages:subtitle, pages:nav_title, page:media
+}

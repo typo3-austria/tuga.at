@@ -1,5 +1,5 @@
 [globalVar = TSFE : beUserLogin > 0] || [applicationContext = Development*]
-  // showing some debug infos in <head>
+// showing some debug infos in <head>
 page.headerData.666999 = TEXT
 page.headerData.666999 {
 	insertData = 1

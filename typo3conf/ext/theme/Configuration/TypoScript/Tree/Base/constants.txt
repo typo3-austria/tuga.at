@@ -1,39 +1,53 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme/Configuration/TypoScript/Base" extensions="constantsts">
 
+thm {
+	name = Theme by Sup7even Digital
+	key = theme
+	res = EXT:theme/Resources/
+	resLang = EXT:theme/Resources/Private/Language/
+}
 
-Tree {
-	System {
-		L10n {
+tree {
+	sys {
+		l10n {
 			locale_all = de_DE.UTF-8
 			language = de
 			directionalityOfText = ltr
 			sys_language_uid = 0
 			languageMode = 	content_fallback
-			languageOverlay = 1
+			languageOverlay =
 		}
-		TitleTag {
-			Sitename =
+		titleTag {
+			sitename =
 		}
 	}
-    Seo {
-        GoogleSiteVerification =
+    seo {
+        googleSiteVerification =
     }
-	Uid {
+	uid {
+		// Parent id for menus
+		menuPid {
+			meta = 16
+			service = 11
+		}
+		// Config for fixed IDs menus (e.g. special.list)
+		menuPageIDs {
+			cta =
+		}
+	}
+	ext {
 
 	}
-	Ext {
-
-	}
-	GA {
-		ID =
-		Domain =
+	ga {
+		id =
+		domain =
 	}
 }
 
 [globalVar = GP:L=1]
-	Tree {
-		System {
-			L10n {
+	tree {
+		sys {
+			l10n {
 				locale_all = en_US.UTF-8
 				language = en
 				directionalityOfText = ltr
@@ -45,8 +59,8 @@ Tree {
 	}
 
 [applicationContext = Development*]
-	Tree {
-        Uid {
+	tree {
+        uid {
 
         }
 	}
