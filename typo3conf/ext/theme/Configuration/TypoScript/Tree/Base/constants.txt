@@ -32,12 +32,10 @@ tree {
 	uid {
 		// Parent id for menus
 		menuPid {
-			meta = 16
-			service = 11
+
 		}
 		// Config for fixed IDs menus (e.g. special.list)
 		menuPageIDs {
-			cta =
 		}
 	}
 	ext {

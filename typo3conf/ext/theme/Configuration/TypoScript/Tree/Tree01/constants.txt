@@ -1,26 +1,34 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme/Configuration/TypoScript/Tree/Base/constants.txt">
 
-Tree {
-	System {
-		L10n {
+tree {
+	system {
+		l10n {
 
 		}
-		TitleTag {
-			Sitename =
+		titleTag {
+			sitename =
 		}
 	}
-    Seo {
-        GoogleSiteVerification =
+    seo {
+        googleSiteVerification =
     }
-	Uid {
+	uid {
+		// Parent id for menus
+		menuPid {
+			meta = 16
+			service = 11
+		}
+		// Config for fixed IDs menus (e.g. special.list)
+		menuPageIDs {
+			cta =
+		}
+	}
+	ext {
 
 	}
-	Ext {
-
-	}
-	GA {
-        ID =
-        Domain =
+	ga {
+        id =
+        domain =
     }
 }
 
@@ -28,8 +36,8 @@ Tree {
 
 # DEV-SERVER
 [applicationContext = Development*]
-	Tree {
-		Uid {
+	tree {
+		uid {
 
 		}
 	}
