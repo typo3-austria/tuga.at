@@ -2,13 +2,21 @@
 
 defined('TYPO3_MODE') || die('Access denied.');
 
+// Add theme's general PageTSConfig
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
     'theme',
     'Configuration/TSConfig/PageGeneral.tsc',
     'EXT:theme :: General PageTSConfig'
 );
 
-// Adds ext:realurl tca palette to pagetype "Link to External URL"
+// Add "Only X" PageTSConfig
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    'theme',
+    'Configuration/TSConfig/Page/OnlyFeUsers.tsc',
+    'EXT:theme :: Restrict pages to FeUsers/FeGroups'
+);
+
+// Add ext:realurl tca palette to pagetype "Link to External URL"
 if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('realurl', true)) {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         'pages',
