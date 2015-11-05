@@ -25,7 +25,7 @@ $EM_CONF[$_EXTKEY] = array(
     'constraints' => array(
         'depends' => array(
             // todo clear dependencies
-            'ccontent' => '0.0.0-0.0.0',
+            'ccontent' => '',
             'news' => '3.2.2-0.0.0',
             'realurl' => '2.0.2-0.0.0',
             'sourceopt' => '0.9.1-0.0.0',
@@ -33,9 +33,11 @@ $EM_CONF[$_EXTKEY] = array(
             'typo3' => '7.5.0-7.6.99',
             'typo3_console' => '1.2.3-0.0.0',
             'vhs' => '2.3.3-0.0.0',
-            'scheduler' => '0.0.0-0.0.0',
+            'scheduler' => '',
+            'fluid_styled_content' => '',
         ),
         'conflicts' => array(
+            'css_styled_content' => ''
         ),
         'suggests' => array(
             'dd_googlesitemap' => '',
