@@ -19,17 +19,15 @@ page.meta {
 
 		stdWrap.cObject = COA
 		stdWrap.cObject {
-			10 = TEXT
+			10 = LOAD_REGISTER
 			10 {
-				value = INDEX,FOLLOW
-				if.isFalse.field = no_search
+				seoIndex.cObject = TEXT
+				seoIndex.cObject.value = index
+				seoIndex.cObject.override = noindex
+				seoIndex.cObject.override.if.isTrue.field = no_search
 			}
-
 			20 = TEXT
-			20 {
-				value = NOINDEX,FOLLOW
-				if.isTrue.field = no_search
-			}
+			20.dataWrap = {register:seoIndex}{$tree.meta.robotsAdditional}
 		}
 	}
 

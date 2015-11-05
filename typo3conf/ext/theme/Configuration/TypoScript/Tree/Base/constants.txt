@@ -26,6 +26,9 @@ tree {
 			sitename =
 		}
 	}
+	meta {
+		robotsAdditional = ,follow,noarchive
+	}
     seo {
         googleSiteVerification =
     }
