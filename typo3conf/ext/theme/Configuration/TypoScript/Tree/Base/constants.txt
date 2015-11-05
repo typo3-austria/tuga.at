@@ -5,6 +5,7 @@ thm {
 	key = theme
 	res = EXT:theme/Resources/
 	resLang = EXT:theme/Resources/Private/Language/
+	debug = 0
 }
 
 tree {
@@ -12,11 +13,15 @@ tree {
 		l10n {
 			locale_all = de_DE.UTF-8
 			language = de
+			# https://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/Index.html#sys-language-isocode
+			sys_language_isocode = de
 			directionalityOfText = ltr
 			sys_language_uid = 0
 			languageMode = 	content_fallback
 			languageOverlay =
+			sys_language_isocode_default = de
 		}
+		htmlTag_additionalTagAttributes = itemscope="itemscope" itemtype="http://schema.org/WebPage"
 		titleTag {
 			sitename =
 		}
@@ -50,6 +55,8 @@ tree {
 			l10n {
 				locale_all = en_US.UTF-8
 				language = en
+				# https://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/Index.html#sys-language-isocode
+				sys_language_isocode = en
 				directionalityOfText = ltr
 				sys_language_uid = 1
 				languageMode = content_fallback
@@ -59,6 +66,9 @@ tree {
 	}
 
 [applicationContext = Development*]
+	thm {
+		debug = 1
+	}
 	tree {
         uid {
 
