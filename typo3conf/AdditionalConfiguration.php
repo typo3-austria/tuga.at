@@ -18,6 +18,7 @@ if ($context) {
 $customChanges = [
     'BE' => [
         'sessionTimeout' => 3600*2,
+        'versionNumberInFilename' => 0,
     ],
     'EXTCONF' => [
         'lang' => [
@@ -31,17 +32,24 @@ $customChanges = [
 
         ]
     ],
+    'FE' => array(
+        'disableNoCacheParameter' => true,
+        'hidePagesIfNotTranslatedByDefault' => true,
+    ),
     'GFX' => [
         'jpg_quality' => 86,
     ],
     'SYS' => [
         'sitename' => 'TYPO3 7 base distribution' . ' [' . $context . ']',
         'curlUse' => true,
+        'devIPmask' => '',
         'textfile_ext' => $GLOBALS['TYPO3_CONF_VARS']['SYS']['textfile_ext'] . ',setupts,constantsts,ts1,tsc',
         'UTF8filesystem' => true,
         'systemLocale' => 'de_DE.utf8',
         'defaultCategorizedTables' => '',
         'clearCacheSystem' => true,
+        't3lib_cs_convMethod' => 'mbstring',
+        't3lib_cs_utils' => 'mbstring',
     ],
     'MAIL' => [
         'defaultMailFromAddress' => '',
