@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="theme">
+		<header/>
+		<body>
+			<trans-unit id="default.title">
+				<source><![CDATA[Default]]></source>
+			</trans-unit>
+			<trans-unit id="homepage.title">
+				<source><![CDATA[Homepage]]></source>
+			</trans-unit>
+			<trans-unit id="col.main">
+				<source><![CDATA[Main Content]]></source>
+			</trans-unit>
+			<trans-unit id="col.sidebar">
+				<source><![CDATA[Sidebar]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
