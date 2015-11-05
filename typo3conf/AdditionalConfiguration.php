@@ -26,6 +26,11 @@ $customChanges = [
             ],
         ],
     ],
+    'EXT' => [
+        'extConf' => [
+
+        ]
+    ],
     'GFX' => [
         'jpg_quality' => 86,
     ],
