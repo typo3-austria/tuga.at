@@ -17,8 +17,8 @@ tree {
 			sys_language_isocode = de
 			directionalityOfText = ltr
 			sys_language_uid = 0
-			languageMode = 	content_fallback
-			languageOverlay =
+			languageMode = content_fallback; 0
+			language_overlay = 1
 			sys_language_isocode_default = de
 		}
 		htmlTag_additionalTagAttributes = itemscope="itemscope" itemtype="http://schema.org/WebPage"
