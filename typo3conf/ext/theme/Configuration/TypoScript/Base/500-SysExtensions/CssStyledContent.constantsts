@@ -1,8 +1,0 @@
-styles.content.imgtext {
-    linkWrap.lightboxEnabled = 1
-}
-
-content {
-    // set h2 when default header_layout is set
-    defaultHeaderType = 2
-}

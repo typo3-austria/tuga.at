@@ -1,0 +1,4 @@
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:fluid_styled_content/Configuration/TypoScript/Static/setup.txt">
+
+// set default extension name for labels in Fluid
+lib.fluidContent.extbase.controllerExtensionName = {$thm.name}
