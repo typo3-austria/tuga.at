@@ -18,7 +18,6 @@ if ($context) {
 $customChanges = [
     'BE' => [
         'sessionTimeout' => 3600*2,
-        'maxFileSize' => 10240*2,
     ],
     'EXTCONF' => [
         'lang' => [
