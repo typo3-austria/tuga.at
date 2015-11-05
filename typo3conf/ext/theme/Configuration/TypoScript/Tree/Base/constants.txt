@@ -1,7 +1,7 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme/Configuration/TypoScript/Base" extensions="constantsts">
 
 thm {
-	name = Theme by Sup7even Digital
+	name = Theme
 	key = theme
 	res = EXT:theme/Resources/
 	resLang = EXT:theme/Resources/Private/Language/
