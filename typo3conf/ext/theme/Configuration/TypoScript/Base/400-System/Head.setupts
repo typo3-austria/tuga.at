@@ -1,3 +1,5 @@
+// Opening headTag with directly appending the http-equiv meta tag
+// for IE performance reasons. Also add initially a favicon link tag
+// for IE.
+// TODO Check how the favicon could be integrated nowadays (incl. iOS, etc)
 page.headTag = <head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
-
-page.headerData.100 < lib.Seo.TitleTag
