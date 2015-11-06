@@ -3,6 +3,8 @@
 sourceopt {
 	removeGenerator = 0
 	removeComments = 1
+	formatHtml = 3
+	formatHtml.tabSize = 1
 }
 
 [globalVar = TSFE : beUserLogin > 0]
