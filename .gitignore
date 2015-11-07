@@ -17,6 +17,8 @@ nbproject
 *.t3x
 *.t3d
 *.zip
+*.sql
+!typo3conf/ext/**/*.sql
 
 # Ignore TYPO3 system folders, you should have them symlinked.
 # If not comment out the following entries.
