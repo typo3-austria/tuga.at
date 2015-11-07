@@ -41,3 +41,12 @@ page.meta {
 		}
 	}
 }
+
+[applicationContext = Production/Staging]
+page.meta {
+	robots {
+		stdWrap >
+		value = noindex,nofollow,noarchive
+	}
+}
+[global]
