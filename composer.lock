@@ -1,11 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "c74998d53b652b923317e6a055849f53",
-    "content-hash": "9f8529cafe88264195b7cec0a7f9584d",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -163,12 +162,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-extensions/news.git",
-                "reference": "b5856599653e996b221a1fd7643c7b190c3802ee"
+                "reference": "783f097a037a266aef627058329fea1e9b85f46a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-extensions/news/zipball/b5856599653e996b221a1fd7643c7b190c3802ee",
-                "reference": "b5856599653e996b221a1fd7643c7b190c3802ee",
+                "url": "https://api.github.com/repos/TYPO3-extensions/news/zipball/783f097a037a266aef627058329fea1e9b85f46a",
+                "reference": "783f097a037a266aef627058329fea1e9b85f46a",
                 "shasum": ""
             },
             "require": {
@@ -231,7 +230,7 @@
                 "source": "https://github.com/TYPO3-extensions/news/tree/master",
                 "issues": "https://github.com/TYPO3-extensions/news/issues"
             },
-            "time": "2015-11-04 08:08:53"
+            "time": "2015-11-06 09:30:05"
         },
         {
             "name": "helhum/realurl",
@@ -924,12 +923,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "959972609e64ecf6f3cca549a910d7044eda72ee"
+                "reference": "b2d87462e34a905fa536f31c5e080d7d1ad16428"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/959972609e64ecf6f3cca549a910d7044eda72ee",
-                "reference": "959972609e64ecf6f3cca549a910d7044eda72ee",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/b2d87462e34a905fa536f31c5e080d7d1ad16428",
+                "reference": "b2d87462e34a905fa536f31c5e080d7d1ad16428",
                 "shasum": ""
             },
             "require": {
@@ -1114,7 +1113,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-11-05 12:20:55"
+            "time": "2015-11-09 14:03:25"
         },
         {
             "name": "typo3/cms-composer-installers",
