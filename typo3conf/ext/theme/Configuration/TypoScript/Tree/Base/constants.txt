@@ -71,8 +71,20 @@ tree {
 		debug = 1
 	}
 	tree {
+		ga {
+			id =
+		}
         uid {
 
         }
+	}
+[applicationContext = Development*]
+	tree {
+		ga {
+			id =
+		}
+		uid {
+			
+		}
 	}
 [global]
