@@ -39,6 +39,7 @@ config {
 	pageTitleFirst = 1
 	pageTitleSeparator = -
 	pageTitleSeparator.noTrimWrap = | | |
+#	noPageTitle = 2
 	headerComment = Created by www.sup7even.digital :: We work harder, move faster & deliver more.
 	headerComment = Created by Sup7even Digital :: http://www.sup7even.digital
 
