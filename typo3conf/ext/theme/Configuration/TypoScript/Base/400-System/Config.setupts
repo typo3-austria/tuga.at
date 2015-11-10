@@ -2,7 +2,6 @@ config {
 
 	doctype = html5
 	metaCharset = utf-8
-	htmlTag_setParams = itemscope="itemscope" itemtype="http://schema.org/WebPage"
 	htmlTag_setParams = none
 	htmlTag_stdWrap {
 		setContentToCurrent = 1
