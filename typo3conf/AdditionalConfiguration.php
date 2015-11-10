@@ -76,6 +76,9 @@ $customChanges = [
                 'showSampleTasks' => 1,
                 'useAtDaemon' => 0,
             ]),
+            'static_info_tables' => serialize([
+                'enableManager' => 0
+            ]),
         ]
     ],
     'FE' => [
