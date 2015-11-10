@@ -12,6 +12,7 @@ $customChanges = [
         'debug' => true,
     ],
     'SYS' => [
+        'curlUse' => true,
         'devIPmask' => '*',
         'displayErrors' => true,
         'enableDeprecationLog' => 'file',
