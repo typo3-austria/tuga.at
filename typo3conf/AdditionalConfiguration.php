@@ -18,7 +18,7 @@ if ($context) {
 $customChanges = [
     'BE' => [
         'sessionTimeout' => 3600*2,
-        'versionNumberInFilename' => 0,
+        'versionNumberInFilename' => 1,
     ],
     'EXTCONF' => [
         'lang' => [
