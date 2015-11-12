@@ -13,7 +13,7 @@ call_user_func(function () {
     // Add "Only X" PageTSConfig
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'theme',
-        'Configuration/TSConfig/Page/OnlyFeUsers.tsc',
+        'Configuration/TSConfig/Single/OnlyFeUsers.tsc',
         'EXT:theme :: Restrict pages to FeUsers/FeGroups'
     );
 
