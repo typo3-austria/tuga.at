@@ -3,7 +3,7 @@
 #	tt_content {
 #		header {
 #			types {
-#				CustomContentElement {
+#				ccontent_intro_teaser {
 #					label = OverwriteLabelWhenCTypeIsThisCustomContentElement
 #				}
 #			}
