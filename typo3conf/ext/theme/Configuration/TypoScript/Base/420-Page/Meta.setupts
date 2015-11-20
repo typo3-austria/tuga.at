@@ -44,9 +44,7 @@ page.meta {
 
 [applicationContext = Production/Staging]
 page.meta {
-	robots {
-		stdWrap >
-		value = noindex,nofollow,noarchive
-	}
+	robots >
+	robots = noindex,nofollow,noarchive
 }
 [global]
