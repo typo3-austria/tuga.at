@@ -14,7 +14,7 @@ lib.fluidTemplate {
 			10 = {$thm.res}Private/Templates
 			20 = EXT:sitemodification/Resources/Private/Templates
 		}
-		variable {
+		variables {
 			RootUid = TEXT
 			RootUid {
 				data = leveluid : 0
