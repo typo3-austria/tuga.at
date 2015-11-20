@@ -9,10 +9,10 @@
 			<trans-unit id="homepage.title">
 				<target><![CDATA[Startseite]]></target>
 			</trans-unit>
-			<trans-unit id="homepage.title">
+			<trans-unit id="col.main">
 				<target><![CDATA[Hauptinhalt]]></target>
 			</trans-unit>
-			<trans-unit id="homepage.sidebar">
+			<trans-unit id="col.sidebar">
 				<target><![CDATA[Seitenleiste]]></target>
 			</trans-unit>
 		</body>
