@@ -10,6 +10,9 @@
 		"post-update-cmd": "Helhum\\Typo3Console\\Composer\\InstallerScripts::setupConsole",
 		"post-install-cmd": "Helhum\\Typo3Console\\Composer\\InstallerScripts::setupConsole"
 	},
+	"config": {
+		"optimize-autoloader": true
+	},
     "require": {
         "typo3/cms": "dev-master as 7.5.0",
         "typo3-ter/static-info-tables": "^6.3.4",
