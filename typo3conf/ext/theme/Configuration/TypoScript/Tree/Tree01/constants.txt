@@ -10,7 +10,7 @@ tree {
 		}
 	}
     seo {
-        googleSiteVerification =
+#        googleSiteVerification =
     }
 	uid {
 		// Parent id for menus
@@ -43,6 +43,9 @@ tree {
 	}
 [applicationContext = Production/Staging]
 	tree {
+		seo {
+			googleSiteVerification =
+		}
 		ga {
 			id =
 		}
