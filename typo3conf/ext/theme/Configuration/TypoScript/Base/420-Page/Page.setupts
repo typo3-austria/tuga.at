@@ -3,7 +3,7 @@ page {
 	// Import desired FLUIDTEMPLATE
 	10 < lib.fluidTemplate.default
 	10 {
-		variable {
+		variables {
 
 		}
 		settings {
