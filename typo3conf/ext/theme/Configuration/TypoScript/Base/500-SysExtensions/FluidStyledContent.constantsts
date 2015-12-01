@@ -1,3 +1,4 @@
+// @TODO: Until https://forge.typo3.org/issues/70044 is fixed the include won't work as expected and you must include FSC before any ext:theme static template
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:fluid_styled_content/Configuration/TypoScript/Static/constants.txt">
 
 styles.templates {
