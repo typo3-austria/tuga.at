@@ -1,9 +1,9 @@
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:fluid_styled_content/Configuration/TypoScript/Static/constants.txt">
 
 styles.templates {
-	templateRootPath = {$thm.res}Private/Templates/
-	partialRootPath = {$thm.res}Private/Partials/
-	layoutRootPath ={$thm.res}Private/Layouts/
+	templateRootPath = {$thm.res}Private/Templates/Content/
+	partialRootPath = {$thm.res}Private/Partials/Content/
+	layoutRootPath ={$thm.res}Private/Layouts/Content/
 }
 
 styles.content {
