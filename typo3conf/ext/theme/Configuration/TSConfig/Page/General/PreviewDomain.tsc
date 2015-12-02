@@ -1,0 +1,3 @@
+[applicationContext = Development/Docker]
+# TCEMAIN.previewDomain = devDomainWithoutSchema.vm
+[global]
