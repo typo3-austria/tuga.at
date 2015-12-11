@@ -1,4 +1,7 @@
-# SUP7EVEN DIGITAL TYPO3 BASE DISTRIBUTION
+# TUGA.at TYPO3 Distribution
 
-State: alpha
-TYPO3: 7 LTS
+powered by
+
+- montagmorgen.at
+- sup7even.digital
+- josefglatz.at

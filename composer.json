@@ -24,9 +24,7 @@
         "typo3-ter/typo3-console": "^1.2.5",
         "typo3-ter/autoloader": "^1.11.1",
 		"fluidtypo3/vhs": "^2.3.3",
-        "lochmueller/sourceopt": "dev-master",
-		"georgringer/news": "dev-master",
-		"reelworx/rx-shariff": "^5.0.0"
+        "lochmueller/sourceopt": "dev-master"
     },
 	"autoload": {
 		"psr-4": {

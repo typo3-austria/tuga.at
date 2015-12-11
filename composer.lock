@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8b0d6401555121177fedae46f68ad1b4",
-    "content-hash": "dbf0a75e4b4f5cc786cff59121bd8574",
+    "hash": "a2b5a705587fc508f8dc397c4396e892",
+    "content-hash": "a96d962959372cf51be4d363e7619d5d",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -156,82 +156,6 @@
                 "viewhelper"
             ],
             "time": "2015-11-19 22:46:54"
-        },
-        {
-            "name": "georgringer/news",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-extensions/news.git",
-                "reference": "a9843b35ca846019c55a3d9225f4b3038758c72b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-extensions/news/zipball/a9843b35ca846019c55a3d9225f4b3038758c72b",
-                "reference": "a9843b35ca846019c55a3d9225f4b3038758c72b",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": ">=7.6.0,<8.0"
-            },
-            "replace": {
-                "news": "self.version",
-                "typo3-ter/news": "self.version"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "1.4.*@dev",
-                "phpunit/phpunit": "~4.8.0"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.0.x-dev"
-                },
-                "typo3/cms": {
-                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                    "web-dir": ".Build/Web"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GeorgRinger\\News\\": "Classes"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "GeorgRinger\\News\\Tests\\": "Tests",
-                    "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/",
-                    "TYPO3\\CMS\\Fluid\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/fluid/Tests/"
-                }
-            },
-            "scripts": {
-                "post-autoload-dump": [
-                    "mkdir -p .Build/Web/typo3conf/ext/",
-                    "[ -L .Build/Web/typo3conf/ext/news ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/news"
-                ]
-            },
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Georg Ringer",
-                    "role": "Developer",
-                    "homepage": "http://montagmorgen.at"
-                }
-            ],
-            "description": "Versatile news extension, based on extbase & fluid for TYPO3 CMS",
-            "homepage": "http://montagmorgen.at",
-            "keywords": [
-                "TYPO3",
-                "extension",
-                "news"
-            ],
-            "support": {
-                "source": "https://github.com/TYPO3-extensions/news/tree/master",
-                "issues": "https://github.com/TYPO3-extensions/news/issues"
-            },
-            "time": "2015-11-29 20:46:21"
         },
         {
             "name": "helhum/realurl",
@@ -606,39 +530,6 @@
             "time": "2012-12-21 11:40:51"
         },
         {
-            "name": "reelworx/rx-shariff",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.typo3.org/TYPO3CMS/Extensions/rx_shariff.git",
-                "reference": "50c4ce577edc69236699d736b9719db9a083779c"
-            },
-            "require": {
-                "typo3/cms-core": "6.2.9 - 7.99.99"
-            },
-            "replace": {
-                "rx_shariff": "*"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "psr-4": {
-                    "Reelworx\\RxShariff\\": "Classes/"
-                }
-            },
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Reelworx GmbH",
-                    "role": "Developer",
-                    "homepage": "http://reelworx.at/"
-                }
-            ],
-            "description": "Shariff implementation for TYPO3 CMS including the backend module, a viewhelper and a plugin.",
-            "time": "2015-11-23 16:29:49"
-        },
-        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.1",
             "source": {
@@ -801,10 +692,10 @@
         },
         {
             "name": "typo3-ter/autoloader",
-            "version": "1.11.1",
+            "version": "1.11.2",
             "dist": {
                 "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/autoloader/1.11.1/t3x/",
+                "url": "http://typo3.org/extensions/repository/download/autoloader/1.11.2/t3x/",
                 "reference": null,
                 "shasum": null
             },
@@ -827,14 +718,14 @@
                 }
             ],
             "description": "Automatic components loading of ExtBase extensions to get more time for coffee in the company ;) This ext is not a PHP SPL autoloader or class loader - it is better! Loads CommandController, Xclass, Hooks, Aspects, FlexForms, Slots, TypoScript, TypeConverter, BackendLayouts and take care of createing needed templates, TCA configuration or translations at the right location.",
-            "time": "2015-11-24 15:51:59"
+            "time": "2015-12-02 14:56:06"
         },
         {
             "name": "typo3-ter/static-info-tables",
-            "version": "6.3.5",
+            "version": "6.3.6",
             "dist": {
                 "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/static_info_tables/6.3.5/t3x/",
+                "url": "http://typo3.org/extensions/repository/download/static_info_tables/6.3.6/t3x/",
                 "reference": null,
                 "shasum": null
             },
@@ -865,7 +756,7 @@
                 }
             ],
             "description": "Data and API for countries, languages and currencies.",
-            "time": "2015-11-23 17:59:16"
+            "time": "2015-12-02 17:22:55"
         },
         {
             "name": "typo3-ter/typo3-console",
@@ -963,12 +854,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "570e19edc7ab3363c46071667d1ee667a64926f2"
+                "reference": "c0cd71a6793f04d145fe417cb04e03a69736d54b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/570e19edc7ab3363c46071667d1ee667a64926f2",
-                "reference": "570e19edc7ab3363c46071667d1ee667a64926f2",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/c0cd71a6793f04d145fe417cb04e03a69736d54b",
+                "reference": "c0cd71a6793f04d145fe417cb04e03a69736d54b",
                 "shasum": ""
             },
             "require": {
@@ -1153,7 +1044,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-12-01 12:59:32"
+            "time": "2015-12-10 04:49:49"
         },
         {
             "name": "typo3/cms-composer-installers",
@@ -1232,8 +1123,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "typo3/cms": 20,
-        "lochmueller/sourceopt": 20,
-        "georgringer/news": 20
+        "lochmueller/sourceopt": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
