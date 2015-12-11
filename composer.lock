@@ -924,12 +924,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "c0cd71a6793f04d145fe417cb04e03a69736d54b"
+                "reference": "bf8964a0af9cc5df325154f93ea33a65a3a298d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/c0cd71a6793f04d145fe417cb04e03a69736d54b",
-                "reference": "c0cd71a6793f04d145fe417cb04e03a69736d54b",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/bf8964a0af9cc5df325154f93ea33a65a3a298d1",
+                "reference": "bf8964a0af9cc5df325154f93ea33a65a3a298d1",
                 "shasum": ""
             },
             "require": {
@@ -1114,7 +1114,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-12-10 04:49:49"
+            "time": "2015-12-11 05:42:02"
         },
         {
             "name": "typo3/cms-composer-installers",
