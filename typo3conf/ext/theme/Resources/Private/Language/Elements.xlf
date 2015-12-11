@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="theme">
+		<header/>
+		<body>
+			<trans-unit id="tx_theme_session">
+				<source>Session</source>
+			</trans-unit>
+			<trans-unit id="tx_theme_session.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_theme_session.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_theme_session.speaker">
+				<source>Speaker</source>
+			</trans-unit>
+			<trans-unit id="tx_theme_session.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="element.sectionHeader">
+				<source>Custom Elements</source>
+			</trans-unit>
+			<trans-unit id="element.session.title">
+				<source>Sessions</source>
+			</trans-unit>
+			<trans-unit id="element.session.description">
+				<source>Sessions of this event</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+	theme {
+		header = LLL:EXT:theme/Resources/Private/Language/Elements.xlf:element.sectionHeader
+		show = *
+		elements {
+			sessions {
+				icon = ../typo3conf/ext/theme/ext_icon.svg
+				title = LLL:EXT:theme/Resources/Private/Language/Elements.xlf:element.session.title
+				description =LLL:EXT:theme/Resources/Private/Language/Elements.xlf:element.session.description
+				tt_content_defValues {
+					CType = theme_sessions
+				}
+			}
+		}
+	}
+}
