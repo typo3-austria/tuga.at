@@ -44,5 +44,6 @@ tasks:
         checkPathsExist: true
   post-release:
     - clear-op-cache: {frontend-url: 'http://stage.tuga.at'}
-    - typo3-console: {copyEntryPoint:1, command: cache:flush}
+    - typo3-console: {copyEntryPoint:1, command: 'cache:flush'}
+    - typo3-console: {copyEntryPoint:1, command: 'database:updateschema "field.add,field.change,table.add,table.change"'}
   post-deploy:
