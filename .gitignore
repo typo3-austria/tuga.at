@@ -82,3 +82,4 @@ Build/**/
 /.mage/artifact/
 /.mage/logs/log-*
 /.mage/~working.lock
+/backup/
