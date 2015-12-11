@@ -4,6 +4,10 @@ robots {
 	config {
 		disableAllHeaderCode = 1
 		additionalHeaders = Content-type:text/plain
+		admPanel = 0
+		debug = 0
+		metaCharset = utf-8
+		disablePrefixComment = 1
 	}
 
 	10 = TEXT
