@@ -55,7 +55,7 @@ $customChanges = [
                 'resourceFolderImporter' => '/news_import',
             ]),
             'realurl' => serialize([
-                'configFile' => 'typo3conf/ext/theme/Resources/Private/Extensions/Realurl/ManualConfiguration.php',
+                'configFile' => 'typo3conf/ext/theme/Resources/Private/Extension/Realurl/ManualConfiguration.php',
                 'enableAutoConf' => 1,
                 'enableDevLog' => 0,
                 'enableChashUrlDebug' => 0,
