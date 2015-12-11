@@ -27,6 +27,7 @@ nbproject
 /typo3_src-*
 /index.php
 /vendor
+/bin
 
 # Ignore temp directory.
 /typo3temp/
@@ -78,3 +79,6 @@ pids
 *.seed
 
 Build/**/
+/.mage/artifact/
+/.mage/logs/log-*
+/.mage/~working.lock

@@ -1,35 +1,41 @@
 {
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://composer.typo3.org/"
-        },
-		{
-			"type": "git",
-			"url": "https://git.typo3.org/TYPO3CMS/Extensions/rx_shariff.git"
-		}
-    ],
-    "name": "SUP7/TYPO3-project-7",
-	"scripts": {
-		"post-update-cmd": "Helhum\\Typo3Console\\Composer\\InstallerScripts::setupConsole",
-		"post-install-cmd": "Helhum\\Typo3Console\\Composer\\InstallerScripts::setupConsole"
-	},
-	"config": {
-		"optimize-autoloader": true
-	},
-    "require": {
-        "typo3/cms": "dev-master as 7.6.0",
-        "typo3-ter/static-info-tables": "^6.3.4",
-        "helhum/realurl": "^2.0.2",
-        "typo3-ter/typo3-console": "^1.2.5",
-        "typo3-ter/autoloader": "^1.11.1",
-		"fluidtypo3/vhs": "^2.3.3",
-        "lochmueller/sourceopt": "dev-master"
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://composer.typo3.org/"
     },
-	"autoload": {
-		"psr-4": {
-			"SUP7\\Theme\\": "typo3conf/ext/theme/Classes",
-			"SUP7\\Ccontent\\": "typo3conf/ext/ccontent/Classes"
-		}
-	}
+    {
+      "type": "git",
+      "url": "https://git.typo3.org/TYPO3CMS/Extensions/rx_shariff.git"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:DeploymentOfTypo3/MagallanesTasks.git"
+    }
+  ],
+  "name": "SUP7/TYPO3-project-7",
+  "scripts": {
+    "post-update-cmd": "Helhum\\Typo3Console\\Composer\\InstallerScripts::setupConsole",
+    "post-install-cmd": "Helhum\\Typo3Console\\Composer\\InstallerScripts::setupConsole"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "bin-dir": "bin/"
+  },
+  "require": {
+    "typo3/cms": "dev-master as 7.6.0",
+    "DeploymentOfTypo3/MagallanesTasks": "dev-master",
+    "typo3-ter/static-info-tables": "^6.3.4",
+    "helhum/realurl": "^2.0.2",
+    "typo3-ter/typo3-console": "^1.2.5",
+    "typo3-ter/autoloader": "^1.11.1",
+    "fluidtypo3/vhs": "^2.3.3",
+    "lochmueller/sourceopt": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "SUP7\\Theme\\": "typo3conf/ext/theme/Classes",
+      "SUP7\\Ccontent\\": "typo3conf/ext/ccontent/Classes"
+    }
+  }
 }
