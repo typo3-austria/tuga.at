@@ -29,6 +29,11 @@ $customChanges = [
     ],
     'EXT' => [
         'extConf' => [
+            'backend' => serialize([
+                'loginLogo' => 'EXT:theme/Resources/Public/Images/tuga.svg',
+                'loginHighlightColor' => '',
+                'loginBackgroundImage' => '',
+            ]),
             'ccontent' => serialize([
                 'setPageTSconfig' => 1,
             ]),
