@@ -16,6 +16,7 @@ Use this syntax for inclusion:
 $websites = array('Base', 'Tree01');
 foreach($websites as $website) {
     ExtensionManagementUtility::addStaticFile(
+        // @TODO make theme available via call_user_function
         'theme',
         'Configuration/TypoScript/Tree/' . $website,
         'Thm TS:' . $website
