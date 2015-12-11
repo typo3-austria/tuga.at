@@ -9,6 +9,7 @@ $customChanges = [
         'installToolPassword' => '$P$CfbWYC131wKhZW8xrdAM.uzHVA8CBt',
         'warning_mode' => '',
         'adminOnly' => 0,
+        'versionNumberInFilename' => 0,
     ],
     'FE' => [
         'debug' => false,
