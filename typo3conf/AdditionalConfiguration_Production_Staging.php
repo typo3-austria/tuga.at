@@ -4,7 +4,7 @@ defined('TYPO3_MODE') || die('Access denied.');
 // Override configuration of LocalConfiguration
 $customChanges = [
     'DB' => [
-        'database' => getenv('TYPO3_DATABASE'),
+        'database' => getenv('TYPO3_DARABASE'),
         'host' => getenv('TYPO3_HOST'),
         'password' => getenv('TYPO3_PASSWORD'),
         'port' => 3306,
