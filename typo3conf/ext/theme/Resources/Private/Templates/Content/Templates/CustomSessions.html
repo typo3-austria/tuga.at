@@ -1,1 +1,7 @@
-<f:debug>{_all}</f:debug>
+
+<f:for each="{sessions}" as="session">
+	<div class="col-md-4">
+		<h4>{session.title}</h4>
+		von {session.speaker.first_name} {session.speaker.last_name}
+	</div>
+</f:for>
