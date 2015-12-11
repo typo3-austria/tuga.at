@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c74998d53b652b923317e6a055849f53",
+    "hash": "8b0d6401555121177fedae46f68ad1b4",
+    "content-hash": "dbf0a75e4b4f5cc786cff59121bd8574",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -113,16 +114,16 @@
         },
         {
             "name": "fluidtypo3/vhs",
-            "version": "2.3.3",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FluidTYPO3/vhs.git",
-                "reference": "15789647ab516ac996105b7495d981c4f7476ec9"
+                "reference": "59f7cd988b19797fd496f99481c8d69b455b78eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FluidTYPO3/vhs/zipball/15789647ab516ac996105b7495d981c4f7476ec9",
-                "reference": "15789647ab516ac996105b7495d981c4f7476ec9",
+                "url": "https://api.github.com/repos/FluidTYPO3/vhs/zipball/59f7cd988b19797fd496f99481c8d69b455b78eb",
+                "reference": "59f7cd988b19797fd496f99481c8d69b455b78eb",
                 "shasum": ""
             },
             "require": {
@@ -154,7 +155,7 @@
                 "utility",
                 "viewhelper"
             ],
-            "time": "2015-05-20 11:13:08"
+            "time": "2015-11-19 22:46:54"
         },
         {
             "name": "georgringer/news",
@@ -162,16 +163,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-extensions/news.git",
-                "reference": "783f097a037a266aef627058329fea1e9b85f46a"
+                "reference": "a9843b35ca846019c55a3d9225f4b3038758c72b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-extensions/news/zipball/783f097a037a266aef627058329fea1e9b85f46a",
-                "reference": "783f097a037a266aef627058329fea1e9b85f46a",
+                "url": "https://api.github.com/repos/TYPO3-extensions/news/zipball/a9843b35ca846019c55a3d9225f4b3038758c72b",
+                "reference": "a9843b35ca846019c55a3d9225f4b3038758c72b",
                 "shasum": ""
             },
             "require": {
-                "typo3/cms-core": ">=7.5.0,<8.0"
+                "typo3/cms-core": ">=7.6.0,<8.0"
             },
             "replace": {
                 "news": "self.version",
@@ -230,7 +231,7 @@
                 "source": "https://github.com/TYPO3-extensions/news/tree/master",
                 "issues": "https://github.com/TYPO3-extensions/news/issues"
             },
-            "time": "2015-11-06 09:30:05"
+            "time": "2015-11-29 20:46:21"
         },
         {
             "name": "helhum/realurl",
@@ -605,6 +606,39 @@
             "time": "2012-12-21 11:40:51"
         },
         {
+            "name": "reelworx/rx-shariff",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.typo3.org/TYPO3CMS/Extensions/rx_shariff.git",
+                "reference": "50c4ce577edc69236699d736b9719db9a083779c"
+            },
+            "require": {
+                "typo3/cms-core": "6.2.9 - 7.99.99"
+            },
+            "replace": {
+                "rx_shariff": "*"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Reelworx\\RxShariff\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Reelworx GmbH",
+                    "role": "Developer",
+                    "homepage": "http://reelworx.at/"
+                }
+            ],
+            "description": "Shariff implementation for TYPO3 CMS including the backend module, a viewhelper and a plugin.",
+            "time": "2015-11-23 16:29:49"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.1",
             "source": {
@@ -659,16 +693,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.6",
+            "version": "v2.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "5efd632294c8320ea52492db22292ff853a43766"
+                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/5efd632294c8320ea52492db22292ff853a43766",
-                "reference": "5efd632294c8320ea52492db22292ff853a43766",
+                "url": "https://api.github.com/repos/symfony/console/zipball/16bb1cb86df43c90931df65f529e7ebd79636750",
+                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750",
                 "shasum": ""
             },
             "require": {
@@ -693,7 +727,10 @@
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Console\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -711,20 +748,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-20 14:38:46"
+            "time": "2015-11-18 09:54:26"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.6",
+            "version": "v2.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d"
+                "reference": "a06a0c0ff7db3736a50d530c908cca547bf13da9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d",
-                "reference": "2ffb4e9598db3c48eb6d0ae73b04bbf09280c59d",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a06a0c0ff7db3736a50d530c908cca547bf13da9",
+                "reference": "a06a0c0ff7db3736a50d530c908cca547bf13da9",
                 "shasum": ""
             },
             "require": {
@@ -739,7 +776,10 @@
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Finder\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -757,14 +797,14 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-11 09:39:48"
+            "time": "2015-10-30 20:10:21"
         },
         {
             "name": "typo3-ter/autoloader",
-            "version": "1.9.4",
+            "version": "1.11.1",
             "dist": {
                 "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/autoloader/1.9.4/t3x/",
+                "url": "http://typo3.org/extensions/repository/download/autoloader/1.11.1/t3x/",
                 "reference": null,
                 "shasum": null
             },
@@ -787,20 +827,20 @@
                 }
             ],
             "description": "Automatic components loading of ExtBase extensions to get more time for coffee in the company ;) This ext is not a PHP SPL autoloader or class loader - it is better! Loads CommandController, Xclass, Hooks, Aspects, FlexForms, Slots, TypoScript, TypeConverter, BackendLayouts and take care of createing needed templates, TCA configuration or translations at the right location.",
-            "time": "2015-10-29 13:27:46"
+            "time": "2015-11-24 15:51:59"
         },
         {
             "name": "typo3-ter/static-info-tables",
-            "version": "6.3.4",
+            "version": "6.3.5",
             "dist": {
                 "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/static_info_tables/6.3.4/t3x/",
+                "url": "http://typo3.org/extensions/repository/download/static_info_tables/6.3.5/t3x/",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "php": ">= 5.3.7",
-                "typo3/cms": ">= 6.2.0, <= 7.99.99"
+                "typo3/cms": ">= 6.2.0, <= 7.6.99"
             },
             "conflict": {
                 "typo3-ter/cc-infotablesmgm": "<= 99.99.99",
@@ -825,14 +865,14 @@
                 }
             ],
             "description": "Data and API for countries, languages and currencies.",
-            "time": "2015-11-03 16:09:32"
+            "time": "2015-11-23 17:59:16"
         },
         {
             "name": "typo3-ter/typo3-console",
-            "version": "1.2.3",
+            "version": "1.2.5",
             "dist": {
                 "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/typo3_console/1.2.3/t3x/",
+                "url": "http://typo3.org/extensions/repository/download/typo3_console/1.2.5/t3x/",
                 "reference": null,
                 "shasum": null
             },
@@ -857,7 +897,7 @@
                 }
             ],
             "description": "A reliable and powerful command line interface for TYPO3 CMS",
-            "time": "2015-10-01 10:15:58"
+            "time": "2015-11-23 22:10:07"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -923,12 +963,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "b2d87462e34a905fa536f31c5e080d7d1ad16428"
+                "reference": "570e19edc7ab3363c46071667d1ee667a64926f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/b2d87462e34a905fa536f31c5e080d7d1ad16428",
-                "reference": "b2d87462e34a905fa536f31c5e080d7d1ad16428",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/570e19edc7ab3363c46071667d1ee667a64926f2",
+                "reference": "570e19edc7ab3363c46071667d1ee667a64926f2",
                 "shasum": ""
             },
             "require": {
@@ -947,7 +987,7 @@
                 "symfony/console": "~2.7.0",
                 "symfony/finder": "~2.7.0",
                 "typo3/class-alias-loader": "^1.0",
-                "typo3/cms-composer-installers": "^1.2.2"
+                "typo3/cms-composer-installers": "^1.2.5"
             },
             "replace": {
                 "typo3/cms-about": "self.version",
@@ -1113,24 +1153,27 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-11-09 14:03:25"
+            "time": "2015-12-01 12:59:32"
         },
         {
             "name": "typo3/cms-composer-installers",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/CmsComposerInstallers.git",
-                "reference": "f41bf519acc9430a7d999a6a22a5720e1ee3a27a"
+                "reference": "68dce62bbfed9912583de4a1db16df8feb8f7e2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/f41bf519acc9430a7d999a6a22a5720e1ee3a27a",
-                "reference": "f41bf519acc9430a7d999a6a22a5720e1ee3a27a",
+                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/68dce62bbfed9912583de4a1db16df8feb8f7e2d",
+                "reference": "68dce62bbfed9912583de4a1db16df8feb8f7e2d",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0.0"
+            },
+            "conflict": {
+                "composer/installers": "*"
             },
             "replace": {
                 "lw/typo3cms-installers": "*",
@@ -1174,14 +1217,14 @@
                 "installer",
                 "typo3"
             ],
-            "time": "2015-10-08 20:34:38"
+            "time": "2015-11-03 21:19:57"
         }
     ],
     "packages-dev": [],
     "aliases": [
         {
-            "alias": "7.5.0",
-            "alias_normalized": "7.5.0.0",
+            "alias": "7.6.0",
+            "alias_normalized": "7.6.0.0",
             "version": "9999999-dev",
             "package": "typo3/cms"
         }
