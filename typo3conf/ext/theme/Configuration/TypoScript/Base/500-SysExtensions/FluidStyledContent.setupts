@@ -1,4 +1,28 @@
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:fluid_styled_content/Configuration/TypoScript/Static/setup.txt">
 
-// set default extension name for labels in Fluid
-lib.fluidContent.extbase.controllerExtensionName = {$thm.name}
+lib.fluidContent {
+	// set default extension name for labels in Fluid
+	extbase.controllerExtensionName = {$thm.name}
+
+	templateRootPaths {
+		200 = EXT:theme/Resources/Private/Templates/Content/Templates/
+	}
+
+	partialRootPaths {
+		200 = EXT:theme/Resources/Private/Templates/Content/Partials/
+	}
+
+	layoutRootPaths {
+		200 = EXT:theme/Resources/Private/Templates/Content/Layouts/
+	}
+}
+
+tt_content {
+	theme_sessions < lib.fluidContent
+	theme_sessions {
+		templateName = CustomSessions
+		dataProcessing {
+	#		1 = Cyberhouse\Theme\Content\TeaserElementProcessor
+		}
+	}
+}
