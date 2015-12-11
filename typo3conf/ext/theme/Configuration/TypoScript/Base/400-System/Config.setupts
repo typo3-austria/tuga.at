@@ -27,11 +27,11 @@ config {
 			}
 
 			20 = TEXT
-			20.value = <!--[if IE 8]> <html class="no-js lt-ie9" dir="{$Tree.System.L10n.directionalityOfText}" lang="{$Tree.System.L10n.language}"{register:additionalHtmlTagAttributes}{register:tagEnd} <![endif]-->
+			20.value = <!--[if IE 8]> <html class="no-js lt-ie9" dir="{$tree.sys.L10n.directionalityOfText}" lang="{$tree.sys.L10n.language}"{register:additionalHtmlTagAttributes}{register:tagEnd} <![endif]-->
 			20.wrap = |{register:newLine}
 			20.insertData = 1
 			50 < .20
-			50.value = <!--[if gt IE 8]> <!--><html class="no-js" dir="{$Tree.System.L10n.directionalityOfText}" lang="{$Tree.System.L10n.language}"{register:additionalHtmlTagAttributes}{register:tagEnd} <!--<![endif]-->
+			50.value = <!--[if gt IE 8]> <!--><html class="no-js" dir="{$tree.sys.L10n.directionalityOfText}" lang="{$tree.sys.L10n.language}"{register:additionalHtmlTagAttributes}{register:tagEnd} <!--<![endif]-->
 
 			90 = RESTORE_REGISTER
 		}
