@@ -69,8 +69,6 @@ node_modules
 *.css.map
 ### Node template
 # Logs
-logs
-*.log
 npm-debug.log*
 
 # Runtime data
@@ -80,6 +78,6 @@ pids
 
 Build/**/
 /.mage/artifact/
-/.mage/logs/log-*
+/.mage/logs/log-*.log
 /.mage/~working.lock
 /backup/
