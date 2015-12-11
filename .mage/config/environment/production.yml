@@ -25,7 +25,6 @@ tasks:
           - composer.lock
           - /composer.json
           - /index.php
-          - typo3conf/LocalConfiguration.php
           - atlassian-ide-plugin.xml
           - .editorconfig
           - .git*
