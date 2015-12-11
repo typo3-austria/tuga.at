@@ -81,6 +81,15 @@ return array (
       array (
       ),
     ),
+    'linkvalidator' => 
+    array (
+      'composerName' => 'typo3/cms-linkvalidator',
+      'state' => 'active',
+      'packagePath' => 'typo3/sysext/linkvalidator/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'setup' => 
     array (
       'composerName' => 'typo3/cms-setup',
@@ -236,6 +245,15 @@ return array (
       array (
       ),
     ),
+    'filemetadata' => 
+    array (
+      'composerName' => 'typo3/cms-filemetadata',
+      'state' => 'active',
+      'packagePath' => 'typo3/sysext/filemetadata/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'fluid_styled_content' => 
     array (
       'composerName' => 'typo3/cms-fluid-styled-content',
@@ -295,6 +313,15 @@ return array (
       'composerName' => 'typo3/cms-recordlist',
       'state' => 'active',
       'packagePath' => 'typo3/sysext/recordlist/',
+      'suggestions' => 
+      array (
+      ),
+    ),
+    'recycler' => 
+    array (
+      'composerName' => 'typo3/cms-recycler',
+      'state' => 'active',
+      'packagePath' => 'typo3/sysext/recycler/',
       'suggestions' => 
       array (
       ),
@@ -471,15 +498,6 @@ return array (
       array (
       ),
     ),
-    'filemetadata' => 
-    array (
-      'composerName' => 'typo3/cms-filemetadata',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/filemetadata/',
-      'suggestions' => 
-      array (
-      ),
-    ),
     'indexed_search' => 
     array (
       'composerName' => 'typo3/cms-indexed-search',
@@ -500,29 +518,11 @@ return array (
       array (
       ),
     ),
-    'linkvalidator' => 
-    array (
-      'composerName' => 'typo3/cms-linkvalidator',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/linkvalidator/',
-      'suggestions' => 
-      array (
-      ),
-    ),
     'opendocs' => 
     array (
       'composerName' => 'typo3/cms-opendocs',
       'state' => 'inactive',
       'packagePath' => 'typo3/sysext/opendocs/',
-      'suggestions' => 
-      array (
-      ),
-    ),
-    'recycler' => 
-    array (
-      'composerName' => 'typo3/cms-recycler',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/recycler/',
       'suggestions' => 
       array (
       ),
