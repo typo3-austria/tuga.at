@@ -3,6 +3,7 @@ return [
     'ctrl' => [
         'label' => 'title',
         'label_alt' => 'speaker',
+        'label_alt_force' => true,
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',

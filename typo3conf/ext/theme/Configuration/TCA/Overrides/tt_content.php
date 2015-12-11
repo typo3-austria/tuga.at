@@ -27,7 +27,7 @@ $tca = [
     ],
     'columns' => [
         'tx_theme_sessions' => [
-            'label' => 'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:tx_theme_session.title',
+            'label' => 'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:element.session.title',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_theme_session',

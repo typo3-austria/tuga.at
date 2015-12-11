@@ -22,7 +22,7 @@ tt_content {
 	theme_sessions {
 		templateName = CustomSessions
 		dataProcessing {
-	#		1 = Cyberhouse\Theme\Content\TeaserElementProcessor
+			1 = SUP7\Theme\Content\SessionElementProcessor
 		}
 	}
 }
