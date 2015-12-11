@@ -27,6 +27,15 @@
 			<trans-unit id="element.session.description">
 				<source>Sessions of this event</source>
 			</trans-unit>
+			<trans-unit id="element.location.title">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="element.location.description">
+				<source>Location of this event</source>
+			</trans-unit>
+			<trans-unit id="tt_content.location">
+				<source>Location for Google Maps</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -11,6 +11,14 @@ mod.wizards.newContentElement.wizardItems {
 					CType = theme_sessions
 				}
 			}
+			location {
+				icon = ../typo3conf/ext/theme/ext_icon.svg
+				title = LLL:EXT:theme/Resources/Private/Language/Elements.xlf:element.location.title
+				description =LLL:EXT:theme/Resources/Private/Language/Elements.xlf:element.location.description
+				tt_content_defValues {
+					CType = theme_location
+				}
+			}
 		}
 	}
 }

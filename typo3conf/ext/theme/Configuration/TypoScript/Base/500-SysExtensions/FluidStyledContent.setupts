@@ -25,4 +25,8 @@ tt_content {
 			1 = SUP7\Theme\Content\SessionElementProcessor
 		}
 	}
+	theme_location < lib.fluidContent
+	theme_location {
+		templateName = CustomLocation
+	}
 }
