@@ -43,6 +43,26 @@ call_user_func(
             2 => 'apps-pagetree-page-supseven'
         ];
 
+
+        $additionalFields = [
+            'meetup_time' => [
+                'label' => 'LLL:EXT:theme/Resources/Private/Language/BackendGeneral.xlf:pages.meetup_time',
+                'config' => [
+                    'type' => 'input',
+                    'eval' => 'datetime'
+                ]
+            ],
+            'meetup_link' => [
+                'label' => 'LLL:EXT:theme/Resources/Private/Language/BackendGeneral.xlf:pages.meetup_link',
+                'config' => [
+                    'type' => 'input',
+                ]
+            ],
+        ];
+
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $additionalFields);
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'meetup_time,meetup_link');
+
     },
     'theme'
 );

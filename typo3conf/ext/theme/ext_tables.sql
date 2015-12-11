@@ -28,3 +28,8 @@ CREATE TABLE tx_theme_session (
 CREATE TABLE tt_content (
    tx_theme_sessions int(11) unsigned DEFAULT '0' NOT NULL
 );
+
+CREATE TABLE pages (
+   meetup_time int(11) unsigned DEFAULT '0' NOT NULL,
+   meetup_link varchar(255) DEFAULT '' NOT NULL
+);
