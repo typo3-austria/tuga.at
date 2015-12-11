@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = array(
-    'title' => 'Theme by Sup7even Digital',
+    'title' => 'Theme by Sup7even Digital // Josef Glatz',
     'description' => '',
     'category' => 'Theme',
     'shy' => 0,
@@ -17,8 +17,8 @@ $EM_CONF[$_EXTKEY] = array(
     'modify_tables' => '',
     'clearcacheonload' => 1,
     'lockType' => '',
-    'author' => 'Sup7even Development',
-    'author_email' => 'office@supseven.at',
+    'author' => 'Josef Glatz',
+    'author_email' => 'jousch@gmail.com',
     'author_company' => 'sup7even.digital',
     'CGLcompliance' => '',
     'CGLcompliance_note' => '',

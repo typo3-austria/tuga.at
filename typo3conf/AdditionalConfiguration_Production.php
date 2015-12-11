@@ -6,6 +6,7 @@ $customChanges = [
     'BE' => [
         'debug' => false,
         'warning_email_addr' => '',
+        'installToolPassword' => '$P$CfbWYC131wKhZW8xrdAM.uzHVA8CBt',
         'warning_mode' => '',
         'adminOnly' => 0,
     ],
