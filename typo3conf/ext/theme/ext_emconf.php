@@ -26,7 +26,6 @@ $EM_CONF[$_EXTKEY] = array(
         'depends' => array(
             // todo clear dependencies
             'ccontent' => '',
-            'news' => '3.2.2-0.0.0',
             'realurl' => '2.0.2-0.0.0',
             'sourceopt' => '0.9.1-0.0.0',
             'static_info_tables' => '6.3.4-0.0.0',

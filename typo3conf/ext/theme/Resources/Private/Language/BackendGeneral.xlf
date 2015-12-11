@@ -33,10 +33,6 @@
 			<trans-unit id="tt_content.header_layout.100">
 				<source><![CDATA[Hidden Header]]></source>
 			</trans-unit>
-
-			<trans-unit id="icon.pagetree.sup7even">
-				<source><![CDATA[Sup7even Test Icon]]></source>
-			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -30,7 +30,7 @@ tree {
 		robotsAdditional = ,follow,noarchive
 	}
     seo {
-        googleSiteVerification = Os0Z0HrHf8pAErOYD5roAhX5jBtPZpFJgSQbgeKUKh4
+        googleSiteVerification = 
     }
 	uid {
 		// Parent id for menus
