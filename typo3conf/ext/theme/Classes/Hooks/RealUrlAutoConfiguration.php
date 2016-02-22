@@ -1,5 +1,5 @@
 <?php
-namespace O10\Theme\Hooks;
+namespace SUP7\Theme\Hooks;
 
 use Tx\Realurl\Configuration\ConfigurationGenerator;
 
