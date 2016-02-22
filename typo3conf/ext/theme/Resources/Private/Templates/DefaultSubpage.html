@@ -1,0 +1,34 @@
+<html data-namespace-typo3-fluid="true"
+			xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+			xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+	<f:layout name="Default" />
+
+	<f:section name="Ressources">
+	</f:section>
+
+	<f:section name="Content">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="text-uppercase">
+						{data.title}
+						<f:if condition="{data.meetup_time}">
+							<small>
+								<span class="meetup--date">{data.meetup_time -> f:format.date(format:'%d. %B %Y')}</span>
+								<span class="meetup--time">{data.meetup_time -> f:format.date(format:'%R')} Uhr</span>
+							</small>
+						</f:if>
+					</h1>
+					<f:if condition="{data.meetup_sponsor}">
+						<p class="meetup--sponsor" title="Location Sponsor von {data.title}">{data.meetup_sponsor}</p>
+					</f:if>
+
+					{v:content.render(column: '0')}
+
+				</div>
+			</div>
+		</div>
+	</f:section>
+
+</html>
