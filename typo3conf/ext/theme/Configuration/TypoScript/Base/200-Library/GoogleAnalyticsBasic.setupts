@@ -3,7 +3,7 @@
 lib.googleAnalyticsBasic = TEXT
 lib.googleAnalyticsBasic {
 	if.isTrue = {$tree.ga.id}
-	stdWrap.cObject = TEXT
+	stdWrap.cObject = COA
 	stdWrap.cObject {
 		10 = TEXT
 		10.value (
