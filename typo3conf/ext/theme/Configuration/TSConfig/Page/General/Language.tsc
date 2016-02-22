@@ -1,7 +1,7 @@
 mod {
 	SHARED {
 		# set correct label and flag for default language in BE
-		defaultLanguageFlag = de
+		defaultLanguageFlag = at
 		defaultLanguageLabel = German
 
 		# show translated records next to the original ones
