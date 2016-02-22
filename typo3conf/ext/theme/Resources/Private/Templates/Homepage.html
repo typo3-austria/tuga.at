@@ -8,22 +8,7 @@
 	</f:section>
 
 	<f:section name="Content">
-		<v:page.menu.directory pages="{settings.uid.meetings}" as="pastMeetings" expandAll="false" linkActive="true" classCurrent="active" classActive="active" class="nav-link">
-			<nav>
-				<ul class="nav nav--pastmeetings">
-					<f:for each="{pastMeetings}" as="item">
-						<li class="nav-item">
-							<a href="{item.link}" class="{item.class}">
-								<v:tag name="span" class="nav--pastmeetings--title">{item.nav_title -> v:or(alternative: item.title)}</v:tag>
-								<v:tag name="span" class="nav--pastmeetings--date" title="{item.meetup_time -> f:format.date(format:'KW%W, %A, %d. %B %Y')}"> {item.meetup_time -> f:format.date(format:'%d. %B %Y')}</v:tag></a>
-							<f:if condition="{item.meetup_sponsor}">
-								<v:tag name="span" class="nav--pastmeetings--sponsor">{item.meetup_sponsor}</v:tag>
-							</f:if>
-						</li>
-					</f:for>
-				</ul>
-			</nav>
-		</v:page.menu.directory>
+		<f:render partial="Page/Pastmeetings.html" section="Main" />
 	</f:section>
 
 </html>
