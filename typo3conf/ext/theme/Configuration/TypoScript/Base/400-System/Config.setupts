@@ -45,6 +45,9 @@ config {
 	Sup7even Digital :: http://www.sup7even.digital
 	Georg Ringer :: http://montagmorgen.at
 	Josef Glatz :: http://www.josefglatz.at
+
+Hosted by
+	abaton Hosting & Open Source :: https://www.abaton.at/
 	)
 
 	debug = 0
