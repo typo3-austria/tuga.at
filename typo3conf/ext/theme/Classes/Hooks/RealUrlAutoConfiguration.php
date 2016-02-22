@@ -1,5 +1,7 @@
 <?php
-namespace Sup7\Theme\Hooks;
+namespace O10\Theme\Hooks;
+
+use Tx\Realurl\Configuration\ConfigurationGenerator;
 
 /**
  * Class RealUrlAutoConfiguration
@@ -7,13 +9,14 @@ namespace Sup7\Theme\Hooks;
 class RealUrlAutoConfiguration
 {
     /**
-     * Generates additional RealURL configuration and merges it with provided configuration
+     * Generates additional RealURL configuration and replace it with provided configuration recursively
+     * - Add basic/often used/common RealUrl configuration
      *
      * @param array $params Default configuration
-     * @param \tx_realurl_autoconfgen $pObj Parent object
+     * @param ConfigurationGenerator $pObj Parent object
      * @return array Updated configuration
      */
-    public function addThmConfig($params, \tx_realurl_autoconfgen &$pObj)
+    public function addThmConfig($params, ConfigurationGenerator &$pObj)
     {
 
         return array_replace_recursive($params['config'], [
@@ -27,6 +30,7 @@ class RealUrlAutoConfiguration
             ],
             'fileName' => [
                 'defaultToHTMLsuffixOnPrev' => 0,
+                'acceptHTMLsuffix' => 0,
                 'index' => [
                     'robots.txt' => [
                         'keyValues' => [
@@ -51,6 +55,28 @@ class RealUrlAutoConfiguration
                 '_DEFAULT' => [
 
                 ],
+            ],
+        ]);
+    }
+
+    /**
+     * Generates additional RealURL configuration and replace it with provided configuration recursively
+     * - Disable RealUrl Cache
+     *
+     * @param $params
+     * @param ConfigurationGenerator $pObj
+     * @return array
+     */
+    public function disableRealUrlCache($params, ConfigurationGenerator &$pObj)
+    {
+        return array_replace_recursive($params['config'], [
+            'init' => [
+                'enableCHashCache' => false,
+                'enableUrlDecodeCache' => false,
+                'enableUrlEncodeCache' => false
+            ],
+            'pagePath' => [
+                'disablePathCache' => true,
             ],
         ]);
     }
