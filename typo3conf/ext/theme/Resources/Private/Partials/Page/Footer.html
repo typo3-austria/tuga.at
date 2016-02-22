@@ -1,0 +1,26 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+	  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+<f:section name="Main">
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-md-5 col-lg-4">
+					<f:format.date format="Y">today</f:format.date> - <span title="TYPO3 Usergroup Austria">TUGA</span>
+				</div>
+				<div class="col-xs-12 col-md-7 col-lg-8 text-right">
+					<v:page.menu.directory pages="{settings.uid.service}" class="nav nav-inline nav--footer" expandAll="false" showHiddenInMenu="false" linkActive="true" linkCurrent="true" classActive="active" classCurrent="active" />
+					<v:page.menu.directory pages="{settings.uid.social}" class="nav nav-inline nav--footer" expandAll="false" showHiddenInMenu="false" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p class="footer--hoster text-muted">Hosting Sponsor <a href="https://www.abaton.at" target="_blank">abaton.at</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</f:section>
+
+</html>
