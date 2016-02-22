@@ -80,3 +80,5 @@ $tca = [
 ];
 $GLOBALS['TCA']['tt_content'] = array_replace_recursive($GLOBALS['TCA']['tt_content'], $tca);
 
+// enable RTE for bodytext in CType `theme_location`
+$GLOBALS['TCA']['tt_content']['types']['theme_location']['columnsOverrides'] = ['bodytext' => ['defaultExtras' => 'richtext:rte_transform[mode=ts_css]']];
