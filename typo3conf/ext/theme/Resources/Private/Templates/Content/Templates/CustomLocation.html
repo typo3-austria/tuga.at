@@ -1,4 +1,19 @@
-<f:if condition="{data.location}">
-	<iframe style="width:100%;height:400px;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAQr57DvK8fUw2Oh54G3cJo02UdBm-yQw4&q={data.location}" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+	  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
 
-</f:if>
+<div class="m-location">
+	<f:if condition="{data.bodytext -> v:format.trim()}">
+		<div class="m-location--text">
+			{data.bodytext -> f:format.html()}
+		</div>
+	</f:if>
+	<f:if condition="{data.location}">
+		<iframe style="width:100%;height:400px;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAQr57DvK8fUw2Oh54G3cJo02UdBm-yQw4&q={data.location -> f:format.urlencode()}" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		<a href="https://www.google.at/maps/dir//{data.location -> f:format.urlencode()}" target="_blank">&#x29DF; Route</a>
+	</f:if>
+</div>
+
+</html>
+
+
