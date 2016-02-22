@@ -8,6 +8,22 @@
 	</f:section>
 
 	<f:section name="Content">
+		<header id="nextmeetup">
+			<h1>
+				<f:image src="{f:uri.resource(path:'Images/tuga.svg', extensionName:'theme')}" maxWidth="284" />
+				<span>TYPO3 Usergroup Austria</span>
+			</h1>
+		</header>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					{v:content.render(column: '0')}
+				</div>
+			</div>
+		</div>
+
+
 		<f:render partial="Page/Pastmeetings.html" section="Main" />
 	</f:section>
 
