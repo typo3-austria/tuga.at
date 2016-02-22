@@ -26,12 +26,6 @@ return [
             'packagePath' => 'typo3/sysext/fluid/',
             'suggestions' => [],
         ],
-        'documentation' => [
-            'composerName' => 'typo3/cms-documentation',
-            'state' => 'active',
-            'packagePath' => 'typo3/sysext/documentation/',
-            'suggestions' => [],
-        ],
         'info' => [
             'composerName' => 'typo3/cms-info',
             'state' => 'active',
@@ -54,12 +48,6 @@ return [
             'composerName' => 'typo3/cms-lang',
             'state' => 'active',
             'packagePath' => 'typo3/sysext/lang/',
-            'suggestions' => [],
-        ],
-        'linkvalidator' => [
-            'composerName' => 'typo3/cms-linkvalidator',
-            'state' => 'active',
-            'packagePath' => 'typo3/sysext/linkvalidator/',
             'suggestions' => [],
         ],
         'setup' => [
@@ -108,12 +96,6 @@ return [
             'packagePath' => 'typo3/sysext/wizard_sortpages/',
             'suggestions' => [],
         ],
-        'about' => [
-            'composerName' => 'typo3/cms-about',
-            'state' => 'active',
-            'packagePath' => 'typo3/sysext/about/',
-            'suggestions' => [],
-        ],
         'aboutmodules' => [
             'composerName' => 'typo3/cms-aboutmodules',
             'state' => 'active',
@@ -142,12 +124,6 @@ return [
             'composerName' => 'typo3/cms-context-help',
             'state' => 'active',
             'packagePath' => 'typo3/sysext/context_help/',
-            'suggestions' => [],
-        ],
-        'cshmanual' => [
-            'composerName' => 'typo3/cms-cshmanual',
-            'state' => 'active',
-            'packagePath' => 'typo3/sysext/cshmanual/',
             'suggestions' => [],
         ],
         'felogin' => [
@@ -314,10 +290,22 @@ return [
             'packagePath' => 'typo3conf/ext/theme/',
             'suggestions' => [],
         ],
+        'about' => [
+            'composerName' => 'typo3/cms-about',
+            'state' => 'inactive',
+            'packagePath' => 'typo3/sysext/about/',
+            'suggestions' => [],
+        ],
         'adodb' => [
             'composerName' => 'typo3/cms-adodb',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/adodb/',
+            'suggestions' => [],
+        ],
+        'cshmanual' => [
+            'composerName' => 'typo3/cms-cshmanual',
+            'state' => 'inactive',
+            'packagePath' => 'typo3/sysext/cshmanual/',
             'suggestions' => [],
         ],
         'css_styled_content' => [
@@ -330,6 +318,12 @@ return [
             'composerName' => 'typo3/cms-dbal',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/dbal/',
+            'suggestions' => [],
+        ],
+        'documentation' => [
+            'composerName' => 'typo3/cms-documentation',
+            'state' => 'inactive',
+            'packagePath' => 'typo3/sysext/documentation/',
             'suggestions' => [],
         ],
         'feedit' => [
@@ -348,6 +342,12 @@ return [
             'composerName' => 'typo3/cms-indexed-search-mysql',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/indexed_search_mysql/',
+            'suggestions' => [],
+        ],
+        'linkvalidator' => [
+            'composerName' => 'typo3/cms-linkvalidator',
+            'state' => 'inactive',
+            'packagePath' => 'typo3/sysext/linkvalidator/',
             'suggestions' => [],
         ],
         'opendocs' => [
