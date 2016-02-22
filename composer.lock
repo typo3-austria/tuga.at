@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "287172b89feefd90f008c0c393d65d3d",
-    "content-hash": "2443a4d83addc40d37a8295525ac2faf",
+    "hash": "820ba949e8a8c83e347acbfe0cdb3e6b",
+    "content-hash": "2a41397d87489802555a850d1a029986",
     "packages": [
         {
             "name": "andres-montanez/magallanes",
@@ -114,19 +114,19 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:DeploymentOfTypo3/MagallanesTasks.git",
-                "reference": "46560030886ebf1b2a5e41b735348974eb7b1b2e"
+                "reference": "2c6265f2ef70b0980470ed139e0eac6d04430262"
             },
             "require": {
                 "andres-montanez/magallanes": "1.0.*"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "Tasks/"
-                ]
+                "psr-4": {
+                    "Task\\": "Tasks/"
+                }
             },
             "description": "Deployment tasks for magallanes",
-            "time": "2015-12-04 09:58:10"
+            "time": "2016-01-12 11:58:23"
         },
         {
             "name": "doctrine/instantiator",
@@ -293,6 +293,56 @@
                 "issues": "https://github.com/lochmueller/sourceopt/issues"
             },
             "time": "2015-09-02 11:18:28"
+        },
+        {
+            "name": "mso/idna-convert",
+            "version": "v0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phlylabs/idna-convert.git",
+                "reference": "0a0a09e460e63739d82c3f0c3f0e5555567a6be3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phlylabs/idna-convert/zipball/0a0a09e460e63739d82c3f0c3f0e5555567a6be3",
+                "reference": "0a0a09e460e63739d82c3f0c3f0e5555567a6be3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "idna_convert.class.php",
+                    "uctc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1+"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Sommerfeld",
+                    "email": "mso@phlylabs.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A library for encoding and decoding internationalized domain names",
+            "homepage": "http://idnaconv.net/",
+            "keywords": [
+                "idn",
+                "idna",
+                "php"
+            ],
+            "time": "2016-01-06 21:05:46"
         },
         {
             "name": "pear/http_request2",
@@ -463,56 +513,6 @@
             "time": "2015-02-10 20:07:52"
         },
         {
-            "name": "phpwhois/idna-convert",
-            "version": "v0.8.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpWhois/idna-convert.git",
-                "reference": "ea337954b43ae47f5ebba97c19d309081bebc46e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpWhois/idna-convert/zipball/ea337954b43ae47f5ebba97c19d309081bebc46e",
-                "reference": "ea337954b43ae47f5ebba97c19d309081bebc46e",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.8.x-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "idna_convert.class.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1"
-            ],
-            "authors": [
-                {
-                    "name": "Matthias Sommerfeld",
-                    "email": "phlymail@phlylabs.de",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dmitry Lukashin",
-                    "email": "dmitry@lukashin.ru",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "idna-convert library based on http://idnaconv.phlymail.de/",
-            "homepage": "http://idnaconv.phlymail.de/",
-            "keywords": [
-                "idn",
-                "idna",
-                "php"
-            ],
-            "time": "2014-12-26 04:51:08"
-        },
-        {
             "name": "psr/http-message",
             "version": "1.0",
             "source": {
@@ -654,16 +654,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.7",
+            "version": "v2.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750"
+                "reference": "d3fc138b6ed8f8074591821d3416d8f9c04d6ca6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/16bb1cb86df43c90931df65f529e7ebd79636750",
-                "reference": "16bb1cb86df43c90931df65f529e7ebd79636750",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d3fc138b6ed8f8074591821d3416d8f9c04d6ca6",
+                "reference": "d3fc138b6ed8f8074591821d3416d8f9c04d6ca6",
                 "shasum": ""
             },
             "require": {
@@ -709,20 +709,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-18 09:54:26"
+            "time": "2016-01-14 08:26:43"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.7",
+            "version": "v2.7.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "a06a0c0ff7db3736a50d530c908cca547bf13da9"
+                "reference": "d20ac81c81a67ab898b0c0afa435f3e9a7d460cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/a06a0c0ff7db3736a50d530c908cca547bf13da9",
-                "reference": "a06a0c0ff7db3736a50d530c908cca547bf13da9",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/d20ac81c81a67ab898b0c0afa435f3e9a7d460cf",
+                "reference": "d20ac81c81a67ab898b0c0afa435f3e9a7d460cf",
                 "shasum": ""
             },
             "require": {
@@ -758,25 +758,34 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-30 20:10:21"
+            "time": "2016-01-14 08:26:43"
         },
         {
             "name": "typo3-ter/autoloader",
-            "version": "1.11.2",
+            "version": "1.11.4",
             "dist": {
                 "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/autoloader/1.11.2/t3x/",
+                "url": "https://typo3.org/extensions/repository/download/autoloader/1.11.4/t3x/",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "php": ">= 5.4.0",
-                "typo3/cms": ">= 6.2.0, <= 7.99.99"
+                "typo3/cms-core": ">= 6.2.0, <= 7.99.99"
+            },
+            "replace": {
+                "autoloader": "self.version"
             },
             "type": "typo3-cms-extension",
             "autoload": {
                 "classmap": [
                     ""
+                ],
+                "exclude-from-classmap": [
+                    "Tests",
+                    "tests",
+                    "Resources",
+                    "class.ext_update.php"
                 ]
             },
             "authors": [
@@ -788,20 +797,20 @@
                 }
             ],
             "description": "Automatic components loading of ExtBase extensions to get more time for coffee in the company ;) This ext is not a PHP SPL autoloader or class loader - it is better! Loads CommandController, Xclass, Hooks, Aspects, FlexForms, Slots, TypoScript, TypeConverter, BackendLayouts and take care of createing needed templates, TCA configuration or translations at the right location.",
-            "time": "2015-12-02 14:56:06"
+            "time": "2016-01-10 02:05:37"
         },
         {
             "name": "typo3-ter/static-info-tables",
-            "version": "6.3.6",
+            "version": "6.3.9",
             "dist": {
                 "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/static_info_tables/6.3.6/t3x/",
+                "url": "https://typo3.org/extensions/repository/download/static_info_tables/6.3.9/t3x/",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "php": ">= 5.3.7",
-                "typo3/cms": ">= 6.2.0, <= 7.6.99"
+                "typo3/cms-core": ">= 6.2.0, <= 7.6.99"
             },
             "conflict": {
                 "typo3-ter/cc-infotablesmgm": "<= 99.99.99",
@@ -809,12 +818,19 @@
                 "typo3-ter/uncache": "<= 99.99.99"
             },
             "replace": {
+                "static_info_tables": "self.version",
                 "typo3-ter/static_info_tables": "self.version"
             },
             "type": "typo3-cms-extension",
             "autoload": {
                 "classmap": [
                     ""
+                ],
+                "exclude-from-classmap": [
+                    "Tests",
+                    "tests",
+                    "Resources",
+                    "class.ext_update.php"
                 ]
             },
             "authors": [
@@ -826,7 +842,7 @@
                 }
             ],
             "description": "Data and API for countries, languages and currencies.",
-            "time": "2015-12-02 17:22:55"
+            "time": "2016-02-19 23:35:04"
         },
         {
             "name": "typo3-ter/typo3-console",
@@ -920,16 +936,16 @@
         },
         {
             "name": "typo3/cms",
-            "version": "dev-master",
+            "version": "dev-TYPO3_7-6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "bf8964a0af9cc5df325154f93ea33a65a3a298d1"
+                "reference": "0f9cbd95077e941d28d18b9dbea00344c9a309c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/bf8964a0af9cc5df325154f93ea33a65a3a298d1",
-                "reference": "bf8964a0af9cc5df325154f93ea33a65a3a298d1",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/0f9cbd95077e941d28d18b9dbea00344c9a309c8",
+                "reference": "0f9cbd95077e941d28d18b9dbea00344c9a309c8",
                 "shasum": ""
             },
             "require": {
@@ -939,9 +955,9 @@
                 "ext-pcre": "*",
                 "ext-session": "*",
                 "ext-xml": "*",
+                "mso/idna-convert": "^0.9.1",
                 "pear/http_request2": "~2.2.1",
                 "php": ">=5.5.0",
-                "phpwhois/idna-convert": "~0.8.2",
                 "psr/http-message": "~1.0",
                 "psr/log": "1.0.*@dev",
                 "swiftmailer/swiftmailer": "~5.4.1",
@@ -1114,7 +1130,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2015-12-11 05:42:02"
+            "time": "2016-02-20 13:20:02"
         },
         {
             "name": "typo3/cms-composer-installers",
@@ -1184,9 +1200,9 @@
     "packages-dev": [],
     "aliases": [
         {
-            "alias": "7.6.0",
-            "alias_normalized": "7.6.0.0",
-            "version": "9999999-dev",
+            "alias": "7.6.4",
+            "alias_normalized": "7.6.4.0",
+            "version": "dev-TYPO3_7-6",
             "package": "typo3/cms"
         }
     ],

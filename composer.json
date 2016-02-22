@@ -23,7 +23,7 @@
     "bin-dir": "bin/"
   },
   "require": {
-    "typo3/cms": "dev-master as 7.6.0",
+    "typo3/cms": "dev-TYPO3_7-6 as 7.6.4",
     "DeploymentOfTypo3/MagallanesTasks": "dev-master",
     "typo3-ter/static-info-tables": "^6.3.4",
     "helhum/realurl": "^2.0.2",
