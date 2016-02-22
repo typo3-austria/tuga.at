@@ -56,12 +56,20 @@ call_user_func(
                 'label' => 'LLL:EXT:theme/Resources/Private/Language/BackendGeneral.xlf:pages.meetup_link',
                 'config' => [
                     'type' => 'input',
+                    'eval' => 'trim',
+                ]
+            ],
+            'meetup_sponsor' => [
+                'label' => 'LLL:EXT:theme/Resources/Private/Language/BackendGeneral.xlf:pages.meetup_sponsor',
+                'config' => [
+                    'type' => 'input',
+                    'eval' => 'trim',
                 ]
             ],
         ];
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $additionalFields);
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'meetup_time,meetup_link');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'meetup_time,meetup_link,meetup_sponsor');
 
     },
     'theme'
