@@ -6,8 +6,10 @@
 <f:layout name="Default" />
 
 	<f:render section="Ressources"/>
+	<f:render partial="Page/Infobar" section="Main" arguments="{_all}" />
+
 	<f:render section="Content" />
 
-	<f:render partial="Page/Footer" section="Main" />
+	<f:render partial="Page/Footer" section="Main" arguments="{_all}" />
 
 </html>

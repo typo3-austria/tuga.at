@@ -1,0 +1,19 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+	  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+<f:section name="Main">
+	<f:if condition="{v:content.get(column: '10', pageUid: '{RootUid}')}">
+		<aside class="infobar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						{v:content.render(column: '10', pageUid: '{RootUid}')}
+					</div>
+				</div>
+			</div>
+		</aside>
+	</f:if>
+</f:section>
+
+</html>

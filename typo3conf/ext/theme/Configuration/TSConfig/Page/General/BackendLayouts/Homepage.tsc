@@ -6,13 +6,21 @@ mod {
 				config {
 					backend_layout {
 						colCount = 1
-						rowCount = 1
+						rowCount = 2
 						rows {
 							1 {
 								columns {
 									1 {
 										name = LLL:EXT:theme/Resources/Private/Language/BackendLayouts.xlf:col.main
 										colPos = 0
+									}
+								}
+							}
+							2 {
+								columns {
+									1 {
+										name = Infobar
+										colPos = 10
 									}
 								}
 							}
