@@ -3,7 +3,7 @@
 sourceopt {
 	removeGenerator = 0
 	removeComments = 1
-	formatHtml = 3
+	formatHtml = 1
 	formatHtml.tabSize = 1
 }
 
@@ -11,4 +11,9 @@ sourceopt {
 	sourceopt {
 		removeComments = 0
 	}
+[global]
+
+// Disable ext:sourceopt if type isn't 0 (default) or the page is in Development Mode
+[globalVar = GP:type > 0] || [applicationContext = Development*]
+	sourceopt.enabled = 0
 [global]
