@@ -13,7 +13,7 @@
 					<li class="nav-item">
 						<a href="{item.link}" class="{item.class}">
 							<v:tag name="span" class="nav--pastmeetings--title">{item.nav_title -> v:or(alternative: item.title)}</v:tag>
-							<v:tag name="span" class="nav--pastmeetings--date" title="{item.title} fand bereits statt: {item.meetup_time -> f:format.date(format:'KW%W, %A, %d. %B %Y')}"> {item.meetup_time -> f:format.date(format:'%d. %B %Y')}</v:tag></a>
+							<f:if condition="{item.meetup_time}"><v:tag name="span" class="nav--pastmeetings--date" title="{item.title} fand bereits statt: {item.meetup_time -> f:format.date(format:'KW%W, %A, %d. %B %Y')}"> {item.meetup_time -> f:format.date(format:'%d. %B %Y')}</v:tag></a></f:if>
 						<f:if condition="{item.meetup_sponsor}">
 							<v:tag name="span" class="nav--pastmeetings--sponsor">{item.meetup_sponsor}</v:tag>
 						</f:if>
