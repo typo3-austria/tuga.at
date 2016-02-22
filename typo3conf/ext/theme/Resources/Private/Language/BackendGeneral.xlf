@@ -39,6 +39,9 @@
 			<trans-unit id="pages.meetup_time">
 				<source>Meetup Time</source>
 			</trans-unit>
+			<trans-unit id="pages.meetup_sponsor">
+				<source>Meetup (Location-)Sponsor</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

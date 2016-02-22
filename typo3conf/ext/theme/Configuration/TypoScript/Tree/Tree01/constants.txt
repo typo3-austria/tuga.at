@@ -16,7 +16,8 @@ tree {
 		// Parent id for menus
 		menuPid {
 			meta = 16
-			service = 11
+			service = 2
+			meetings = 15
 		}
 		// Config for fixed IDs menus (e.g. special.list)
 		menuPageIDs {
