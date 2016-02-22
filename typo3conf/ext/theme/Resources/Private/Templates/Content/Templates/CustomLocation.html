@@ -5,7 +5,7 @@
 <div class="m-location">
 	<h2>Location</h2>
 	<f:if condition="{data.bodytext -> v:format.trim()}">
-		<div class="m-location--text">
+		<div class="m-location--text" itemprop="location">
 			{data.bodytext -> f:format.html()}
 		</div>
 	</f:if>

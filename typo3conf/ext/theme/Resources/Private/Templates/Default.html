@@ -11,20 +11,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h1 class="text-uppercase">
-						{data.title}
-						<f:if condition="{data.meetup_time}">
-							<small>
-								<span class="meetup--date">{data.meetup_time -> f:format.date(format:'%d. %B %Y')}</span>
-								<span class="meetup--time">{data.meetup_time -> f:format.date(format:'%R')} Uhr</span>
-							</small>
+					<section itemtype="http://schema.org/Event">
+						<h1 class="text-uppercase">
+							<span itemprop="name">{data.title}</span>
+							<f:if condition="{data.meetup_time}">
+								<small itemprop="startDate" content="{data.meetup_time -> f:format.date(format:'%Y-%m-%dT%X')}">
+									<span class="meetup--date">{data.meetup_time -> f:format.date(format:'%d. %B %Y')}</span>
+									<span class="meetup--time">{data.meetup_time -> f:format.date(format:'%R')} Uhr</span>
+								</small>
+							</f:if>
+						</h1>
+						<f:if condition="{data.meetup_sponsor}">
+							<p class="meetup--sponsor" title="Location Sponsor von {data.title}">{data.meetup_sponsor}</p>
 						</f:if>
-					</h1>
-					<f:if condition="{data.meetup_sponsor}">
-						<p class="meetup--sponsor" title="Location Sponsor von {data.title}">{data.meetup_sponsor}</p>
-					</f:if>
+						<div class="hidden">
+							<f:link.page absolute="true" additionalAttributes="{itemprop:'url'}"><f:uri.page absolute="true" /></f:link.page>
+						</div>
 
-					{v:content.render(column: '0')}
+						{v:content.render(column: '0')}
+					</section>
 
 				</div>
 			</div>
