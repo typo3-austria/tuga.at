@@ -70,6 +70,7 @@ $customChanges = [
     'FE' => [
         'disableNoCacheParameter' => true,
         'hidePagesIfNotTranslatedByDefault' => true,
+        'pageNotFound_handling' => '/404/',
     ],
     'GFX' => [
         'jpg_quality' => 86,
