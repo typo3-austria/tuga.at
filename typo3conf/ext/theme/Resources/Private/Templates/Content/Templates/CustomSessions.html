@@ -11,6 +11,16 @@
 					<f:then>
 						<f:image src="/uploads/pics/{session.speaker.image}" class="img-circle img-responsive img-blacknwhite" width="640c" height="640c" alt="Portrait/Avatar von {session.speaker.first_name}{f:if(condition:'{session.speaker.middle_name}',then:' {session.speaker.middle_name}')} {session.speaker.last_name}" />
 					</f:then>
+					<f:else>
+						<f:if condition="{session.speaker.email}">
+							<f:then>
+								<v:media.gravatar email="{session.speaker.email" size="640" class="img-circle img-responsive img-blacknwhite" />
+							</f:then>
+							<f:else>
+								<img src="" alt="Kein Avatar/Profilbild" height="640" width="640" class="img-circle img-responsive img-blacknwhite">
+							</f:else>
+						</f:if>
+					</f:else>
 				</f:if>
 				<p class="session--speaker--name">
 					{session.speaker.first_name}{f:if(condition:'{session.speaker.middle_name}',then:' {session.speaker.middle_name}')} {session.speaker.last_name}
