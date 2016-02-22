@@ -29,7 +29,7 @@
 						<i class="icon-clock"></i> {latestMeetup.meetup_time -> f:format.date(format:'%R')}
 					</span>
 				</p>
-				<f:if condition="latestMeetup.meetup_link">
+				<f:if condition="{latestMeetup.meetup_link}">
 					<div class="nextmeetup--link nextmeetup--link__meetup">
 						<f:link.external uri="{latestMeetup.meetup_link}" target="_blank">Termin auf meetup.com</f:link.external>
 					</div>
