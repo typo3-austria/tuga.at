@@ -29,7 +29,7 @@
 
 				<div class="nextmeetup--bottom">
 					<p class="nextmeetup--info">
-						Unser nächstes Treffen:
+						Unser nächstes TUGA-Meeting
 						<span itemprop="startDate" content="{latestMeetup.meetup_time -> f:format.date(format:'%Y-%m-%dT%X')}">
 							<i class="icon-cal"></i> {latestMeetup.meetup_time -> f:format.date(format:'%e. %B %Y')}
 							<i class="icon-clock"></i> {latestMeetup.meetup_time -> f:format.date(format:'%R')}
@@ -37,7 +37,7 @@
 					</p>
 					<f:if condition="{latestMeetup.meetup_link}">
 						<div class="nextmeetup--link nextmeetup--link__meetup">
-							<f:link.external uri="{latestMeetup.meetup_link}" target="_blank">Termin auf meetup.com</f:link.external>
+							<f:link.external uri="{latestMeetup.meetup_link}" target="_blank" title="Zum Meeting anmelden auf meetup.com">Anmelden</f:link.external>
 						</div>
 					</f:if>
 
