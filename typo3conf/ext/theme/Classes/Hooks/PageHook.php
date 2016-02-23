@@ -37,15 +37,20 @@ class PageHook
      */
     public function render(array $params = array(), PageLayoutController $parentObject)
     {
-
+        // Request backendLayout for actual page
         $rawBackendLayout = GeneralUtility::callUserFunction(BackendLayoutView::class . '->getSelectedCombinedIdentifier', $parentObject->pageinfo['uid'], $this);
+        // Clean backendLayout identifier (everything to the last double underscore must be deleted)
         $backendLayout = preg_replace("/.*__/", "", $rawBackendLayout);
 
+        // Show additional info box only for specific backendLayouts
         if ($backendLayout == 'Default') {
             if ($parentObject->pageinfo['meetup_time'] || $parentObject->pageinfo['meetup_sponsor'] || $parentObject->pageinfo['meetup_link']) {
+                // Set background color initially to red (warning)
                 $NecessaryFieldsFilled = 'f2dede';
+                $footerContent = '';
 
                 if ($parentObject->pageinfo['meetup_time'] && $parentObject->pageinfo['meetup_sponsor'] && $parentObject->pageinfo['meetup_link']) {
+                    // Set background color to green (success) if all necessary properties are filled
                     $NecessaryFieldsFilled = 'dff0d8';
                 }
                 $footerContent = '<div class="panel panel-default" style="padding: 20px; background-color:#' . $NecessaryFieldsFilled . '">';
