@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "820ba949e8a8c83e347acbfe0cdb3e6b",
-    "content-hash": "2a41397d87489802555a850d1a029986",
+    "hash": "cb47feb3c9c925145647c2407a6a4376",
+    "content-hash": "3eaa3f49a846fa4cad612321cec91e4d",
     "packages": [
         {
             "name": "andres-montanez/magallanes",
@@ -940,12 +940,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "7f4d88b71c56c4606443b15381ae105ea29bb4f0"
+                "reference": "8540f0b93cb84281645f61ca7e42104e02dc9383"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/7f4d88b71c56c4606443b15381ae105ea29bb4f0",
-                "reference": "7f4d88b71c56c4606443b15381ae105ea29bb4f0",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/8540f0b93cb84281645f61ca7e42104e02dc9383",
+                "reference": "8540f0b93cb84281645f61ca7e42104e02dc9383",
                 "shasum": ""
             },
             "require": {
@@ -1130,7 +1130,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2016-02-22 15:27:03"
+            "time": "2016-02-23 10:45:55"
         },
         {
             "name": "typo3/cms-composer-installers",
@@ -1200,8 +1200,8 @@
     "packages-dev": [],
     "aliases": [
         {
-            "alias": "7.6.4",
-            "alias_normalized": "7.6.4.0",
+            "alias": "7.6.5",
+            "alias_normalized": "7.6.5.0",
             "version": "dev-TYPO3_7-6",
             "package": "typo3/cms"
         }
