@@ -1,0 +1,7 @@
+.m-location {
+	margin-bottom: 20px;
+
+	@media(min-width: $screen-tablet) {
+		margin-bottom: 30px;
+	}
+}

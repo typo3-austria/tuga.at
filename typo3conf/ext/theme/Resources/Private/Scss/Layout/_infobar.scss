@@ -1,7 +1,8 @@
 .infobar {
 	@include font-smoothing(on);
 
-	padding: 3px 35px 0 0;
+	padding: 3px 7px 0 0;
+	margin-bottom: 0;
 	border: none;
 	border-radius: 0;
 
@@ -13,9 +14,13 @@
 	display: block;
 	z-index: 100;
 
+	> .container {
+		padding-right: 35px;
+	}
+
 	.close {
-		position: absolute;
-		top: 0px;
+		//position: absolute;
+		//top: 0px;
 		right: 11px;
 		span {
 			vertical-align: sub;

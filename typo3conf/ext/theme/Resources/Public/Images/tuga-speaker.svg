@@ -3,31 +3,18 @@
     <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
     <title>tuga-speaker</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
-    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="tuga-speaker" sketch:type="MSLayerGroup">
-            <rect id="Rectangle-1" stroke="#979797" fill="#D8D8D8" sketch:type="MSShapeGroup" x="0" y="0" width="590" height="590"></rect>
-            <path d="M382.053929,360.350588 C376.932321,361.865882 372.845714,362.434118 367.485893,362.434118 C323.576429,362.434118 259.1025,208.602941 259.1025,157.404118 C259.1025,138.557647 263.550536,132.27 269.834464,126.871765 C216.096607,133.159412 151.614464,152.932353 130.996607,178.066471 C126.540357,184.362353 123.829643,194.232353 123.829643,206.807647 C123.829643,286.731176 208.921429,468.092941 268.943214,468.092941 C296.719821,468.097059 343.537143,422.333529 382.053929,360.350588" id="Shape" fill="#CFCFCF" filter="url(#filter-1)" sketch:type="MSShapeGroup"></path>
-            <path d="M354.026786,121.502353 C409.555357,121.502353 465.120893,130.478824 465.120893,161.904706 C465.120893,225.658235 424.792857,302.917647 404.20375,302.917647 C367.477679,302.917647 321.793929,200.524118 321.793929,149.325294 C321.798036,125.978235 330.751607,121.502353 354.026786,121.502353" id="Shape" fill="#CFCFCF" filter="url(#filter-2)" sketch:type="MSShapeGroup"></path>
+            <g id="Page-3" sketch:type="MSShapeGroup">
+                <g id="tuga-speaker">
+                    <rect id="Rectangle-1" fill="#F5F5F5" x="0" y="0" width="590" height="590"></rect>
+                    <g id="Group" transform="translate(123.000000, 121.000000)" fill="#EAEAEA">
+                        <path d="M259.053929,239.350588 C253.932321,240.865882 249.845714,241.434118 244.485893,241.434118 C200.576429,241.434118 136.1025,87.602941 136.1025,36.404118 C136.1025,17.557647 140.550536,11.27 146.834464,5.871765 C93.096607,12.159412 28.614464,31.932353 7.996607,57.066471 C3.540357,63.362353 0.829643,73.232353 0.829643,85.807647 C0.829643,165.731176 85.921429,347.092941 145.943214,347.092941 C173.719821,347.097059 220.537143,301.333529 259.053929,239.350588" id="Shape"></path>
+                        <path d="M231.026786,0.502353 C286.555357,0.502353 342.120893,9.478824 342.120893,40.904706 C342.120893,104.658235 301.792857,181.917647 281.20375,181.917647 C244.477679,181.917647 198.793929,79.524118 198.793929,28.325294 C198.798036,4.978235 207.751607,0.502353 231.026786,0.502353" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
         </g>
     </g>
 </svg>

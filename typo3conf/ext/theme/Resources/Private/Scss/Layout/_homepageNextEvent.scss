@@ -42,12 +42,12 @@
 			transition: top 1s ease-in-out;
 			top: 3.5rem;
 			&.active-infobar {
-				top: 4.5rem;
+				top: 5rem;
 			}
 			@media(min-width: 800px) {
 				top: 5.5rem;
 				&.active-infobar {
-					top: 6rem;
+					top: 6.5rem;
 				}
 			}
 
