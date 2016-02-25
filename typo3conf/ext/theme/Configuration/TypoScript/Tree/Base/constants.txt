@@ -30,7 +30,7 @@ tree {
 		robotsAdditional = ,follow,noarchive
 	}
     seo {
-        googleSiteVerification = 
+        googleSiteVerification =
     }
 	uid {
 		// Parent id for menus
@@ -49,7 +49,12 @@ tree {
 		domain =
 	}
 }
-
+[globalVar = TSFE:page|is_siteroot = 1]
+	tree {
+		sys {
+			htmlTag_additionalTagAttributes = itemscope="itemscope" itemtype="http://schema.org/Event"
+		}
+	}
 [globalVar = GP:L=1]
 	tree {
 		sys {
