@@ -6,13 +6,59 @@ mod {
 				config {
 					backend_layout {
 						colCount = 4
-						rowCount = 1
+						rowCount = 5
 						rows {
 							1 {
 								columns {
 									1 {
 										name = LLL:EXT:theme/Resources/Private/Language/BackendLayouts.xlf:col.main
 										colPos = 0
+										colspan = 4
+									}
+								}
+							}
+							2 {
+								columns {
+									1 {
+										name = LLL:EXT:theme/Resources/Private/Language/BackendLayouts.xlf:col.main
+										colPos = 20
+										colspan = 2
+									}
+									2 {
+										name = LLL:EXT:theme/Resources/Private/Language/BackendLayouts.xlf:col.main
+										colPos = 21
+										colspan = 2
+									}
+								}
+							}
+							3 {
+								columns {
+									1 {
+										name = LLL:EXT:theme/Resources/Private/Language/BackendLayouts.xlf:col.main
+										colPos = 22
+										colspan = 4
+									}
+								}
+							}
+							4 {
+								columns {
+									1 {
+										name = LLL:EXT:theme/Resources/Private/Language/BackendLayouts.xlf:col.main
+										colPos = 23
+										colspan = 2
+									}
+									2 {
+										name = LLL:EXT:theme/Resources/Private/Language/BackendLayouts.xlf:col.main
+										colPos = 24
+										colspan = 2
+									}
+								}
+							}
+							5 {
+								columns {
+									1 {
+										name = LLL:EXT:theme/Resources/Private/Language/BackendLayouts.xlf:col.main
+										colPos = 25
 										colspan = 4
 									}
 								}
