@@ -17,12 +17,12 @@ page {
 
 	//CSS files to be included
 	includeCSS {
-
+		main = {$thm.res}Public/Css/main.min.css
 	}
 
 	// JS files to be included in the page footer
 	includeJSFooter {
-
+		main = {$thm.res}Public/JavaScript/main.js
 	}
 
 	// JS files to be included in <head />
