@@ -4,7 +4,6 @@
 
 <f:if condition="{sessions}">
 	<f:then>
-		{_all -> f:debug(inline:1)}
 		<div class="m-sessions row">
 			<div class="col-xs-12"><f:render partial="Header" arguments="{_all}" /></div>
 			<f:for each="{sessions}" as="session" iteration="iterator">
