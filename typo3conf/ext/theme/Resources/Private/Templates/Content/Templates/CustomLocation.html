@@ -13,7 +13,7 @@
 		<div class="maps">
 			<iframe style="width:100%;height:400px;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAQr57DvK8fUw2Oh54G3cJo02UdBm-yQw4&q={data.location -> f:format.urlencode()}" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 		</div>
-		<a href="https://www.google.at/maps/dir//{data.location -> f:format.urlencode()}" target="_blank">&#x29DF; Route</a>
+		<a href="https://www.google.at/maps/dir//{data.location -> f:format.urlencode()}" target="_blank" title="Google Maps öffnen" data-toggle="tooltip" data-placement="right"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Route berechnen</a>
 	</f:if>
 </div>
 

@@ -5,25 +5,35 @@
 <f:if condition="{sessions}">
 	<f:then>
 		<div class="m-sessions row">
-			<f:render partial="Header" arguments="{_all}" />
+			<div class="col-xs-12"><f:render partial="Header" arguments="{_all}" /></div>
 			<f:for each="{sessions}" as="session">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" itemprop="performer" itemscope="" itemtype="http://schema.org/Person">
-					<f:if condition="{session.speaker.image}">
-						<f:then>
-							<f:image additionalAttributes="{itemprop:'image'}" src="/uploads/pics/{session.speaker.image}" class="img-circle img-responsive img-blacknwhite" width="640c" height="640c" alt="Portrait/Avatar von {session.speaker.first_name}{f:if(condition:'{session.speaker.middle_name}',then:' {session.speaker.middle_name}')} {session.speaker.last_name}" />
-						</f:then>
-						<f:else>
-							<v:media.gravatar additionalAttributes="{itemprop:'image'}"  email="{session.speaker.email}" size="300" class="img-circle img-responsive img-blacknwhite" imageSet="blank" />
-						</f:else>
-					</f:if>
-					<p class="session--speaker--name" itemprop="name">
-						{session.speaker.first_name}{f:if(condition:'{session.speaker.middle_name}',then:' {session.speaker.middle_name}')} {session.speaker.last_name}
-					</p>
-					<h2 class="session--speaker--topic">{session.title}</h2>
-					<p class="session--speaker--topic--description">{session.description}</p>
-					<f:if condition="{session.link}">
-						<f:link.typolink parameter="{session.link}" title='Zum Download von Präsentation/Dateien der Session "{session.title}" von {session.speaker.first_name} {session.speaker.last_name}'><p class="text-center">&#x21E3; Download</p></f:link.typolink>
-					</f:if>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 m-sessions--speaker" itemprop="performer" itemscope="" itemtype="http://schema.org/Person">
+					<div class="row">
+						<div class="col-xs-6 col-sm-12">
+							<f:if condition="{session.speaker.image}">
+								<f:then>
+									<f:image additionalAttributes="{itemprop:'image'}" src="/uploads/pics/{session.speaker.image}" class="img-circle img-responsive img-blacknwhite" width="640c" height="640c" alt="Portrait/Avatar von {session.speaker.first_name}{f:if(condition:'{session.speaker.middle_name}',then:' {session.speaker.middle_name}')} {session.speaker.last_name}" />
+								</f:then>
+								<f:else>
+									<div class="session--speaker--avatarfallback img-circle">
+										<v:media.gravatar additionalAttributes="{itemprop:'image'}"  email="{session.speaker.email}" size="300" class="img-circle img-responsive img-blacknwhite" imageSet="blank" />
+									</div>
+								</f:else>
+							</f:if>
+						</div>
+						<div class="col-xs-6 col-sm-12">
+							<p class="session--speaker--name" itemprop="name">
+								{session.speaker.first_name}{f:if(condition:'{session.speaker.middle_name}',then:' {session.speaker.middle_name}')} {session.speaker.last_name}
+							</p>
+							<h2 class="session--speaker--topic">{session.title}</h2>
+							<p class="session--speaker--topic--description">{session.description}</p>
+							<f:if condition="{session.link}">
+								<p><f:link.typolink class="session--speaker--topic--link" parameter="{session.link}" title='Zum Download von Präsentation/Dateien der Session "{session.title}" von {session.speaker.first_name} {session.speaker.last_name}'><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Download</f:link.typolink>&nbsp;&nbsp;</p>
+							</f:if>
+						</div>
+					</div>
+
+
 				</div>
 			</f:for>
 		</div>
