@@ -1,0 +1,20 @@
+{
+  "name": "html5boilerplate",
+  "version": "4.3.0",
+  "description": "HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.",
+  "homepage": "http://html5boilerplate.com/",
+  "keywords": [
+    "html5",
+    "css3"
+  ],
+  "main": "css/main.css",
+  "_release": "4.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "4.3.0",
+    "commit": "5e639ba074a2a9da46d637f27a70097196592ac1"
+  },
+  "_source": "git://github.com/components/html5-boilerplate.git",
+  "_target": "~4.3.0",
+  "_originalSource": "html5-boilerplate-bower"
+}

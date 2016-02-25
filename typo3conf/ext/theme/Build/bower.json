@@ -1,0 +1,28 @@
+{
+  "name": "TugaAt",
+  "version": "1.0.0",
+  "authors": [
+    "Josef Glatz <josef.glatz@typo3.org>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "GPL-2.0",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "imagesloaded": "~3.1.8",
+    "slick-carousel": "~1.5.8",
+    "html5-boilerplate-bower": "~4.3.0",
+    "bootstrap-block-grid": "1.1.1",
+    "waypoints": "https://github.com/imakewebthings/waypoints.git",
+    "counterup": "https://github.com/bfintal/Counter-Up.git",
+    "bootstrap-sass": "^3.3.6",
+    "javascript-equal-height-responsive-rows": "*",
+    "magnific-popup": "^1.1.0",
+    "jquery": "^2.2.1",
+    "animate.css": "^3.5.1",
+    "modernizr": "^3.3.1"
+  },
+  "devDependencies": {}
+}
