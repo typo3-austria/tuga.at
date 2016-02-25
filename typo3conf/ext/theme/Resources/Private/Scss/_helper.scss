@@ -22,9 +22,9 @@
 .box1-1 {
 	position: relative;
 	width: 100%;		/* desired width */
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	//display: flex;
+	//justify-content: center;
+	//align-items: center;
 	&:before {
 		content: "";
 		display: block;
