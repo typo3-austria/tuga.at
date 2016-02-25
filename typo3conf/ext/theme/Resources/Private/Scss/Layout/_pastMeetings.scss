@@ -1,0 +1,42 @@
+.l-pastmeetings {
+	margin-bottom: 30px;
+}
+
+.nav--pastmeetings {
+	@media(min-width:$screen-sm-min) {
+		column-count: 2;
+		column-fill: balance;
+		column-span: none;
+		> li {
+			break-inside: avoid-column;
+		}
+	}
+
+	&--title {
+		text-transform: uppercase;
+	}
+	&--sponsor {
+		color: $gray;
+		//float: right;
+		//@media(min-width:$screen-md-min) {
+		//	float: none;
+		//}
+		&:before {
+			content: " / ";
+			color: $gray-light;
+			//display: none;
+			//@media(min-width:$screen-md-min) {
+			//	display: inline;
+			//}
+
+		}
+	}
+	&--date {
+		color: $text-color;
+		&:before {
+			content: " / ";
+			color: $gray-light;
+			visibility: hidden;
+		}
+	}
+}

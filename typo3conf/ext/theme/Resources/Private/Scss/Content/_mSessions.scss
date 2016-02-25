@@ -1,0 +1,41 @@
+.m-sessions {
+	margin-bottom: 50px;
+	&--speaker {
+		text-align: center;
+	}
+	.session {
+		&--speaker {
+			&--avatarfallback {
+				background:{
+					image: url("../Images/tuga-speaker.svg");
+					repeat: no-repeat;
+					size: cover;
+					position: 50% 50%;
+				}
+			}
+			&--name {
+				margin-bottom: 2px;
+				font-weight: bold;
+				margin-top: 15px;
+			}
+			&--topic {
+				margin-top: 0;
+				margin-bottom: 2px;
+				font-size: $font-size-base - 1;
+				&--description {
+					font-size: $font-size-small - 1;
+					margin-bottom: 0;
+				}
+				&--link {
+					font-size: $font-size-small - 2;
+					> p {
+						margin-top: 4px;
+						> span {
+							font-size: $font-size-small - 2 - 4;
+						}
+					}
+				}
+			}
+		}
+	}
+}

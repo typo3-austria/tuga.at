@@ -1,0 +1,44 @@
+footer {
+	@include font-smoothing(on);
+	background-color: #333333;
+	padding-top: 10px;
+	.nav--footer {
+		float: right;
+		li {
+			> a {
+				&:hover,
+				&:focus {
+					color: $white;
+					text-decoration: underline;
+					background-color: transparent;
+				}
+			}
+			&:last-child > a {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+.footer {
+	&--infotext {
+
+		color: $white;
+		padding-top: 10px;
+	}
+	&--hoster {
+		font-size: $font-size-small;
+		&:first-child {
+			padding-top: 50px;
+			padding-bottom: 10px;
+		}
+		a {
+			color: $white;
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+
+}

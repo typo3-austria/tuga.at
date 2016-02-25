@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="590px" height="590px" viewBox="0 0 590 590" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>tuga-speaker</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="tuga-speaker" sketch:type="MSLayerGroup">
+            <rect id="Rectangle-1" stroke="#979797" fill="#D8D8D8" sketch:type="MSShapeGroup" x="0" y="0" width="590" height="590"></rect>
+            <path d="M382.053929,360.350588 C376.932321,361.865882 372.845714,362.434118 367.485893,362.434118 C323.576429,362.434118 259.1025,208.602941 259.1025,157.404118 C259.1025,138.557647 263.550536,132.27 269.834464,126.871765 C216.096607,133.159412 151.614464,152.932353 130.996607,178.066471 C126.540357,184.362353 123.829643,194.232353 123.829643,206.807647 C123.829643,286.731176 208.921429,468.092941 268.943214,468.092941 C296.719821,468.097059 343.537143,422.333529 382.053929,360.350588" id="Shape" fill="#CFCFCF" filter="url(#filter-1)" sketch:type="MSShapeGroup"></path>
+            <path d="M354.026786,121.502353 C409.555357,121.502353 465.120893,130.478824 465.120893,161.904706 C465.120893,225.658235 424.792857,302.917647 404.20375,302.917647 C367.477679,302.917647 321.793929,200.524118 321.793929,149.325294 C321.798036,125.978235 330.751607,121.502353 354.026786,121.502353" id="Shape" fill="#CFCFCF" filter="url(#filter-2)" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

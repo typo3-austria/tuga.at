@@ -1,0 +1,56 @@
+.infobar {
+	@include font-smoothing(on);
+
+	padding: 3px 35px 0 0;
+	border: none;
+	border-radius: 0;
+
+	background: $brand-primary;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	z-index: 100;
+
+	.close {
+		position: absolute;
+		top: 0px;
+		right: 11px;
+		span {
+			vertical-align: sub;
+		}
+	}
+
+	a,p {
+		color: $white;
+	}
+	&--content {
+		h1,h2,h3,h4,h5,h6 {
+			margin-top: 0;
+			font-size: 15px;
+			&:last-child {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+		p {
+			font-size: 14px;
+		}
+		a {
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+				color: $white;
+			}
+		}
+		> :first-child {
+			margin-top: 10px;
+		}
+		> :last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+// Set project specifc bootstrap variables
+@import 'bootstrap-custom-variables',
+		'app-variables';
+
+// Import bootstrap (already set bootstrap variables have more priority)
+@import '_bootstrap'
+		,'../../../Build/bower_components/animate.css/animate.css'
+		,'mixins'
+		,'typography'
+		,'Layout/general'
+		,'Layout/footer'
+		,'Layout/infobar'
+		,'Layout/homepageNextEvent'
+		,'Layout/pastMeetings'
+		,'Content/mSessions'
+		,'Content/gmaps'
+		,'helper'
+
+;
