@@ -2,7 +2,7 @@
 	  xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
 	  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
 
-<div class="m-location">
+<div class="m-location" id="c{data.uid}">
 	<h2>Location</h2>
 	<f:if condition="{data.bodytext -> v:format.trim()}">
 		<div class="m-location--text" itemprop="location">

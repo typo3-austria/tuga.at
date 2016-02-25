@@ -3,6 +3,9 @@
 	height: 100%;
 	width: 100%;
 	min-height: 30rem;
+	@media(min-width: $screen-desktop) {
+		min-height: 60rem;
+	}
 	position: relative;
 	background:{
 		color: #ccc;
@@ -24,7 +27,6 @@
 		background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.56) 0%,rgba(0,0,0,0) 65%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
 		background: radial-gradient(ellipse at center, rgba(0,0,0,0.56) 0%,rgba(0,0,0,0) 65%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
 	}
 
 	&--header {
@@ -37,10 +39,16 @@
 			width: 100%;
 		}
 		&--top {
-
-			top: 3rem;
+			transition: top 1s ease-in-out;
+			top: 3.5rem;
+			&.active-infobar {
+				top: 4.5rem;
+			}
 			@media(min-width: 800px) {
-				top: 5rem;
+				top: 5.5rem;
+				&.active-infobar {
+					top: 6rem;
+				}
 			}
 
 			> h1 {
@@ -48,6 +56,7 @@
 					max-width: 140px;
 					height: auto;
 					vertical-align: top;
+					transition: all 1s ease-in-out;
 					@media(min-width: $screen-tablet) {
 						max-width: 200px;
 					}
@@ -56,6 +65,7 @@
 					}
 				}
 				.textlogo {
+					transition: all 1s ease-in-out;
 					display: block;
 					margin-left: auto;
 					margin-right: auto;
@@ -139,6 +149,7 @@
 			background: radial-gradient(ellipse at center, rgba(0,0,0,0.56) 0%,rgba(0,0,0,0) 65%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+			transition: top 1s ease-in-out;
 			bottom: 3rem;
 			@media(min-width: 800px) {
 				bottom: 5rem;

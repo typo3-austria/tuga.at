@@ -28,7 +28,7 @@
 			</f:else>
 		</f:if>
 		<header class="nextmeetup" id="nextmeetup" style="{f:if(condition:'{sujetImage.0}', then:'background-image:url({sujetImage.0.url})')}" title="{f:if(condition:'{sujetImage.0}',then:'Foto: {sujetImage.0.title}')}">
-			<div class="nextmeetup--header--top">
+			<div class="nextmeetup--header--top {f:if(condition:'{v:content.get(column: \'10\', pageUid: \'{RootUid}\')}',then:'active-infobar')}">
 				<h1 class="animated">
 					<f:link.page pageUid="{RootUid}" title="Zur Startseite" additionalAttributes="{data-toggle:'tooltip',data-placement:'bottom'}" class="nextmeetup--header--top--link"><f:image src="{f:uri.resource(path:'Images/tuga.svg', extensionName:'theme')}" maxWidth="284" alt="Usergroup Logo" /></f:link.page>
 					<span class="textlogo"><span class="textlogo-1">TYPO3</span> <span class="textlogo-2">Usergroup</span> <span class="textlogo-3">Austria</span></span>
