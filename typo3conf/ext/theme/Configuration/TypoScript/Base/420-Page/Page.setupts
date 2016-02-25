@@ -11,6 +11,8 @@ page {
 				service = {$tree.uid.menuPid.service}
 				meetings = {$tree.uid.menuPid.meetings}
 				social = {$tree.uid.menuPid.social}
+				newtalk = {$tree.uid.newtalk}
+				newlocation = {$tree.uid.newlocation}
 			}
 		}
 	}

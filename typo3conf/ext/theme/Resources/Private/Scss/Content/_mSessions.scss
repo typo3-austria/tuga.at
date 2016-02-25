@@ -5,6 +5,28 @@
 		@media(min-width: $screen-tablet) {
 			text-align: center;
 		}
+		&.motivate {
+			display: none;
+			.tmpl-homepage & {
+				display: block;
+			}
+			.box1-1 {
+				border-radius: 100% 100%;
+				background-color: #F5F5F5;
+
+				> span.glyphicon {
+					font-size: 140px;
+					transform: translateY(9%);
+					opacity: 0.05;
+				}
+
+				@media(min-width: $screen-desktop) {
+					> span.glyphicon {
+						font-size: 150px;
+					}
+				}
+			}
+		}
 	}
 	.session {
 		&--speaker {

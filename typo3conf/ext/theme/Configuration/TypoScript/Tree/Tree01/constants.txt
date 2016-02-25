@@ -24,6 +24,8 @@ tree {
 		menuPageIDs {
 			cta =
 		}
+		newtalk = 42
+		newlocation = 43
 	}
 	ext {
 

@@ -30,7 +30,7 @@
 		<header class="nextmeetup" id="nextmeetup" style="{f:if(condition:'{sujetImage.0}', then:'background-image:url({sujetImage.0.url})')}" title="{f:if(condition:'{sujetImage.0}',then:'Foto: {sujetImage.0.title}')}">
 			<div class="nextmeetup--header--top {f:if(condition:'{v:content.get(column: \'10\', pageUid: \'{RootUid}\')}',then:'active-infobar')}">
 				<h1 class="animated">
-					<f:link.page pageUid="{RootUid}" title="Zur Startseite" additionalAttributes="{data-toggle:'tooltip',data-placement:'bottom'}" class="nextmeetup--header--top--link"><f:image src="{f:uri.resource(path:'Images/tuga.svg', extensionName:'theme')}" maxWidth="284" alt="Usergroup Logo" /></f:link.page>
+					<f:link.page pageUid="{RootUid}"><f:image src="{f:uri.resource(path:'Images/tuga.svg', extensionName:'theme')}" maxWidth="284" alt="Usergroup Logo" /></f:link.page>
 					<span class="textlogo"><span class="textlogo-1">TYPO3</span> <span class="textlogo-2">Usergroup</span> <span class="textlogo-3">Austria</span></span>
 				</h1>
 				<div class="hidden">
@@ -48,7 +48,7 @@
 				</p>
 				<f:if condition="{latestMeetup.meetup_link}">
 					<div class="nextmeetup--link nextmeetup--link__meetup">
-						<f:link.external uri="{latestMeetup.meetup_link}" class="btn btn-primary btn-lg  animated infinite pulse" target="_blank" title="Zum Meeting anmelden" additionalAttributes="{data-toggle:'tooltip',data-placement:'bottom'}">Ich möchte teilnehmen!</f:link.external>
+						<f:link.external uri="{latestMeetup.meetup_link}" class="btn btn-primary btn-lg  animated infinite pulse" target="_blank">Ich möchte teilnehmen!</f:link.external>
 					</div>
 				</f:if>
 			</div>

@@ -17,6 +17,16 @@ lib.fluidContent {
 	layoutRootPaths {
 		200 = EXT:theme/Resources/Private/Templates/Content/Layouts/
 	}
+
+	settings {
+		uid {
+			service = {$tree.uid.menuPid.service}
+			meetings = {$tree.uid.menuPid.meetings}
+			social = {$tree.uid.menuPid.social}
+			newtalk = {$tree.uid.newtalk}
+			newlocation = {$tree.uid.newlocation}
+		}
+	}
 }
 
 tt_content {
