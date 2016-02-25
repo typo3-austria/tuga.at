@@ -22,7 +22,7 @@
 							</f:if>
 						</h1>
 						<f:if condition="{data.meetup_sponsor}">
-							<p class="meetup--sponsor" title="Location Sponsor von {data.title}">{data.meetup_sponsor}</p>
+							<p class="meetup--sponsor"><span  title="Location Sponsor von {data.title}" data-toggle="tooltip" data-placement="right">{data.meetup_sponsor}</span></p>
 						</f:if>
 						<div class="hidden">
 							<f:link.page absolute="true" additionalAttributes="{itemprop:'url'}"><f:uri.page absolute="true" /></f:link.page>

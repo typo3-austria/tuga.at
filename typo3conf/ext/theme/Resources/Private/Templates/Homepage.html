@@ -16,44 +16,54 @@
 			</f:for><!-- TYPO3 Inspire people to share! -->
 		</v:page.menu.directory>
 
-		<section itemtype="http://schema.org/Event">
-			<header id="nextmeetup">
-				<h1>
-					<f:image src="{f:uri.resource(path:'Images/tuga.svg', extensionName:'theme')}" maxWidth="284" />
-					<span>TYPO3 Usergroup Austria</span>
+		<f:comment> <!-- Get sujet image --> </f:comment>
+		<f:if condition="{latestMeetup.media}">
+			<f:then>
+				{v:page.resources.fal(uid:'{latestMeetup.uid}', limit:1) -> v:variable.set(name: 'sujetImage')}
+			</f:then>
+			<f:else>
+				<f:if condition="{data.media}">
+					{v:page.resources.fal(limit:1) -> v:variable.set(name: 'sujetImage')}
+				</f:if>
+			</f:else>
+		</f:if>
+		<header class="nextmeetup" id="nextmeetup" style="{f:if(condition:'{sujetImage.0}', then:'background-image:url({sujetImage.0.url})')}" title="{f:if(condition:'{sujetImage.0}',then:'Foto: {sujetImage.0.title}')}">
+			<div class="nextmeetup--header--top">
+				<h1 class="animated">
+					<f:link.page pageUid="{RootUid}" title="Zur Startseite" additionalAttributes="{data-toggle:'tooltip',data-placement:'bottom'}" class="nextmeetup--header--top--link"><f:image src="{f:uri.resource(path:'Images/tuga.svg', extensionName:'theme')}" maxWidth="284" alt="Usergroup Logo" /></f:link.page>
+					<span class="textlogo"><span class="textlogo-1">TYPO3</span> <span class="textlogo-2">Usergroup</span> <span class="textlogo-3">Austria</span></span>
 				</h1>
 				<div class="hidden">
 					<h2 itemprop="name">{latestMeetup.title}</h2>
 					<f:link.page pageUid="{latestMeetup.uid}" absolute="true" additionalAttributes="{itemprop:'url'}"><f:uri.page absolute="true" pageUid="{latestMeetup.uid}" /></f:link.page>
 				</div>
-
-				<div class="nextmeetup--bottom">
-					<p class="nextmeetup--info">
-						Unser nächstes TUGA-Meeting
-						<span itemprop="startDate" content="{latestMeetup.meetup_time -> f:format.date(format:'%Y-%m-%dT%X')}">
-							<i class="icon-cal"></i> {latestMeetup.meetup_time -> f:format.date(format:'%e. %B %Y')}
-							<i class="icon-clock"></i> {latestMeetup.meetup_time -> f:format.date(format:'%R')}
-						</span>
-					</p>
-					<f:if condition="{latestMeetup.meetup_link}">
-						<div class="nextmeetup--link nextmeetup--link__meetup">
-							<f:link.external uri="{latestMeetup.meetup_link}" target="_blank" title="Zum Meeting anmelden auf meetup.com">Anmelden</f:link.external>
-						</div>
-					</f:if>
-
-				</div>
-			</header>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<f:if condition="{latestMeetup}">
-							{v:content.render(column:'0', pageUid: '{latestMeetup.uid}')}
-						</f:if>
+			</div>
+			<div class="nextmeetup--header--bottom">
+				<p class="nextmeetup--info" data-toggle="tooltip" data-placement="top" title="{latestMeetup.meetup_time -> f:format.date(format:'KW%W, %a. %d.%m.%Y')}">
+					Unser nächstes TUGA-Meeting:
+					<span itemprop="startDate" content="{latestMeetup.meetup_time -> f:format.date(format:'%Y-%m-%dT%X')}">
+						<small><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></small> {latestMeetup.meetup_time -> f:format.date(format:'%e. %B %Y')}
+						<small><span class="glyphicon glyphicon-time" aria-hidden="true"></span></small> {latestMeetup.meetup_time -> f:format.date(format:'%R')}
+					</span>
+				</p>
+				<f:if condition="{latestMeetup.meetup_link}">
+					<div class="nextmeetup--link nextmeetup--link__meetup">
+						<f:link.external uri="{latestMeetup.meetup_link}" class="btn btn-primary btn-lg  animated infinite pulse" target="_blank" title="Zum Meeting anmelden" additionalAttributes="{data-toggle:'tooltip',data-placement:'bottom'}">Ich möchte teilnehmen!</f:link.external>
 					</div>
+				</f:if>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<f:if condition="{latestMeetup}">
+						{v:content.render(column:'0', pageUid: '{latestMeetup.uid}')}
+					</f:if>
 				</div>
 			</div>
-		</section>
+		</div>
+		<div class="clearfix"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -62,8 +72,13 @@
 			</div>
 		</div>
 
-
-		<f:render partial="Page/Pastmeetings.html" section="Main" />
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<f:render partial="Page/Pastmeetings.html" section="Main" />
+				</div>
+			</div>
+		</div>
 	</f:section>
 
 </html>
