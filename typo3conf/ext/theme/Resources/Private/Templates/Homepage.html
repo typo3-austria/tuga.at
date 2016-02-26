@@ -59,9 +59,9 @@
 					<div class="col-xs-12">
 						{v:content.render(column:'0', pageUid: '{latestMeetup.uid}')}
 						<div class="text-center">
-							<f:link.page pageUid="{latestMeetup.uid}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}" class="btn btn-primary">Permanentlink</f:link.page>
+							<f:link.page pageUid="{latestMeetup.uid}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}" class="btn btn-primary btn-sm">Permanentlink</f:link.page>
 							<f:if condition="{latestMeetup.meetup_link}">
-								<f:link.page pageUid="{latestMeetup.meetup_link}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}" class="btn btn-primary">Meeting auf meetup.com</f:link.page>
+								<f:link.page pageUid="{latestMeetup.meetup_link}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}" class="btn btn-primary btn-sm">Meeting auf meetup.com</f:link.page>
 							</f:if>
 						</div>
 					</div>
