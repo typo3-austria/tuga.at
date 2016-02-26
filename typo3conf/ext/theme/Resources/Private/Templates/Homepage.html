@@ -40,7 +40,7 @@
 			</div>
 			<div class="nextmeetup--header--bottom">
 				<p class="nextmeetup--info" data-toggle="tooltip" data-placement="top" title="{latestMeetup.meetup_time -> f:format.date(format:'KW%W, %a. %d.%m.%Y')}">
-					Unser nächstes TUGA-Meeting:
+					Nächstes TUGA-Meeting:
 					<span itemprop="startDate" content="{latestMeetup.meetup_time -> f:format.date(format:'%Y-%m-%dT%X')}">
 						<small><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></small> {latestMeetup.meetup_time -> f:format.date(format:'%e. %B %Y')}
 						<small><span class="glyphicon glyphicon-time" aria-hidden="true"></span></small> {latestMeetup.meetup_time -> f:format.date(format:'%R')}
@@ -53,16 +53,21 @@
 				</f:if>
 			</div>
 		</header>
-
-		<div class="container content-main">
-			<div class="row">
-				<div class="col-xs-12">
-					<f:if condition="{latestMeetup}">
+		<f:if condition="{latestMeetup}">
+			<div class="container content-main">
+				<div class="row">
+					<div class="col-xs-12">
 						{v:content.render(column:'0', pageUid: '{latestMeetup.uid}')}
-					</f:if>
+						<div class="text-center">
+							<f:link.page pageUid="{latestMeetup.uid}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}" class="btn btn-primary">Permanentlink</f:link.page>
+							<f:if condition="{latestMeetup.meetup_link}">
+								<f:link.page pageUid="{latestMeetup.meetup_link}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}" class="btn btn-primary">Meeting auf meetup.com</f:link.page>
+							</f:if>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</f:if>
 
 		<f:if condition="{v:content.get(column: '0')}">
 			<aside class="section-gray">
