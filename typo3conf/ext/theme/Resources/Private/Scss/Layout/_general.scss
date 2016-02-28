@@ -87,3 +87,15 @@ body,html {
 .navbar-static-top.affix {
 	top: 0;
 }
+
+.tmpl-default {
+
+	/* can be treated like a fallback */
+	background-color: $white;
+
+	/* will be "on top", if browser supports it */
+	background-image: linear-gradient(lighten($gray-base, 97.5%), $white);
+
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}

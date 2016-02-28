@@ -13,9 +13,9 @@
 				<div class="col-xs-12">
 					<section itemtype="http://schema.org/Event">
 						<h1 class="text-uppercase">
-							<span itemprop="name">{data.title}</span>
+							<span itemprop="name" class="meeting-detail--header--main">{data.title}</span>
 							<f:if condition="{data.meetup_time}">
-								<small itemprop="startDate" content="{data.meetup_time -> f:format.date(format:'%Y-%m-%dT%X')}">
+								<small itemprop="startDate" content="{data.meetup_time -> f:format.date(format:'%Y-%m-%dT%X')}" class="meeting-detail--header--date">
 									<span class="meetup--date">{data.meetup_time -> f:format.date(format:'%d.&nbsp;%h&nbsp;%Y')}</span>
 									<span class="meetup--time">{data.meetup_time -> f:format.date(format:'%R')}&nbsp;Uhr</span>
 								</small>
