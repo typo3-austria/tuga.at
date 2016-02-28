@@ -4,10 +4,20 @@
 (function () {
 	"use strict";
 
-	// bootstrap tooltips
+	// check for touch device (minimal)
+	var is_touch_device = 'ontouchstart' in document.documentElement;
+
+	// bootstrap tooltips for all except links
 	$(function () {
-		$('[data-toggle="tooltip"]').tooltip()
-	})
+		$(':not(a)[data-toggle="tooltip"]').tooltip()
+	});
+
+	// bootstrap tooltips for links on non touch devices
+	if (!is_touch_device) {
+		$('a[data-toggle="tooltip"]').tooltip({
+
+		});
+	}
 
 
 	// Activate Gmap on click
