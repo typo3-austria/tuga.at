@@ -16,8 +16,8 @@
 							<span itemprop="name">{data.title}</span>
 							<f:if condition="{data.meetup_time}">
 								<small itemprop="startDate" content="{data.meetup_time -> f:format.date(format:'%Y-%m-%dT%X')}">
-									<span class="meetup--date">{data.meetup_time -> f:format.date(format:'%d. %B %Y')}</span>
-									<span class="meetup--time">{data.meetup_time -> f:format.date(format:'%R')} Uhr</span>
+									<span class="meetup--date">{data.meetup_time -> f:format.date(format:'%d.&nbsp;%h&nbsp;%Y')}</span>
+									<span class="meetup--time">{data.meetup_time -> f:format.date(format:'%R')}&nbsp;Uhr</span>
 								</small>
 							</f:if>
 						</h1>
