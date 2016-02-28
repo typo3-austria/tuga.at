@@ -11,6 +11,14 @@ $customChanges = [
         'adminOnly' => 0,
         'versionNumberInFilename' => 0,
     ],
+    'DB' => [
+        'database' => getenv('TYPO3_DARABASE'),
+        'host' => getenv('TYPO3_HOST'),
+        'password' => getenv('TYPO3_PASSWORD'),
+        'port' => 3306,
+        'socket' => '',
+        'username' => getenv('TYPO3_USER'),
+    ],
     'FE' => [
         'debug' => false,
     ],
