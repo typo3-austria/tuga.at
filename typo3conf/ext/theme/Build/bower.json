@@ -22,7 +22,8 @@
     "magnific-popup": "^1.1.0",
     "jquery": "^2.2.1",
     "animate.css": "^3.5.1",
-    "modernizr": "^3.3.1"
+    "modernizr": "^3.3.1",
+    "jQuery.mmenu": "mmenu#^5.6.1"
   },
   "devDependencies": {}
 }
