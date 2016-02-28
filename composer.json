@@ -11,9 +11,14 @@
     {
       "type": "git",
       "url": "git@github.com:DeploymentOfTypo3/MagallanesTasks.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/helhum/typo3_console"
     }
   ],
   "name": "SUP7/TYPO3-project-7",
+  "minimum-stability": "dev",
   "scripts": {
     "post-update-cmd": "Helhum\\Typo3Console\\Composer\\InstallerScripts::setupConsole",
     "post-install-cmd": "Helhum\\Typo3Console\\Composer\\InstallerScripts::setupConsole"
@@ -27,7 +32,7 @@
     "DeploymentOfTypo3/MagallanesTasks": "dev-master",
     "typo3-ter/static-info-tables": "^6.3.4",
     "helhum/realurl": "^2.0.2",
-    "typo3-ter/typo3-console": "^1.2.5",
+    "helhum/typo3-console": "dev-master as 1.2.5",
     "typo3-ter/autoloader": "^1.11.1",
     "fluidtypo3/vhs": "^2.3.3",
     "lochmueller/sourceopt": "dev-master"

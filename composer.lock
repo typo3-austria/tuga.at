@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cb47feb3c9c925145647c2407a6a4376",
-    "content-hash": "3eaa3f49a846fa4cad612321cec91e4d",
+    "hash": "acb459eeaeba42586929102f53a78506",
+    "content-hash": "7202cfd6eefd88a453277cc1d21d3556",
     "packages": [
         {
             "name": "andres-montanez/magallanes",
@@ -130,7 +130,7 @@
         },
         {
             "name": "doctrine/instantiator",
-            "version": "1.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
@@ -229,16 +229,16 @@
         },
         {
             "name": "helhum/realurl",
-            "version": "2.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/realurl.git",
-                "reference": "d1759325899a0f09a91ca5e4195f1029dbe2138a"
+                "reference": "758e3242397e916dc694c2c0cf5f6978af918ed4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/realurl/zipball/d1759325899a0f09a91ca5e4195f1029dbe2138a",
-                "reference": "d1759325899a0f09a91ca5e4195f1029dbe2138a",
+                "url": "https://api.github.com/repos/helhum/realurl/zipball/758e3242397e916dc694c2c0cf5f6978af918ed4",
+                "reference": "758e3242397e916dc694c2c0cf5f6978af918ed4",
                 "shasum": ""
             },
             "require": {
@@ -264,7 +264,80 @@
             ],
             "description": "RealURL: speaking paths for TYPO3",
             "homepage": "http://typo3.org",
-            "time": "2015-10-07 15:56:20"
+            "time": "2015-11-17 14:05:51"
+        },
+        {
+            "name": "helhum/typo3-console",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/helhum/typo3_console",
+                "reference": "2c69fb3904a8f7b3592b475d0a576b41fd875ea9"
+            },
+            "require": {
+                "ext-phar": "*",
+                "symfony/console": ">=2.7|<3.1",
+                "symfony/process": ">=2.7|<3.1"
+            },
+            "replace": {
+                "typo3-ter/typo3-console": "self.version",
+                "typo3_console": "self.version"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.4.*@dev",
+                "namelesscoder/typo3-repository-client": "1.1.x-dev",
+                "phpunit/phpunit": "~4.7.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web",
+                    "Package": {
+                        "partOfMinimalUsableSystem": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Helhum\\Typo3Console\\": "Classes"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Helhum\\Typo3Console\\Tests\\": "Tests",
+                    "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "Helhum\\Typo3Console\\Composer\\InstallerScripts::setupConsole"
+                ]
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Helmut Hummel",
+                    "email": "info@helhum.io",
+                    "role": "Developer",
+                    "homepage": "http://helhum.io"
+                }
+            ],
+            "description": "A reliable and powerful command line interface for TYPO3 CMS",
+            "homepage": "http://insight.helhum.io/post/104528981610/about-the-beauty-and-power-of-typo3-console",
+            "keywords": [
+                "TYPO3",
+                "cli",
+                "command",
+                "commandline",
+                "console"
+            ],
+            "time": "2016-02-17 12:53:35"
         },
         {
             "name": "lochmueller/sourceopt",
@@ -346,21 +419,21 @@
         },
         {
             "name": "pear/http_request2",
-            "version": "v2.2.1",
+            "version": "dev-trunk",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/HTTP_Request2.git",
-                "reference": "d6c81670c504045248c1afdf896bb9a3288158de"
+                "reference": "3599cf0fe455a4e281da464f6510bfc5c2ce54c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/HTTP_Request2/zipball/d6c81670c504045248c1afdf896bb9a3288158de",
-                "reference": "d6c81670c504045248c1afdf896bb9a3288158de",
+                "url": "https://api.github.com/repos/pear/HTTP_Request2/zipball/3599cf0fe455a4e281da464f6510bfc5c2ce54c4",
+                "reference": "3599cf0fe455a4e281da464f6510bfc5c2ce54c4",
                 "shasum": ""
             },
             "require": {
-                "pear/net_url2": ">=2.0.0",
-                "pear/pear_exception": "*",
+                "pear/net_url2": "^2.2.0",
+                "pear/pear_exception": "^1.0.0",
                 "php": ">=5.2.0"
             },
             "suggest": {
@@ -370,20 +443,27 @@
                 "lib-openssl": "Allows handling SSL requests when not using cURL."
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-trunk": "2.2-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "HTTP_Request2": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Alexey Borzov",
-                    "email": "avb@php.net",
-                    "role": "Developer HTML_Common2"
+                    "email": "avb@php.net"
                 }
             ],
             "description": "Provides an easy way to perform HTTP requests.",
@@ -394,11 +474,11 @@
                 "http",
                 "request"
             ],
-            "time": "2014-01-16 17:27:21"
+            "time": "2016-02-13 20:20:39"
         },
         {
             "name": "pear/net_url2",
-            "version": "v2.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Net_URL2.git",
@@ -459,7 +539,7 @@
         },
         {
             "name": "pear/pear_exception",
-            "version": "v1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/PEAR_Exception.git",
@@ -514,7 +594,7 @@
         },
         {
             "name": "psr/http-message",
-            "version": "1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
@@ -563,22 +643,30 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d8e60a5619fff77f9669da8997697443ef1a1d7e",
+                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=5.3.0"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -592,12 +680,13 @@
                 }
             ],
             "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
             "keywords": [
                 "log",
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2016-01-06 21:40:42"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -654,16 +743,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.9",
+            "version": "2.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "d3fc138b6ed8f8074591821d3416d8f9c04d6ca6"
+                "reference": "e1d91ae8b2c7b80a06e3fcee06deb69b3fa958fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/d3fc138b6ed8f8074591821d3416d8f9c04d6ca6",
-                "reference": "d3fc138b6ed8f8074591821d3416d8f9c04d6ca6",
+                "url": "https://api.github.com/repos/symfony/console/zipball/e1d91ae8b2c7b80a06e3fcee06deb69b3fa958fb",
+                "reference": "e1d91ae8b2c7b80a06e3fcee06deb69b3fa958fb",
                 "shasum": ""
             },
             "require": {
@@ -709,20 +798,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-01-14 08:26:43"
+            "time": "2016-02-18 16:03:55"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.7.9",
+            "version": "2.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "d20ac81c81a67ab898b0c0afa435f3e9a7d460cf"
+                "reference": "addcb70b33affbca4f3979b0d000259b63dd6711"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/d20ac81c81a67ab898b0c0afa435f3e9a7d460cf",
-                "reference": "d20ac81c81a67ab898b0c0afa435f3e9a7d460cf",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/addcb70b33affbca4f3979b0d000259b63dd6711",
+                "reference": "addcb70b33affbca4f3979b0d000259b63dd6711",
                 "shasum": ""
             },
             "require": {
@@ -758,7 +847,56 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-01-14 08:26:43"
+            "time": "2016-02-22 16:12:29"
+        },
+        {
+            "name": "symfony/process",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "798aa276c9fbd2b9e81054b03bfaf4449fc375a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/798aa276c9fbd2b9e81054b03bfaf4449fc375a3",
+                "reference": "798aa276c9fbd2b9e81054b03bfaf4449fc375a3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-02-26 21:16:08"
         },
         {
             "name": "typo3-ter/autoloader",
@@ -845,40 +983,8 @@
             "time": "2016-02-19 23:35:04"
         },
         {
-            "name": "typo3-ter/typo3-console",
-            "version": "1.2.5",
-            "dist": {
-                "type": "t3x",
-                "url": "http://typo3.org/extensions/repository/download/typo3_console/1.2.5/t3x/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "typo3/cms": ">= 7.4.0, <= 7.99.99"
-            },
-            "replace": {
-                "typo3-ter/typo3_console": "self.version"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "classmap": [
-                    ""
-                ]
-            },
-            "authors": [
-                {
-                    "name": "Helmut Hummel",
-                    "email": "helmut.hummel@typo3.org",
-                    "company": "",
-                    "username": "helhum"
-                }
-            ],
-            "description": "A reliable and powerful command line interface for TYPO3 CMS",
-            "time": "2015-11-23 22:10:07"
-        },
-        {
             "name": "typo3/class-alias-loader",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/class-alias-loader.git",
@@ -940,12 +1046,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "786d6ac95a0296f3b2f839c48ee47aff7501d9fc"
+                "reference": "9ac9ec0c1f83d5c3f8fe469ffee9f106335ae1f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/786d6ac95a0296f3b2f839c48ee47aff7501d9fc",
-                "reference": "786d6ac95a0296f3b2f839c48ee47aff7501d9fc",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/9ac9ec0c1f83d5c3f8fe469ffee9f106335ae1f2",
+                "reference": "9ac9ec0c1f83d5c3f8fe469ffee9f106335ae1f2",
                 "shasum": ""
             },
             "require": {
@@ -1130,20 +1236,20 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2016-02-24 16:35:57"
+            "time": "2016-02-26 16:31:47"
         },
         {
             "name": "typo3/cms-composer-installers",
-            "version": "1.2.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/CmsComposerInstallers.git",
-                "reference": "68dce62bbfed9912583de4a1db16df8feb8f7e2d"
+                "reference": "2937ffee1dd5c66dd6d1e229a05e81703e38ffed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/68dce62bbfed9912583de4a1db16df8feb8f7e2d",
-                "reference": "68dce62bbfed9912583de4a1db16df8feb8f7e2d",
+                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/2937ffee1dd5c66dd6d1e229a05e81703e38ffed",
+                "reference": "2937ffee1dd5c66dd6d1e229a05e81703e38ffed",
                 "shasum": ""
             },
             "require": {
@@ -1194,7 +1300,7 @@
                 "installer",
                 "typo3"
             ],
-            "time": "2015-11-03 21:19:57"
+            "time": "2016-01-29 15:13:15"
         }
     ],
     "packages-dev": [],
@@ -1204,12 +1310,19 @@
             "alias_normalized": "7.6.5.0",
             "version": "dev-TYPO3_7-6",
             "package": "typo3/cms"
+        },
+        {
+            "alias": "1.2.5",
+            "alias_normalized": "1.2.5.0",
+            "version": "9999999-dev",
+            "package": "helhum/typo3-console"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "typo3/cms": 20,
         "deploymentoftypo3/magallanestasks": 20,
+        "helhum/typo3-console": 20,
         "lochmueller/sourceopt": 20
     },
     "prefer-stable": false,
