@@ -37,7 +37,6 @@ var JSHEAD_SRCS = [
 // Styles task
 gulp.task('styles', function () {
     gulp.src(CSS_SRC)
-		.pipe(sassGlob())
         .pipe(sass({ style: 'expanded' }))
         .pipe(autoprefixer("last 1 version", "ie 9"))
         .pipe(sourcemaps.init())
