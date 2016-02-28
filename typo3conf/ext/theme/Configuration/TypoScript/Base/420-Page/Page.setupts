@@ -13,6 +13,7 @@ page {
 				social = {$tree.uid.menuPid.social}
 				newtalk = {$tree.uid.newtalk}
 				newlocation = {$tree.uid.newlocation}
+				mainPages = {$tree.uid.menuPid.mainPages}
 			}
 		}
 	}

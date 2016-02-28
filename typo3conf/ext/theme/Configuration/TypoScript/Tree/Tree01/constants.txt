@@ -19,6 +19,7 @@ tree {
 			service = 2
 			meetings = 15
 			social = 13
+			mainPages = 3
 		}
 		// Config for fixed IDs menus (e.g. special.list)
 		menuPageIDs {
