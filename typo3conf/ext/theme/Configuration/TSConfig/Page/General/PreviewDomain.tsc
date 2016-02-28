@@ -1,3 +1,7 @@
 [applicationContext = Development/Docker]
- TCEMAIN.previewDomain = tuga.vm
+	TCEMAIN.previewDomain = tuga.vm
+[applicationContext = Production/Staging]
+	TCEMAIN.previewDomain = stage.tuga.at
+[applicationContext = Production/Live]
+	TCEMAIN.previewDomain = tuga.at
 [global]
