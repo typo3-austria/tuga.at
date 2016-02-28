@@ -22,12 +22,21 @@ footer {
 
 .footer {
 	&--infotext {
-
+		text-align: center;
 		color: $white;
 		padding-top: 10px;
+		@media (min-width: 361px) {
+			text-align: left;
+		}
 	}
 	&--hoster {
 		font-size: $font-size-small;
+
+		text-align: center;
+		@media (min-width: $screen-xs-min) {
+			text-align: left;
+		}
+
 		&:first-child {
 			padding-top: 30px;
 			padding-bottom: 10px;
