@@ -19,6 +19,7 @@ $customChanges = [
     'BE' => [
         'sessionTimeout' => 3600*2,
         'versionNumberInFilename' => 1,
+        'compressionLevel' => 9,
     ],
     'EXTCONF' => [
         'lang' => [
@@ -71,6 +72,7 @@ $customChanges = [
         'disableNoCacheParameter' => true,
         'hidePagesIfNotTranslatedByDefault' => true,
         'pageNotFound_handling' => '/404/',
+        'compressionLevel' => 9,
     ],
     'GFX' => [
         'jpg_quality' => 80,
