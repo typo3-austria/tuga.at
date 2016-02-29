@@ -31,6 +31,25 @@
 						{v:content.render(column: '0')}
 					</section>
 
+					<aside class="meetup--pagination" role="navigation">
+						<nav>
+							<v:tag name="ul" class="pager">
+								<v:page.menu.browse labelNext="Voriges Meeting" labelPrevious="Nächstes Meeting" as="menu">
+									<f:if condition="{menu.next}">
+										<li class="next">
+											<f:link.page pageUid="{menu.next.uid}" title="{menu.next.nav_title -> v:or(alternative:'{menu.next.title}')}, {menu.next.meetup_time -> f:format.date(format:'%e. %B %Y')}">{menu.next.linktext} &raquo;</f:link.page>
+										</li>
+									</f:if>
+									<f:if condition="{menu.prev}">
+										<li class="previous">
+											<f:link.page pageUid="{menu.prev.uid}" title="{menu.prev.nav_title -> v:or(alternative:'{menu.prev.title}')}, {menu.prev.meetup_time -> f:format.date(format:'%e. %B %Y')}">&laquo; {menu.prev.linktext}</f:link.page>
+										</li>
+									</f:if>
+								</v:page.menu.browse>
+							</v:tag>
+						</nav>
+					</aside>
+
 				</div>
 			</div>
 		</div>
