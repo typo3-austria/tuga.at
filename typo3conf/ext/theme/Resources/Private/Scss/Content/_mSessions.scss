@@ -7,7 +7,8 @@
 		}
 		&.motivate {
 			display: none;
-			.tmpl-homepage & {
+			.tmpl-homepage &,
+			.forthcoming-meeting & {
 				display: block;
 			}
 			.box1-1 {
