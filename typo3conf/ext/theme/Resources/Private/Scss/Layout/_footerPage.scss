@@ -7,7 +7,7 @@
 
 	.row {
 		&:nth-child(n+2) {
-			border-top: 1px solid #333;
+			border-top: 1px solid #606060;
 		}
 	}
 
@@ -49,6 +49,35 @@
 		}
 		&--desc {
 			margin-bottom:36px;
+		}
+	}
+
+	.footer-link-block {
+		a {
+			color: #ddd;
+			display: block;
+			padding-bottom: 36px;
+			&:hover,
+			&:focus {
+				color: $white;
+				text-decoration: none;
+				.footer-link-block {
+					&--title {
+						color: $brand-primary;
+					}
+					&--text {
+						color: $white;
+					}
+				}
+			}
+		}
+		&--title {
+
+		}
+		&--text {
+			font-size: $font-size-small;
+			display: block;
+			color: #cccccc;
 		}
 	}
 }
