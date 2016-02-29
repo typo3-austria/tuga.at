@@ -126,12 +126,6 @@ return [
             'packagePath' => 'typo3/sysext/context_help/',
             'suggestions' => [],
         ],
-        'felogin' => [
-            'composerName' => 'typo3/cms-felogin',
-            'state' => 'active',
-            'packagePath' => 'typo3/sysext/felogin/',
-            'suggestions' => [],
-        ],
         'filelist' => [
             'composerName' => 'typo3/cms-filelist',
             'state' => 'active',
@@ -330,6 +324,12 @@ return [
             'composerName' => 'typo3/cms-feedit',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/feedit/',
+            'suggestions' => [],
+        ],
+        'felogin' => [
+            'composerName' => 'typo3/cms-felogin',
+            'state' => 'inactive',
+            'packagePath' => 'typo3/sysext/felogin/',
             'suggestions' => [],
         ],
         'indexed_search' => [
