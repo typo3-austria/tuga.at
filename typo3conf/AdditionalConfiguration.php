@@ -73,7 +73,7 @@ $customChanges = [
         'pageNotFound_handling' => '/404/',
     ],
     'GFX' => [
-        'jpg_quality' => 86,
+        'jpg_quality' => 80,
     ],
     'SYS' => [
         'sitename' => 'TYPO3 Usergroup Austria' . ' [' . $context . ']',
