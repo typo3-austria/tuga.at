@@ -44,12 +44,12 @@ class PageHook
 
         // Show additional info box only for specific backendLayouts
         if ($backendLayout == 'Default') {
-            if ($parentObject->pageinfo['meetup_time'] || $parentObject->pageinfo['meetup_sponsor'] || $parentObject->pageinfo['meetup_link']) {
+            if ($parentObject->pageinfo['meetup_time'] || $parentObject->pageinfo['meetup_sponsor'] || $parentObject->pageinfo['meetup_link'] || $parentObject->pageinfo['meetup_city']) {
                 // Set background color initially to red (warning)
                 $NecessaryFieldsFilled = 'f2dede';
                 $footerContent = '';
 
-                if ($parentObject->pageinfo['meetup_time'] && $parentObject->pageinfo['meetup_sponsor'] && $parentObject->pageinfo['meetup_link']) {
+                if ($parentObject->pageinfo['meetup_time'] && $parentObject->pageinfo['meetup_sponsor'] && $parentObject->pageinfo['meetup_link'] && $parentObject->pageinfo['meetup_city']) {
                     // Set background color to green (success) if all necessary properties are filled
                     $NecessaryFieldsFilled = 'dff0d8';
                 }
@@ -57,6 +57,7 @@ class PageHook
                 $footerContent .= '    <h4>Meetup Infos</h4>';
                 $footerContent .= '    <p><b>Meetup Date/Time:</b> ' . BackendUtility::datetime($parentObject->pageinfo['meetup_time']) . '</p>';
                 $footerContent .= '    <p><b>Meetup Link:</b> ' . $parentObject->pageinfo['meetup_link'] . '</p>';
+                $footerContent .= '    <p><b>Meetup City:</b> ' . $parentObject->pageinfo['meetup_city'] . '</p>';
                 $footerContent .= '    <p><b>Meetup Location Sponsor:</b> ' . $parentObject->pageinfo['meetup_sponsor'] . '</p>';
 
                 return $footerContent .= '</div>';

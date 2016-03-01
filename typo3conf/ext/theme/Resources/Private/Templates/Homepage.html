@@ -40,7 +40,10 @@
 			</div>
 			<div class="nextmeetup--header--bottom">
 				<p class="nextmeetup--info" data-toggle="tooltip" data-placement="top" title="{latestMeetup.meetup_time -> f:format.date(format:'KW%W, %a. %d.%m.%Y')}">
-					Nächstes TUGA-Meeting:
+					<f:if condition="{latestMeetup.meetup_city}">
+						<f:then>Nächstes Meeting in {latestMeetup.meetup_city}</f:then>
+						<f:else>Nächstes Meeting:</f:else>
+					</f:if>
 					<span itemprop="startDate" content="{latestMeetup.meetup_time -> f:format.date(format:'%Y-%m-%dT%X')}">
 						<small><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></small> {latestMeetup.meetup_time -> f:format.date(format:'%e. %B %Y')}
 						<small><span class="glyphicon glyphicon-time" aria-hidden="true"></span></small> {latestMeetup.meetup_time -> f:format.date(format:'%R')}

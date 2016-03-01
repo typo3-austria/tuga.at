@@ -42,6 +42,9 @@
 			<trans-unit id="pages.meetup_sponsor">
 				<source>Meetup Location Sponsor</source>
 			</trans-unit>
+			<trans-unit id="pages.meetup_city">
+				<source>Meetup Location City</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

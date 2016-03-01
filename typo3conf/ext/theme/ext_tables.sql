@@ -33,5 +33,6 @@ CREATE TABLE tt_content (
 CREATE TABLE pages (
    meetup_time int(11) unsigned DEFAULT '0' NOT NULL,
    meetup_link varchar(255) DEFAULT '' NOT NULL,
-   meetup_sponsor varchar(255) DEFAULT '' NOT NULL
+   meetup_sponsor varchar(255) DEFAULT '' NOT NULL,
+   meetup_city varchar(255) DEFAULT '' NOT NULL
 );

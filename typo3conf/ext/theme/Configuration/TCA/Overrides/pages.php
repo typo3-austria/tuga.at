@@ -66,10 +66,17 @@ call_user_func(
                     'eval' => 'trim',
                 ]
             ],
+            'meetup_city' => [
+                'label' => 'LLL:EXT:theme/Resources/Private/Language/BackendGeneral.xlf:pages.meetup_city',
+                'config' => [
+                    'type' => 'input',
+                    'eval' => 'trim',
+                ]
+            ],
         ];
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $additionalFields);
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'meetup_time,meetup_link,meetup_sponsor');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'meetup_time,meetup_link,meetup_city,meetup_sponsor');
 
     },
     'theme'
