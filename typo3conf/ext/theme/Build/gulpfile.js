@@ -28,6 +28,8 @@ var JS_SRCS = [
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
+    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js',
+    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
     '../Resources/Private/JavaScript/*.js'
 ];
 var JSHEAD_SRCS = [

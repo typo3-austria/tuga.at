@@ -62,10 +62,33 @@
 					<div class="col-xs-12">
 						{v:content.render(column:'0', pageUid: '{latestMeetup.uid}')}
 						<div class="text-center">
-							<f:link.page pageUid="{latestMeetup.uid}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}" class="btn btn-primary btn-sm">Permanentlink</f:link.page>
-							<f:if condition="{latestMeetup.meetup_link}">
-								<f:link.page pageUid="{latestMeetup.meetup_link}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}" class="btn btn-primary btn-sm">Meeting auf meetup.com</f:link.page>
-							</f:if>
+
+							<div class="btn-group">
+								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Meeting Infos <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<f:if condition="{latestMeetup.meetup_link}">
+										<li>
+											<f:link.page pageUid="{latestMeetup.meetup_link}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}">Dieses Meeting auf meetup.com</f:link.page>
+										</li>
+									</f:if>
+									<li>
+										<f:link.page pageUid="{latestMeetup.uid}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}">Meeting Permanentlink</f:link.page>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<f:link.page pageUid="{settings.uid.newtalk}">Ich möchte einen Talk vorschlagen</f:link.page>
+									</li>
+									<li>
+										<f:link.page pageUid="{settings.uid.newtalk}">Ich wünsche mir einen Talk</f:link.page>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<f:link.page pageUid="{settings.uid.newlocation}">Ich möchte Sponsor werden</f:link.page>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
