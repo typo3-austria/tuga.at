@@ -63,14 +63,14 @@
 						{v:content.render(column:'0', pageUid: '{latestMeetup.uid}')}
 						<div class="text-center">
 
-							<div class="btn-group">
+							<div class="btn-group nextmeetup--linkbottom">
 								<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Meeting Infos <span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
 									<f:if condition="{latestMeetup.meetup_link}">
 										<li>
-											<f:link.page pageUid="{latestMeetup.meetup_link}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}">Dieses Meeting auf meetup.com</f:link.page>
+											<f:link.page pageUid="{latestMeetup.meetup_link}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}">Ich möchte teilnehmen!</f:link.page>
 										</li>
 									</f:if>
 									<li>

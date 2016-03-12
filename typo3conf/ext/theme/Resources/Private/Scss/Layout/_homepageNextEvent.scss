@@ -181,4 +181,9 @@
 			animation: tada 1s;
 		}
 	}
+	&--linkbottom {
+		> .dropdown-menu {
+			left: -50%;
+		}
+	}
 }
