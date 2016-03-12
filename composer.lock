@@ -272,12 +272,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/typo3_console",
-                "reference": "2c69fb3904a8f7b3592b475d0a576b41fd875ea9"
+                "reference": "8ff8d101d06c9099c65cb3e5f95cb51b3f2ce984"
             },
             "require": {
                 "ext-phar": "*",
                 "symfony/console": ">=2.7|<3.1",
-                "symfony/process": ">=2.7|<3.1"
+                "symfony/process": ">=2.7|<3.1",
+                "typo3/cms-core": "^7.6|^8.0"
             },
             "replace": {
                 "typo3-ter/typo3-console": "self.version",
@@ -337,7 +338,7 @@
                 "commandline",
                 "console"
             ],
-            "time": "2016-02-17 12:53:35"
+            "time": "2016-03-11 11:40:19"
         },
         {
             "name": "lochmueller/sourceopt",
@@ -747,12 +748,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "e1d91ae8b2c7b80a06e3fcee06deb69b3fa958fb"
+                "reference": "6100a40569b2be1b6aba1cc6a92fe6cb71024fc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/e1d91ae8b2c7b80a06e3fcee06deb69b3fa958fb",
-                "reference": "e1d91ae8b2c7b80a06e3fcee06deb69b3fa958fb",
+                "url": "https://api.github.com/repos/symfony/console/zipball/6100a40569b2be1b6aba1cc6a92fe6cb71024fc8",
+                "reference": "6100a40569b2be1b6aba1cc6a92fe6cb71024fc8",
                 "shasum": ""
             },
             "require": {
@@ -798,7 +799,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-18 16:03:55"
+            "time": "2016-03-09 16:30:49"
         },
         {
             "name": "symfony/finder",
@@ -806,12 +807,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "addcb70b33affbca4f3979b0d000259b63dd6711"
+                "reference": "0bacc7c9fc1905cfce20212633013a5b300dce52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/addcb70b33affbca4f3979b0d000259b63dd6711",
-                "reference": "addcb70b33affbca4f3979b0d000259b63dd6711",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/0bacc7c9fc1905cfce20212633013a5b300dce52",
+                "reference": "0bacc7c9fc1905cfce20212633013a5b300dce52",
                 "shasum": ""
             },
             "require": {
@@ -847,7 +848,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-22 16:12:29"
+            "time": "2016-03-10 10:49:29"
         },
         {
             "name": "symfony/process",
@@ -855,12 +856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "798aa276c9fbd2b9e81054b03bfaf4449fc375a3"
+                "reference": "101c171199fd40c555e60998c63de59f83661e9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/798aa276c9fbd2b9e81054b03bfaf4449fc375a3",
-                "reference": "798aa276c9fbd2b9e81054b03bfaf4449fc375a3",
+                "url": "https://api.github.com/repos/symfony/process/zipball/101c171199fd40c555e60998c63de59f83661e9c",
+                "reference": "101c171199fd40c555e60998c63de59f83661e9c",
                 "shasum": ""
             },
             "require": {
@@ -896,7 +897,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-26 21:16:08"
+            "time": "2016-03-10 11:16:56"
         },
         {
             "name": "typo3-ter/autoloader",
@@ -1046,18 +1047,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "9ac9ec0c1f83d5c3f8fe469ffee9f106335ae1f2"
+                "reference": "b46c85a427e9cc508610ab6501daa6d745a5aa49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/9ac9ec0c1f83d5c3f8fe469ffee9f106335ae1f2",
-                "reference": "9ac9ec0c1f83d5c3f8fe469ffee9f106335ae1f2",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/b46c85a427e9cc508610ab6501daa6d745a5aa49",
+                "reference": "b46c85a427e9cc508610ab6501daa6d745a5aa49",
                 "shasum": ""
             },
             "require": {
                 "cogpowered/finediff": "~0.3.1",
                 "doctrine/instantiator": "~1.0.4",
                 "ext-fileinfo": "*",
+                "ext-json": "*",
                 "ext-pcre": "*",
                 "ext-session": "*",
                 "ext-xml": "*",
@@ -1134,6 +1136,7 @@
             },
             "suggest": {
                 "ext-gd": "GDlib/Freetype is required for building images with text (GIFBUILDER) and can also be used to scale images",
+                "ext-mysqli": "",
                 "ext-openssl": "",
                 "ext-soap": "",
                 "ext-zip": "",
@@ -1236,7 +1239,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2016-02-26 16:31:47"
+            "time": "2016-03-11 09:10:01"
         },
         {
             "name": "typo3/cms-composer-installers",
