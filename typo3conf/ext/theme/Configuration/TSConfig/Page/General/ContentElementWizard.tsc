@@ -27,6 +27,14 @@ mod.wizards.newContentElement.wizardItems {
 					CType = theme_contact_person
 				}
 			}
+			alert {
+				icon = ../typo3conf/ext/theme/ext_icon.svg
+				title = LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.alert.title
+				description = LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.alert.description
+				tt_content_defValues {
+					CType = theme_alert
+				}
+			}
 		}
 	}
 }

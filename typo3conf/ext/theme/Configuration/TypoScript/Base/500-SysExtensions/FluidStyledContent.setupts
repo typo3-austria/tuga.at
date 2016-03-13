@@ -45,4 +45,8 @@ tt_content {
 	theme_contact_person {
 		templateName = ContactPerson
 	}
+	theme_alert < lib.fluidContent
+	theme_alert {
+		templateName = Alert
+	}
 }

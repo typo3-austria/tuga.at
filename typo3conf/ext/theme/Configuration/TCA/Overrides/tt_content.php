@@ -17,6 +17,10 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
     'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.contactperson.title',
     'theme_contact_person',
 ];
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
+    'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.alert.title',
+    'theme_alert',
+];
 
 $tca = [
     'types' => [
@@ -49,6 +53,20 @@ $tca = [
 				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
 				header,
 				subheader,
+				bodytext,
+				rowDescription,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended,
+			',
+        ],
+        'theme_alert' => [
+            'showitem' => '
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+				header,
 				bodytext,
 				rowDescription,
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
@@ -102,3 +120,4 @@ $GLOBALS['TCA']['tt_content'] = array_replace_recursive($GLOBALS['TCA']['tt_cont
 // enable RTE for bodytext in CType `theme_location`
 $GLOBALS['TCA']['tt_content']['types']['theme_location']['columnsOverrides'] = ['bodytext' => ['defaultExtras' => 'richtext:rte_transform[mode=ts_css]']];
 $GLOBALS['TCA']['tt_content']['types']['theme_contact_person']['columnsOverrides'] = $GLOBALS['TCA']['tt_content']['types']['theme_location']['columnsOverrides'];
+$GLOBALS['TCA']['tt_content']['types']['theme_alert']['columnsOverrides'] = $GLOBALS['TCA']['tt_content']['types']['theme_location']['columnsOverrides'];

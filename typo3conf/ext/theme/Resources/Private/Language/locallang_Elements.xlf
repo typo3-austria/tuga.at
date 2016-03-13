@@ -39,6 +39,12 @@
 			<trans-unit id="element.contactperson.description">
 				<source>Details about a TUGA contact person</source>
 			</trans-unit>
+			<trans-unit id="element.alert.title">
+				<source>Alert Box</source>
+			</trans-unit>
+			<trans-unit id="element.alert.description">
+				<source>Text within alert box</source>
+			</trans-unit>
 			<trans-unit id="tt_content.location">
 				<source>Location for Google Maps</source>
 			</trans-unit>
