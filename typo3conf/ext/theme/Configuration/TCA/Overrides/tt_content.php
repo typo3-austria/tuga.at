@@ -2,16 +2,20 @@
 
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-    'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:element.sectionHeader',
+    'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.sectionHeader',
     '--div--',
 ];
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-    'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:element.session.title',
+    'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.session.title',
     'theme_sessions',
 ];
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-    'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:element.location.title',
+    'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.location.title',
     'theme_location',
+];
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
+    'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.contactperson.title',
+    'theme_contact_person',
 ];
 
 $tca = [
@@ -40,10 +44,25 @@ $tca = [
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended,
 			',
         ],
+        'theme_contact_person' => [
+            'showitem' => '
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+				header,
+				subheader,
+				bodytext,
+				rowDescription,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended,
+			',
+        ],
     ],
     'columns' => [
         'tx_theme_sessions' => [
-            'label' => 'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:element.session.title',
+            'label' => 'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.session.title',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_theme_session',
@@ -70,7 +89,7 @@ $tca = [
             ],
         ],
         'location' => [
-            'label' => 'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:tt_content.location',
+            'label' => 'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:tt_content.location',
             'config' => [
                 'type' => 'input',
             ],
@@ -82,3 +101,4 @@ $GLOBALS['TCA']['tt_content'] = array_replace_recursive($GLOBALS['TCA']['tt_cont
 
 // enable RTE for bodytext in CType `theme_location`
 $GLOBALS['TCA']['tt_content']['types']['theme_location']['columnsOverrides'] = ['bodytext' => ['defaultExtras' => 'richtext:rte_transform[mode=ts_css]']];
+$GLOBALS['TCA']['tt_content']['types']['theme_contact_person']['columnsOverrides'] = $GLOBALS['TCA']['tt_content']['types']['theme_location']['columnsOverrides'];

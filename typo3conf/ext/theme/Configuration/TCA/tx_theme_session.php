@@ -8,7 +8,7 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'title' => 'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:tx_theme_session',
+        'title' => 'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:tx_theme_session',
         'delete' => 'deleted',
         'hideAtCopy' => true,
         'hideTable' => false,
@@ -52,7 +52,7 @@ return [
         ],
         'title' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:tx_theme_session.title',
+            'label' => 'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:tx_theme_session.title',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -61,7 +61,7 @@ return [
         ],
         'speaker' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:tx_theme_session.speaker',
+            'label' => 'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:tx_theme_session.speaker',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -71,7 +71,7 @@ return [
         ],
         'link' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:tx_theme_session.link',
+            'label' => 'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:tx_theme_session.link',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -80,7 +80,7 @@ return [
         ],
         'description' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:theme/Resources/Private/Language/Elements.xlf:tx_theme_session.description',
+            'label' => 'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:tx_theme_session.description',
             'config' => [
                 'type' => 'text',
             ],

@@ -1,0 +1,21 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+	  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+<div class="m-contactperson" id="c{data.uid}">
+	<div class="panel panel-default">
+		<f:if condition="{data.header}">
+			<div class="panel-heading">
+					<span class="text-uppercase">{data.header}</span> <v:tag name="small" class="text-muted">{data.subheader}</v:tag>
+			</div>
+		</f:if>
+
+		<div class="panel-body">
+			<small>{data.bodytext -> f:format.html()}</small>
+		</div>
+	</div>
+</div>
+
+</html>
+
+

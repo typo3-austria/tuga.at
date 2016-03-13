@@ -41,4 +41,8 @@ tt_content {
 	theme_location {
 		templateName = CustomLocation
 	}
+	theme_contact_person < lib.fluidContent
+	theme_contact_person {
+		templateName = ContactPerson
+	}
 }

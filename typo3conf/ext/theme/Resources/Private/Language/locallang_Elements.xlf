@@ -33,6 +33,12 @@
 			<trans-unit id="element.location.description">
 				<source>Location of this event</source>
 			</trans-unit>
+			<trans-unit id="element.contactperson.title">
+				<source>Contact Person</source>
+			</trans-unit>
+			<trans-unit id="element.contactperson.description">
+				<source>Details about a TUGA contact person</source>
+			</trans-unit>
 			<trans-unit id="tt_content.location">
 				<source>Location for Google Maps</source>
 			</trans-unit>
