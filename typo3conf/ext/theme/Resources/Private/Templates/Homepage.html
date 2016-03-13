@@ -70,25 +70,43 @@
 								<ul class="dropdown-menu">
 									<f:if condition="{latestMeetup.meetup_link}">
 										<li>
-											<f:link.page pageUid="{latestMeetup.meetup_link}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}">Ich möchte teilnehmen!</f:link.page>
+											<f:link.page pageUid="{latestMeetup.meetup_link}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Am Meeting teilnehmen!</f:link.page>
 										</li>
 									</f:if>
+									<li role="separator" class="divider"></li>
 									<li>
-										<f:link.page pageUid="{latestMeetup.uid}" absolute="true" additionalAttributes="{itemprop:'url',role:'button'}">Meeting Permanentlink</f:link.page>
+										<f:link.page pageUid="{settings.uid.newtalk}"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Ich möchte einen Talk vorschlagen</f:link.page>
+									</li>
+									<li>
+										<f:link.page pageUid="{settings.uid.newtalk}"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Ich wünsche mir einen Talk</f:link.page>
 									</li>
 									<li role="separator" class="divider"></li>
 									<li>
-										<f:link.page pageUid="{settings.uid.newtalk}">Ich möchte einen Talk vorschlagen</f:link.page>
-									</li>
-									<li>
-										<f:link.page pageUid="{settings.uid.newtalk}">Ich wünsche mir einen Talk</f:link.page>
+										<f:link.page pageUid="{settings.uid.newlocation}"><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> Ich möchte Sponsor werden</f:link.page>
 									</li>
 									<li role="separator" class="divider"></li>
 									<li>
-										<f:link.page pageUid="{settings.uid.newlocation}">Ich möchte Sponsor werden</f:link.page>
+										<a href="#" data-toggle="modal" data-target="#permanentModal"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Meeting Permanentlink</a>
 									</li>
 								</ul>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="permanentModal" tabindex="-1" role="dialog" aria-labelledby="permanentModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="permanentModalLabel">Meeting Permanentlink</h4>
+						</div>
+						<div class="modal-body">
+							<f:uri.page absolute="1" pageUid="{latestMeetup.uid}" />
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
 						</div>
 					</div>
 				</div>

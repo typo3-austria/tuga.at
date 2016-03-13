@@ -30,6 +30,7 @@ var JS_SRCS = [
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
+    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
     '../Resources/Private/JavaScript/*.js'
 ];
 var JSHEAD_SRCS = [
