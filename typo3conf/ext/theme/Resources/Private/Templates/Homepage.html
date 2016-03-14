@@ -99,11 +99,16 @@
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<button type="button" class="close" data-dismiss="modal" aria-label="{f:translate(key:'frontend.close')}"><span aria-hidden="true">&times;</span></button>
 							<h4 class="modal-title" id="permanentModalLabel">Meeting Permanentlink</h4>
 						</div>
 						<div class="modal-body">
-							<f:uri.page absolute="1" pageUid="{latestMeetup.uid}" />
+							<div class="input-group">
+								<input type="text" id="meetingUrl" class="form-control" placeholder="{f:uri.page(pageUid:'{latestMeetup.uid}', absolute:'1')}" value="{f:uri.page(pageUid:'{latestMeetup.uid}', absolute:'1')}">
+								<span class="input-group-btn">
+									<button class="btn btn-primary btn-js-clipboard" type="button" data-clipboard-target="#meetingUrl">Link in Zwischenablage speichern</button>
+								</span>
+							</div>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>

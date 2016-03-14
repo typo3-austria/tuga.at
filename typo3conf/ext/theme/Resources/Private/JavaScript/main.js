@@ -30,6 +30,52 @@
 		$(this).selectText();
 	});
 
+
+	// clipboard.js activation
+	var clipboard = new Clipboard('.btn-js-clipboard');
+
+	clipboard.on('success', function(e) {
+		//console.log(e);
+		//console.log(e.trigger);
+		$(e.trigger).tooltip({
+			title: TYPO3.lang['frontend.copied'][0]['target'],
+			placement: 'bottom'
+		});
+		$(e.trigger).tooltip('show');
+	});
+	clipboard.on('error', function(e) {
+		//console.log(e);
+		$(e.trigger).tooltip({
+			title: fallbackMessage(e.action),
+			placement: 'bottom'
+		});
+	});
+
+
+
+
+
+
+
+
+	// Simplistic detection, do not use it in production
+	function fallbackMessage(action) {
+		var actionMsg = '';
+		var actionKey = (action === 'cut' ? 'X' : 'C');
+
+		if(/iPhone|iPad/i.test(navigator.userAgent)) {
+			actionMsg = TYPO3.lang['frontend.copyfailure'][0]['target'];
+		}
+		else if (/Mac/i.test(navigator.userAgent)) {
+			actionMsg = 'Drücke Cmd-' + actionKey + ' to ' + action;
+		}
+		else {
+			actionMsg = 'Drücke Strg-' + actionKey + ' to ' + action;
+		}
+
+		return actionMsg;
+	}
+
 }());
 
 

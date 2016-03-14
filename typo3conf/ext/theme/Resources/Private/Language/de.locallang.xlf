@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" product-name="theme">
-		<header/>
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-03-14T04:22:21Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
 		<body>
-			<trans-unit id="frontend.close">
-				<target><![CDATA[Schließen]]></target>
-			</trans-unit>
+		<trans-unit id="frontend.close" approved="yes">
+			<source>Close</source>
+			<target>Schließen</target>
+		</trans-unit>
+		<trans-unit id="frontend.copied" approved="yes">
+			<source>Copied :-)</source>
+			<target>Kopiert :-)</target>
+		</trans-unit>
+		<trans-unit id="frontend.copyfailure" approved="yes">
+			<source>No support :(</source>
+			<target>Kein Support :(</target>
+		</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -23,7 +23,8 @@
     "jquery": "^2.2.1",
     "animate.css": "^3.5.1",
     "modernizr": "^3.3.1",
-    "jQuery.mmenu": "mmenu#^5.6.1"
+    "jQuery.mmenu": "mmenu#^5.6.1",
+    "clipboard": "^1.5.9"
   },
   "devDependencies": {}
 }

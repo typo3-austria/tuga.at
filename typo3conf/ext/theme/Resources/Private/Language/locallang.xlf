@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" product-name="theme">
-		<header/>
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-14T04:22:21Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
 		<body>
-			<trans-unit id="frontend.close"><source><![CDATA[Close]]></source></trans-unit>
+		<trans-unit id="frontend.close">
+			<source>Close</source>
+		</trans-unit>
+		<trans-unit id="frontend.copied">
+			<source>Copied :-)</source>
+		</trans-unit>
+		<trans-unit id="frontend.copyfailure">
+			<source>No support :(</source>
+		</trans-unit>
 		</body>
 	</file>
 </xliff>
