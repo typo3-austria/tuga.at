@@ -37,18 +37,21 @@
 	clipboard.on('success', function(e) {
 		//console.log(e);
 		//console.log(e.trigger);
-		$(e.trigger).tooltip({
-			title: TYPO3.lang['frontend.copied'][0]['target'],
-			placement: 'bottom'
-		});
-		$(e.trigger).tooltip('show');
+		$(e.trigger)
+			.tooltip({
+				title: TYPO3.lang['frontend.copied'][0]['target'],
+				placement: 'bottom'
+			})
+			.tooltip('show');
 	});
 	clipboard.on('error', function(e) {
 		//console.log(e);
-		$(e.trigger).tooltip({
+		$(e.trigger)
+			.tooltip({
 			title: fallbackMessage(e.action),
 			placement: 'bottom'
-		});
+			})
+			.tooltip('show');
 	});
 
 
