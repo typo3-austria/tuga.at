@@ -43,6 +43,8 @@ tasks:
         recursive: true
         checkPathsExist: true
   post-release:
+    - general/manually:
+        - rm typo3conf/realurl_autoconf.php
     - clear-op-cache: {frontend-url: 'http://stage.tuga.at'}
     - typo3-console: {copyEntryPoint:1, command: 'cache:flush'}
     - typo3-console: {copyEntryPoint:1, command: 'database:updateschema "field.add,field.change,table.add,table.change"'}
