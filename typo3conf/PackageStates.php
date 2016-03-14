@@ -284,6 +284,12 @@ return [
             'packagePath' => 'typo3conf/ext/theme/',
             'suggestions' => [],
         ],
+        'lfeditor' => [
+            'composerName' => 'sgalinski/lfeditor',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/lfeditor/',
+            'suggestions' => [],
+        ],
         'about' => [
             'composerName' => 'typo3/cms-about',
             'state' => 'inactive',

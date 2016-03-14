@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "acb459eeaeba42586929102f53a78506",
-    "content-hash": "7202cfd6eefd88a453277cc1d21d3556",
+    "hash": "812ad19d2852f8ab50355f93602ed2ba",
+    "content-hash": "10f52d17363655d788ba6979c8a3cf8b",
     "packages": [
         {
             "name": "andres-montanez/magallanes",
@@ -690,6 +690,36 @@
             "time": "2016-01-06 21:40:42"
         },
         {
+            "name": "sgalinski/lfeditor",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.sgalinski.de/typo3/lfeditor.git",
+                "reference": "967461143cc974df06e8d8b914a2803da8c12715"
+            },
+            "require": {
+                "typo3/cms-core": "*"
+            },
+            "replace": {
+                "lfeditor": "*"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "SGalinski\\Lfeditor\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Language File Editor",
+            "homepage": "https://www.sgalinski.de",
+            "support": {
+                "issues": "https://forge.typo3.org/projects/extension-lfeditor"
+            },
+            "time": "2016-02-23 20:05:22"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.1",
             "source": {
@@ -1047,12 +1077,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "b46c85a427e9cc508610ab6501daa6d745a5aa49"
+                "reference": "50bccbe1c84e4242765f46923efcef6c3b209d02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/b46c85a427e9cc508610ab6501daa6d745a5aa49",
-                "reference": "b46c85a427e9cc508610ab6501daa6d745a5aa49",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/50bccbe1c84e4242765f46923efcef6c3b209d02",
+                "reference": "50bccbe1c84e4242765f46923efcef6c3b209d02",
                 "shasum": ""
             },
             "require": {
@@ -1239,7 +1269,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2016-03-11 09:10:01"
+            "time": "2016-03-13 19:09:26"
         },
         {
             "name": "typo3/cms-composer-installers",
@@ -1319,6 +1349,12 @@
             "alias_normalized": "1.2.5.0",
             "version": "9999999-dev",
             "package": "helhum/typo3-console"
+        },
+        {
+            "alias": "3.3.1",
+            "alias_normalized": "3.3.1.0",
+            "version": "9999999-dev",
+            "package": "sgalinski/lfeditor"
         }
     ],
     "minimum-stability": "dev",
@@ -1326,7 +1362,8 @@
         "typo3/cms": 20,
         "deploymentoftypo3/magallanestasks": 20,
         "helhum/typo3-console": 20,
-        "lochmueller/sourceopt": 20
+        "lochmueller/sourceopt": 20,
+        "sgalinski/lfeditor": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

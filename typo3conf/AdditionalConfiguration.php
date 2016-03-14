@@ -41,6 +41,12 @@ $customChanges = [
             'fluid_styled_content' => serialize([
                 'loadContentElementWizardTsConfig' => 1,
             ]),
+            'lfeditor' => serialize([
+                'viewLanguages' => 'de',
+                'defaultLanguage' => '',
+                'extIgnore' => '/^(CVS|.svn|.git|csh_)/',
+                'changeXlfDate' => 1,
+            ]),
             'realurl' => serialize([
                 'configFile' => 'typo3conf/ext/theme/Resources/Private/Extension/Realurl/ManualConfiguration.php',
                 'enableAutoConf' => 1,
