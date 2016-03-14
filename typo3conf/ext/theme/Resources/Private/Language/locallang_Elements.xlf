@@ -39,6 +39,12 @@
 			<trans-unit id="element.contactperson.description">
 				<source>Details about a TUGA contact person</source>
 			</trans-unit>
+			<trans-unit id="element.sponsorlogos.title">
+				<source>Sponsor Logos</source>
+			</trans-unit>
+			<trans-unit id="element.sponsorlogos.description">
+				<source>Display a bunch of sponsor logos</source>
+			</trans-unit>
 			<trans-unit id="element.alert.title">
 				<source>Alert Box</source>
 			</trans-unit>

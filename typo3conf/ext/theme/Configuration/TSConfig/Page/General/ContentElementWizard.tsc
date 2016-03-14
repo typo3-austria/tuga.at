@@ -19,6 +19,14 @@ mod.wizards.newContentElement.wizardItems {
 					CType = theme_location
 				}
 			}
+			sponsorlogos {
+				icon = ../typo3conf/ext/theme/ext_icon.svg
+				title = LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.sponsorlogos.title
+				description = LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.sponsorlogos.description
+				tt_content_defValues {
+					CType = theme_sponsorlogos
+				}
+			}
 			contactperson {
 				icon = ../typo3conf/ext/theme/ext_icon.svg
 				title = LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.contactperson.title

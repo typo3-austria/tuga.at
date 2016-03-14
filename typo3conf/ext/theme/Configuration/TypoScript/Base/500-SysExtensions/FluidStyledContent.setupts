@@ -30,23 +30,34 @@ lib.fluidContent {
 }
 
 tt_content {
-	theme_sessions < lib.fluidContent
+	theme_sessions =< lib.fluidContent
 	theme_sessions {
 		templateName = CustomSessions
 		dataProcessing {
 			1 = SUP7\Theme\Content\SessionElementProcessor
 		}
 	}
-	theme_location < lib.fluidContent
+	theme_location =< lib.fluidContent
 	theme_location {
 		templateName = CustomLocation
 	}
-	theme_contact_person < lib.fluidContent
+	theme_contact_person =< lib.fluidContent
 	theme_contact_person {
 		templateName = ContactPerson
 	}
-	theme_alert < lib.fluidContent
+	theme_alert =< lib.fluidContent
 	theme_alert {
 		templateName = Alert
+	}
+	theme_sponsorlogos =< lib.fluidContent
+	theme_sponsorlogos {
+		templateName = SponsorLogos
+		dataProcessing {
+			10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+			10 {
+				references.fieldName = assets
+			}
+			20 = TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor
+		}
 	}
 }
