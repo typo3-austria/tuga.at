@@ -1,0 +1,104 @@
+/*
+
+Website main navigation specific stuff
+
+*/
+
+//http://getbootstrap.com/javascript/#collapse
+
+
+//http://codepen.io/designcouch/pen/Atyop?editors=0010
+
+
+$hamburger-fillcolor: $white;
+$hamburger-width: 40px;
+$hamburger-height: 22px;
+$hamburger-stroke-height: 4px;
+$hamburger-stroke-height-half: $hamburger-stroke-height / 2;
+$hamburger-stroke-radius: $hamburger-height;
+
+.hamburger.hamburger-type-3 {
+
+	width: $hamburger-width;
+	height: $hamburger-height;
+	position: relative;
+	margin: 0px 0px;
+	background: transparent;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+
+	span {
+		display: block;
+		position: absolute;
+		height: $hamburger-stroke-height;
+		width: 100%;
+		background: $hamburger-fillcolor;
+		border-radius: $hamburger-stroke-radius;
+		opacity: 1;
+		left: 0;
+		transform: rotate(0deg);
+		transition: .25s ease-in-out;
+
+		&:nth-child(1) {
+			top: 0px;
+		}
+
+		&:nth-child(2),
+		&:nth-child(3) {
+			top: calc(50% - #{$hamburger-stroke-height-half});
+		}
+
+		&:nth-child(4) {
+			top: $hamburger-height - $hamburger-stroke-height;
+		}
+	}
+
+	&.open span:nth-child(1) {
+		top: calc(50% - #{$hamburger-stroke-height-half});
+		width: 0%;
+		left: 50%;
+	}
+
+	&.open span:nth-child(2) {
+		transform: rotate(45deg);
+	}
+
+	&.open span:nth-child(3) {
+		transform: rotate(-45deg);
+
+	}
+
+	&.open span:nth-child(4) {
+		top: calc(50% - #{$hamburger-stroke-height-half});
+		width: 0%;
+		left: 50%;
+	}
+}
+.hamburger-wrap {
+	background: transparent;
+	border: none;
+	outline: none;
+	padding: 0;
+}
+
+.l-mainnav {
+	@include font-smoothing(on);
+	background: $headerSubpage-bg;
+
+	// Inner Wrap for collapsible main nav
+	&--inner {
+		padding:{
+			top: 20px;
+			bottom: 20px;
+		}
+	}
+
+
+	nav {
+		> :last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+}

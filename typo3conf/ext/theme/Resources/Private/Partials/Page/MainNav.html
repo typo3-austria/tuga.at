@@ -3,9 +3,21 @@
 	  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
 
 <f:section name="Main">
-	<nav id="mainmenu">
-		<v:page.menu.directory pages="{settings.uid.mainPages}" />
-	</nav>
+	<aside class="collapse l-mainnav" id="collapsableMainMenu">
+		<div class="l-mainnav--inner">
+			<nav>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<v:page.menu.directory pages="{settings.uid.mainPages}" class="nav nav-pills nav-stacked"  />
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+
+	</aside>
 </f:section>
 
 </html>

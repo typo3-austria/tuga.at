@@ -3,9 +3,9 @@
 			xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
 			v:schemaLocation="https://fluidtypo3.org/schemas/vhs-master.xsd">
 
-<f:layout name="Default" />
-
 	<f:render section="Ressources"/>
+
+	<f:render partial="Page/MainNav" section="Main"/>
 	<f:if condition="{data.uid} == {RootUid}">
 		<f:then>
 			<f:render partial="Page/Infobar" section="Main" arguments="{_all}" />

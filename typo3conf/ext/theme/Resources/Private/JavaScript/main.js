@@ -55,6 +55,12 @@
 	});
 
 
+	// Main Nav
+	$('.hamburger-wrap').click(function(){
+		$('.hamburger', this).toggleClass('open');
+	});
+
+
 
 
 
