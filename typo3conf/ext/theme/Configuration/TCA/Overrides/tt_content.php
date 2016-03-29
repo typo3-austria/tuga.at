@@ -1,5 +1,7 @@
 <?php
 
+$frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
+
 
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
     'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.sectionHeader',
@@ -21,6 +23,10 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
     'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.alert.title',
     'theme_alert',
 ];
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
+    'LLL:EXT:theme/Resources/Private/Language/locallang_Elements.xlf:element.sponsorlogos.title',
+    'theme_sponsorlogos',
+];
 
 $tca = [
     'types' => [
@@ -40,6 +46,19 @@ $tca = [
             'showitem' => '
 				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
 				bodytext,location,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.extended,
+			',
+        ],
+        'theme_sponsorlogos' => [
+            'showitem' => '
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
+				--palette--;' . $frontendLanguageFilePrefix . 'palette.header;header,
+				assets;Sponsor Logos,rowDescription,
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
 				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
 				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,

@@ -1,0 +1,60 @@
+<html data-namespace-typo3-fluid="true"
+	  xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+	  xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+<f:layout name="HeaderContentFooter" />
+
+<f:section name="content">
+	<div class="m-sponsorlogos" id="c{data.uid}">
+		<f:render partial="Header" arguments="{_all}" />
+		<f:if condition="{files}">
+			<f:for each="{files}" as="file">
+
+				<figure>
+					<f:switch expression="{file.mergedProperties.type}">
+						<f:case value="3">
+							<f:render section="audioType" arguments="{_all}" />
+						</f:case>
+						<f:case value="4">
+							<f:render section="videoType" arguments="{_all}" />
+						</f:case>
+						<f:case default="TRUE">
+							<f:render section="imageType" arguments="{_all}" />
+						</f:case>
+					</f:switch>
+					<figcaption>
+						{file.mergedProperties.description}
+						{file -> f:debug(inline:1)}
+					</figcaption>
+				</figure>
+			</f:for>
+		</f:if>
+	</div>
+</f:section>
+
+
+<f:section name="imageType">
+	<f:link.typolink parameter="{file.mergedProperties.link}" target="_blank">
+		<f:render section="media" arguments="{_all}" />
+	</f:link.typolink>
+</f:section>
+
+<f:section name="audioType">
+
+</f:section>
+
+<f:section name="videoType">
+
+</f:section>
+
+<f:section name="media">
+	<f:media
+		file="{file}"
+		height="65"
+		alt="{file.mergedProperties.alternative}"
+		title="{file.mergedProperties.title}"
+	/>
+</f:section>
+
+</html>
+
+
