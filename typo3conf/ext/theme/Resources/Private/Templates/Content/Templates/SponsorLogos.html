@@ -5,12 +5,12 @@
 
 <f:section name="content">
 	<div class="m-sponsorlogos" id="c{data.uid}">
-		<f:render partial="Header" arguments="{_all}" />
+
 		<f:if condition="{files}">
 			<f:for each="{files}" as="file">
 
 				<figure>
-					<f:switch expression="{file.mergedProperties.type}">
+					<f:switch expression="{file.properties.type}">
 						<f:case value="3">
 							<f:render section="audioType" arguments="{_all}" />
 						</f:case>
@@ -22,8 +22,7 @@
 						</f:case>
 					</f:switch>
 					<figcaption>
-						{file.mergedProperties.description}
-						{file -> f:debug(inline:1)}
+						{file.properties.description}
 					</figcaption>
 				</figure>
 			</f:for>
@@ -33,7 +32,7 @@
 
 
 <f:section name="imageType">
-	<f:link.typolink parameter="{file.mergedProperties.link}" target="_blank">
+	<f:link.typolink parameter="{file.properties.link}" target="_blank">
 		<f:render section="media" arguments="{_all}" />
 	</f:link.typolink>
 </f:section>
@@ -52,6 +51,7 @@
 		height="65"
 		alt="{file.mergedProperties.alternative}"
 		title="{file.mergedProperties.title}"
+		class="img-responsive"
 	/>
 </f:section>
 

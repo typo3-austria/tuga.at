@@ -5,3 +5,30 @@
 		margin-bottom: 30px;
 	}
 }
+
+
+// CE sponsorlogos
+.m-sponsorlogos {
+	margin-top: 20px;
+	figure {
+		display: block;
+		@media(min-width: $screen-xs-min) {
+			display: inline-block;
+			margin-right: 25px;
+		}
+		img {
+			margin-bottom: 10px;
+			@media(max-width: $screen-xs-min - 1) {
+				width: 100%;
+			}
+		}
+		a {
+			img {
+
+			}
+		}
+		figcaption {
+
+		}
+	}
+}
