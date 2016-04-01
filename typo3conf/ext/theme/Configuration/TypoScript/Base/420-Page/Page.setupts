@@ -108,3 +108,18 @@ page {
 		}
 	}
 }
+
+// Add a <body> class if the infobar is active on the homepage
+[globalVar = TSFE:page|is_siteroot = 1]
+	page.bodyTagCObject.500 = TEXT
+	page.bodyTagCObject.500 {
+		value = active-infobar
+		if.isTrue.numRows = CONTENT
+		if.isTrue.numRows {
+			table = tt_content
+			select.orderBy = sorting
+			select.where = colPos=10
+		}
+		noTrimWrap = | ||
+	}
+[global]

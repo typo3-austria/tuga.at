@@ -61,7 +61,34 @@
 	});
 
 
+	// Main Nav Homepage
 
+	// If infobar is active, add a class when hamburger icon gets affix
+	$('.hamburger--fixed').on('affix.bs.affix', function (e) {
+		$('.infobar').addClass('hamburger-is-here');
+	});
+	// If infobar is active, remove a class when hamburger icon affix gets removed
+	$('.hamburger--fixed').on('affix-top.bs.affix', function (e) {
+		$('.infobar').removeClass('hamburger-is-here');
+		// close also a opened main nav and "close" hamburger icon
+		$('.l-mainnav.collapse').collapse('hide');
+		$('.hamburger').removeClass('open');
+	});
+	// BS Affix for the hamburger icon on the homepage
+	$('.hamburger--fixed').affix({
+		offset: {
+			top: function () {
+				return (this.top = $('header.nextmeetup').outerHeight(true))
+			}
+		}
+	});
+	// close main nav when clicked outside
+	// @TODO: maybe a better solution is needed: http://stackoverflow.com/questions/23764863/how-to-close-an-open-collapsed-navbar-when-clicking-outside-of-the-navbar-elemen
+	$(function() {
+		$(document).click(function (event) {
+			$('.tmpl-homepage .l-mainnav.collapse').collapse('hide');
+		})
+	});
 
 
 
@@ -98,7 +125,7 @@ jQuery.fn.selectText = function(){
 	});
 	var doc = document;
 	var element = this[0];
-	console.log(this, element);
+	// console.log(this, element);
 	if (doc.body.createTextRange) {
 		var range = document.body.createTextRange();
 		range.moveToElementText(element);

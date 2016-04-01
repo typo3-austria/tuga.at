@@ -34,6 +34,12 @@ $hamburger-stroke-radius: $hamburger-height;
 		height: $hamburger-stroke-height;
 		width: 100%;
 		background: $hamburger-fillcolor;
+		.tmpl-homepage & {
+			background: $gray-darker;
+		}
+		.tmpl-homepage.active-infobar .affix & {
+			background: $hamburger-fillcolor;
+		}
 		border-radius: $hamburger-stroke-radius;
 		opacity: 1;
 		left: 0;
@@ -80,6 +86,27 @@ $hamburger-stroke-radius: $hamburger-height;
 	border: none;
 	outline: none;
 	padding: 0;
+	min-height: $hamburger-height;
+}
+
+.hamburger--fixed {
+	&:not(.affix) {
+		opacity:0;
+		.hamburger.hamburger-type-3 {
+			cursor: default;
+		}
+	}
+	&.affix {
+		top: 10px;
+		z-index: 1000;
+		opacity: 1.0;
+		//right: 10px;
+		transform: translateX(-#{$hamburger-width});
+	}
+
+	.tmpl-homepage & {
+
+	}
 }
 
 .l-mainnav {
@@ -101,4 +128,19 @@ $hamburger-stroke-radius: $hamburger-height;
 			padding-bottom: 0;
 		}
 	}
+
+
+	// @TODO: Add main nav fixed on homepage (e.g. with affix?)
+	.tmpl-homepage & {
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: 900;
+		&--inner {
+			padding-top: 44px;
+		}
+	}
+
+
+	// @TODO: Add rwd styling for the navigation
 }

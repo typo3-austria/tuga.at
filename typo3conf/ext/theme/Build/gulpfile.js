@@ -25,6 +25,7 @@ var HTML_SRC = '../Resources/Private/StaticHtml/**/*.html';
 var IMG_SRC = '../Resources/Private/Images/**/*.{png,gif,jpg,svg}';
 var JS_SRCS = [
     './bower_components/jquery/dist/jquery.min.js',
+    './bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js',

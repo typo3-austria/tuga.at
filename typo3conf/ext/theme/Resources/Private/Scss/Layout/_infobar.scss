@@ -58,4 +58,11 @@
 		}
 	}
 
+	// CSS if the hamburger icon is affixed
+	&.hamburger-is-here {
+		> .container {
+			padding-right: 77px;
+		}
+	}
+
 }
