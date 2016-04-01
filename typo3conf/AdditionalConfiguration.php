@@ -75,7 +75,7 @@ $customChanges = [
             't3monitoring_client' => serialize([
                 'secret' => 'lKACblGIFho13XnqVDYa270BmrknleCSOKcLrY2',
                 'allowedIps' => '2a03:2a00:1100:2::ac10:29bc,172.17.0.1,188.94.251.75',
-                'enableDebugForErrors' => 1,
+                'enableDebugForErrors' => 0,
             ]),
         ]
     ],

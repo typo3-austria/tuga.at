@@ -18,6 +18,7 @@ return [
             'scheduler' => 'a:5:{s:11:"maxLifetime";i:1440;s:11:"enableBELog";i:1;s:15:"showSampleTasks";i:1;s:11:"useAtdaemon";s:1:"0";s:11:"useAtDaemon";i:0;}',
             'sourceopt' => 'a:0:{}',
             'static_info_tables' => 'a:1:{s:13:"enableManager";i:0;}',
+            't3monitoring_client' => 'a:3:{s:6:"secret";s:39:"lKACblGIFho13XnqVDYa270BmrknleCSOKcLrY2";s:10:"allowedIps";s:52:"2a03:2a00:1100:2::ac10:29bc,172.17.0.1,188.94.251.75";s:20:"enableDebugForErrors";s:1:"0";}',
             'theme' => 'a:0:{}',
             'typo3_console' => 'a:0:{}',
             'vhs' => 'a:0:{}',
