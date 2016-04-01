@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e8202ac2dd88198689ac7a7b980184ba",
-    "content-hash": "c78dfb3dd2a74c01e6ebd55c57f4c3ec",
+    "hash": "d2926249113fce1093cc7a47f7329e80",
+    "content-hash": "71b1e16a92bc2cd6a9a7428bb4c51d19",
     "packages": [
         {
             "name": "andres-montanez/magallanes",
@@ -968,30 +968,28 @@
         },
         {
             "name": "typo3-ter/autoloader",
-            "version": "1.11.4",
+            "version": "2.0.1",
             "dist": {
                 "type": "t3x",
-                "url": "https://typo3.org/extensions/repository/download/autoloader/1.11.4/t3x/",
+                "url": "https://typo3.org/extensions/repository/download/autoloader/2.0.1/t3x/",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "php": ">= 5.4.0",
-                "typo3/cms-core": ">= 6.2.0, <= 7.99.99"
+                "typo3/cms-core": ">= 6.2.0, <= 8.99.99"
             },
             "replace": {
                 "autoloader": "self.version"
             },
             "type": "typo3-cms-extension",
             "autoload": {
-                "classmap": [
-                    ""
-                ],
+                "psr-4": {
+                    "HDNET\\Autoloader\\": "Classes/"
+                },
                 "exclude-from-classmap": [
-                    "Tests",
-                    "tests",
-                    "Resources",
-                    "class.ext_update.php"
+                    "/Resources/Private/Examples/",
+                    "/Resources/Private/Contrib/vendor/piotrooo/wsdl-creator/examples/"
                 ]
             },
             "authors": [
@@ -1003,7 +1001,7 @@
                 }
             ],
             "description": "Automatic components loading of ExtBase extensions to get more time for coffee in the company ;) This ext is not a PHP SPL autoloader or class loader - it is better! Loads CommandController, Xclass, Hooks, Aspects, FlexForms, Slots, TypoScript, TypeConverter, BackendLayouts and take care of createing needed templates, TCA configuration or translations at the right location.",
-            "time": "2016-01-10 02:05:37"
+            "time": "2016-04-01 15:52:26"
         },
         {
             "name": "typo3-ter/static-info-tables",
