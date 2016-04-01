@@ -290,6 +290,12 @@ return [
             'packagePath' => 'typo3conf/ext/lfeditor/',
             'suggestions' => [],
         ],
+        't3monitoring_client' => [
+            'composerName' => 'georgringer/t3monitoring_client',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/t3monitoring_client/',
+            'suggestions' => [],
+        ],
         'about' => [
             'composerName' => 'typo3/cms-about',
             'state' => 'inactive',

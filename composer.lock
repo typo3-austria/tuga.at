@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "812ad19d2852f8ab50355f93602ed2ba",
-    "content-hash": "10f52d17363655d788ba6979c8a3cf8b",
+    "hash": "e8202ac2dd88198689ac7a7b980184ba",
+    "content-hash": "c78dfb3dd2a74c01e6ebd55c57f4c3ec",
     "packages": [
         {
             "name": "andres-montanez/magallanes",
@@ -134,12 +134,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d"
+                "reference": "416fb8ad1d095a87f1d21bc40711843cd122fd4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
-                "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/416fb8ad1d095a87f1d21bc40711843cd122fd4a",
+                "reference": "416fb8ad1d095a87f1d21bc40711843cd122fd4a",
                 "shasum": ""
             },
             "require": {
@@ -180,7 +180,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-06-14 21:17:01"
+            "time": "2016-03-31 10:24:22"
         },
         {
             "name": "fluidtypo3/vhs",
@@ -228,6 +228,42 @@
             "time": "2015-11-19 22:46:54"
         },
         {
+            "name": "georgringer/t3monitoring_client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/georgringer/t3monitoring_client.git",
+                "reference": "97e55756b163749b08fac8bb34ef4ac65ae3399a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/t3monitoring_client/zipball/97e55756b163749b08fac8bb34ef4ac65ae3399a",
+                "reference": "97e55756b163749b08fac8bb34ef4ac65ae3399a",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": ">=6.2.0,<8.0"
+            },
+            "replace": {
+                "t3monitoring_client": "*"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "T3Monitor\\T3monitoringClient\\": "Classes"
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Client extension for the t3monitoring service",
+            "support": {
+                "source": "https://github.com/georgringer/t3monitoring_client/tree/master",
+                "issues": "https://github.com/georgringer/t3monitoring_client/issues"
+            },
+            "time": "2016-03-29 07:02:08"
+        },
+        {
             "name": "helhum/realurl",
             "version": "dev-master",
             "source": {
@@ -272,22 +308,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/typo3_console",
-                "reference": "8ff8d101d06c9099c65cb3e5f95cb51b3f2ce984"
+                "reference": "d098c6cc67fcf1c39e568581979f369cc2475a58"
             },
             "require": {
                 "ext-phar": "*",
-                "symfony/console": ">=2.7|<3.1",
-                "symfony/process": ">=2.7|<3.1",
-                "typo3/cms-core": "^7.6|^8.0"
+                "php": ">=5.5.0",
+                "symfony/console": ">=2.7 || <3.1",
+                "symfony/process": ">=2.7 || <3.1",
+                "typo3/cms-core": "^7.6 || ^8.0"
             },
             "replace": {
                 "typo3-ter/typo3-console": "self.version",
                 "typo3_console": "self.version"
             },
             "require-dev": {
-                "mikey179/vfsstream": "1.4.*@dev",
+                "mikey179/vfsstream": "~1.6.0",
                 "namelesscoder/typo3-repository-client": "1.1.x-dev",
-                "phpunit/phpunit": "~4.7.0"
+                "phpunit/phpunit": "~4.8.0"
             },
             "type": "typo3-cms-extension",
             "extra": {
@@ -338,7 +375,7 @@
                 "commandline",
                 "console"
             ],
-            "time": "2016-03-11 11:40:19"
+            "time": "2016-04-01 10:24:04"
         },
         {
             "name": "lochmueller/sourceopt",
@@ -886,12 +923,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "101c171199fd40c555e60998c63de59f83661e9c"
+                "reference": "88ad759d3d484af9f3f31dfd3ef520f64487326a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/101c171199fd40c555e60998c63de59f83661e9c",
-                "reference": "101c171199fd40c555e60998c63de59f83661e9c",
+                "url": "https://api.github.com/repos/symfony/process/zipball/88ad759d3d484af9f3f31dfd3ef520f64487326a",
+                "reference": "88ad759d3d484af9f3f31dfd3ef520f64487326a",
                 "shasum": ""
             },
             "require": {
@@ -927,7 +964,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-10 11:16:56"
+            "time": "2016-03-31 08:13:34"
         },
         {
             "name": "typo3-ter/autoloader",
@@ -1077,12 +1114,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/TYPO3.CMS.git",
-                "reference": "50bccbe1c84e4242765f46923efcef6c3b209d02"
+                "reference": "5a84aae8d1b6725e80b1c6d8cdb846ab43145e6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/50bccbe1c84e4242765f46923efcef6c3b209d02",
-                "reference": "50bccbe1c84e4242765f46923efcef6c3b209d02",
+                "url": "https://api.github.com/repos/TYPO3/TYPO3.CMS/zipball/5a84aae8d1b6725e80b1c6d8cdb846ab43145e6a",
+                "reference": "5a84aae8d1b6725e80b1c6d8cdb846ab43145e6a",
                 "shasum": ""
             },
             "require": {
@@ -1269,7 +1306,7 @@
                 "extbase",
                 "typo3"
             ],
-            "time": "2016-03-13 19:09:26"
+            "time": "2016-04-01 12:03:57"
         },
         {
             "name": "typo3/cms-composer-installers",
@@ -1277,12 +1314,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/CmsComposerInstallers.git",
-                "reference": "2937ffee1dd5c66dd6d1e229a05e81703e38ffed"
+                "reference": "501fc9a55f357b5f3b2e81cfedba26f7bf4b7ebb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/2937ffee1dd5c66dd6d1e229a05e81703e38ffed",
-                "reference": "2937ffee1dd5c66dd6d1e229a05e81703e38ffed",
+                "url": "https://api.github.com/repos/TYPO3/CmsComposerInstallers/zipball/501fc9a55f357b5f3b2e81cfedba26f7bf4b7ebb",
+                "reference": "501fc9a55f357b5f3b2e81cfedba26f7bf4b7ebb",
                 "shasum": ""
             },
             "require": {
@@ -1333,7 +1370,7 @@
                 "installer",
                 "typo3"
             ],
-            "time": "2016-01-29 15:13:15"
+            "time": "2016-03-23 11:08:19"
         }
     ],
     "packages-dev": [],
@@ -1355,6 +1392,12 @@
             "alias_normalized": "3.3.1.0",
             "version": "9999999-dev",
             "package": "sgalinski/lfeditor"
+        },
+        {
+            "alias": "0.0.1",
+            "alias_normalized": "0.0.1.0",
+            "version": "9999999-dev",
+            "package": "georgringer/t3monitoring_client"
         }
     ],
     "minimum-stability": "dev",
@@ -1363,7 +1406,8 @@
         "deploymentoftypo3/magallanestasks": 20,
         "helhum/typo3-console": 20,
         "lochmueller/sourceopt": 20,
-        "sgalinski/lfeditor": 20
+        "sgalinski/lfeditor": 20,
+        "georgringer/t3monitoring_client": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
