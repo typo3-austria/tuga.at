@@ -10,6 +10,7 @@ $customChanges = [
         'warning_mode' => '',
         'adminOnly' => 0,
         'versionNumberInFilename' => 0,
+        'compressionLevel' => 0,
     ],
     'DB' => [
         'database' => getenv('TYPO3_DARABASE'),
@@ -21,6 +22,7 @@ $customChanges = [
     ],
     'FE' => [
         'debug' => false,
+        'compressionLevel' => 0,
     ],
     'GFX' => [
         'colorspace' => 'sRGB',
