@@ -1,0 +1,11 @@
+
+plugin.tx_references_reference {
+	view {
+		templateRootPaths.0 = {$plugin.tx_references_reference.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_references_reference.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_references_reference.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_references_reference.persistence.storagePid}
+	}
+}

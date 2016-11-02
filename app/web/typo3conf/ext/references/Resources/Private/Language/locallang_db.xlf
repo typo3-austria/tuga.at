@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-10-05T08:42:11Z" product-name="references">
+		<header/>
+		<body>
+			<trans-unit id="tx_references_domain_model_reference">
+				<source>Reference</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.uri">
+				<source>Uri</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.teaser">
+				<source>Teaser</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.media">
+				<source>Media</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.county">
+				<source>County</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.staff_count">
+				<source>Staff Count</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.turnover">
+				<source>Turnover</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.year">
+				<source>Year</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.responsive">
+				<source>Responsive</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.logo">
+				<source>Logo</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.multilingual">
+				<source>Multilingual</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.agency">
+				<source>Agency</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.special">
+				<source>Special</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_reference.finished">
+				<source>Finished</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_agency">
+				<source>Agency</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_agency.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_agency.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_agency.uri">
+				<source>Uri</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

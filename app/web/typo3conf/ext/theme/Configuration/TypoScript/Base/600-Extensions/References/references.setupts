@@ -1,0 +1,202 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:solr/Configuration/TypoScript/Solr/setup.txt">
+
+plugin.tx_solr {
+    cssFiles.results >
+    enableDebugMode = 0
+
+    search {
+        results {
+            resultsHighlighting = 0
+            siteHighlighting = 0
+
+            showDocumentScoreAnalysis = 0
+        }
+
+        spellchecking = 1
+        spellchecking {
+            searchUsingSpellCheckerSuggestion = 1
+        }
+
+        lastSearches = 1
+        frequentSearches = 1
+        sorting = 1
+        faceting = 1
+        variants = 0
+    }
+
+    statistics = 1
+
+    suggest = 1
+
+    logging {
+        exceptions = 0
+        debugDevlogOutput = 0
+
+        indexing {
+            indexQueueInitialization = 1
+            missingTypo3SearchMarkers = 0
+            pageIndexed = 0
+
+            queue {
+                pages = 0
+                tt_news = 0
+            }
+        }
+
+        query {
+            filters = 1
+            searchWords = 1
+            queryString = 1
+            rawPost = 1
+            rawGet = 1
+        }
+    }
+}
+
+plugin.tx_solr {
+    templateFiles {
+        #        frequentSearches = EXT:solr/Resources/Templates/PiFrequentSearches/frequentsearches.htm
+        pagebrowser = EXT:theme/Configuration/TypoScript/Base/600-Extensions/References/PiResults/pagebrowser.htm
+        results = EXT:theme/Configuration/TypoScript/Base/600-Extensions/References/PiResults/results.htm
+        search = EXT:theme/Configuration/TypoScript/Base/600-Extensions/References/PiSearch/search.htm
+    }
+
+    index {
+        fieldProcessingInstructions {
+            pageHierarchy_stringM = pathToHierarchy
+            category_stringM = pathToHierarchy
+        }
+
+        queue {
+            pages >
+            reference = 1
+            reference {
+                table = tx_references_domain_model_reference
+
+                fields {
+                    title = name
+                    content = description
+                    year_intS = year
+                    teaser_stringS = teaser
+
+                    county_stringS = CASE
+                    county_stringS {
+                        key.field = county
+
+                        1 = TEXT
+                        1.data = LLL:EXT:references/Resources/Private/Language/locallang.xlf:tx_references_domain_model_reference.county.1
+                        2 = TEXT
+                        2.data = LLL:EXT:references/Resources/Private/Language/locallang.xlf:tx_references_domain_model_reference.county.2
+                        3 = TEXT
+                        3.data = LLL:EXT:references/Resources/Private/Language/locallang.xlf:tx_references_domain_model_reference.county.3
+                        4 = TEXT
+                        4.data = LLL:EXT:references/Resources/Private/Language/locallang.xlf:tx_references_domain_model_reference.county.4
+                        5 = TEXT
+                        5.data = LLL:EXT:references/Resources/Private/Language/locallang.xlf:tx_references_domain_model_reference.county.5
+                        6 = TEXT
+                        6.data = LLL:EXT:references/Resources/Private/Language/locallang.xlf:tx_references_domain_model_reference.county.6
+                        7 = TEXT
+                        7.data = LLL:EXT:references/Resources/Private/Language/locallang.xlf:tx_references_domain_model_reference.county.7
+                        8 = TEXT
+                        8.data = LLL:EXT:references/Resources/Private/Language/locallang.xlf:tx_references_domain_model_reference.county.8
+                        9 = TEXT
+                        9.data = LLL:EXT:references/Resources/Private/Language/locallang.xlf:tx_references_domain_model_reference.county.9
+                    }
+
+                    special_boolS = special
+                    finished_boolS = finished
+
+                    agency_stringM = SOLR_RELATION
+                    agency_stringM {
+                        localField = agency
+                    }
+
+                    url = TEXT
+                    url {
+                        typolink.parameter = 17
+                        typolink.additionalParams = &tx_references_product[controller]=Product&tx_references_product[action]=show&tx_references_product[product]={field:uid}
+                        typolink.additionalParams.insertData = 1
+                        typolink.useCacheHash = 1
+                        typolink.returnLast = url
+                    }
+
+                    logo_stringS = FILES
+                    logo_stringS {
+                        stdWrap.ifEmpty = typo3conf/ext/references/Resources/Public/placeholder.png
+                        references {
+                            table = tx_references_domain_model_reference
+                            uid.data = field:uid
+                            fieldName = logo
+                        }
+
+                        renderObj = TEXT
+                        renderObj {
+                            stdWrap.data = file:current:publicUrl
+                            stdWrap.wrap = |
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    query.disableSiteHash = 1
+
+    search {
+        #sorting = 0
+        frequentSearches >
+        query.sortBy = title asc
+
+        faceting.facets {
+            type >
+            special {
+                field = special_boolS
+                label = Highlight
+            }
+
+            finished {
+                field = finished_boolS
+                label = finished - INTERNAL ;)
+            }
+
+            agency {
+                field = agency_stringM
+                label = Agency
+                sortBy = alpha
+
+                xrenderingInstruction = TEXT
+                xrenderingInstruction {
+                    field = optionValue
+                    noTrimWrap = || |
+                    dataWrap = |({field:optionCount})
+                }
+            }
+
+            county {
+                field = county_stringS
+                label = Bundesland
+                sortBy = alpha
+            }
+
+            category {
+                label = Categories
+                field = category_stringM
+                type = hierarchy
+                hierarchy = HMENU
+                hierarchy {
+                    1 = TMENU
+                    1 {
+                        wrap = <ul>|</ul>
+                        #                        NO = 1
+                        NO.wrapItemAndSub = <li>|</li>
+                        #                        ACT < .NO
+                        #                        ACT.wrapItemAndSub = <li class="active">|</li>
+                    }
+
+                    2 < .1
+                    3 < .2
+                }
+            }
+        }
+    }
+}

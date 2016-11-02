@@ -31,7 +31,9 @@
 
 # TYPO3 specific ignores: ignore all except project specific extensions
 /web/typo3conf/ext/*
+!/web/typo3conf/ext/references
 !/web/typo3conf/ext/theme
+!/web/typo3conf/ext/solr_disablesitehash
 
 
 node_modules
