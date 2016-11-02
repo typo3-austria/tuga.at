@@ -1,0 +1,20 @@
+# General ignores
+.DS_Store
+.idea
+nbproject
+*.project
+*.swp
+.buildpath
+.cache
+.project
+.session
+.settings
+.TemporaryItems
+.webprj
+.vagrant
+*.t3x
+*.t3d
+*.zip
+*.bak
+/backup/*
+/docker-compose.yml
