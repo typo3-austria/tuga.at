@@ -4,9 +4,73 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "76c2fc4530bb7acd5b868b23ca193f70",
-    "content-hash": "d36fda9357d97cb9a2f0cb919fdd8f4b",
+    "hash": "dbdc1cdda07ba02f01c81c6726ac30c9",
+    "content-hash": "87383c22a35c3e0cb823990385c75879",
     "packages": [
+        {
+            "name": "apache-solr-for-typo3/solr",
+            "version": "5.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-Solr/ext-solr.git",
+                "reference": "7c12f8e02d5dd7657f9c38adb1ccdbb2c64a2d56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-Solr/ext-solr/zipball/7c12f8e02d5dd7657f9c38adb1ccdbb2c64a2d56",
+                "reference": "7c12f8e02d5dd7657f9c38adb1ccdbb2c64a2d56",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "typo3/cms": ">=7.6.0"
+            },
+            "replace": {
+                "solr": "self.version",
+                "typo3-ter/solr": "self.version"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8.0 <6.0.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1.x-dev"
+                },
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "Resources/Private/Php/"
+                ],
+                "psr-4": {
+                    "ApacheSolrForTypo3\\Solr\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ingo Renner",
+                    "email": "ingo@typo3.org",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Apache Solr for TYPO3",
+            "homepage": "http://www.typo3-solr.com",
+            "keywords": [
+                "TYPO3 CMS",
+                "search",
+                "solr",
+                "typo3"
+            ],
+            "time": "2016-11-01 13:36:42"
+        },
         {
             "name": "cogpowered/finediff",
             "version": "0.3.1",
