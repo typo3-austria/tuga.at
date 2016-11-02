@@ -74,6 +74,9 @@ shell:
 root:
 	docker exec -it -u root $$(docker-compose ps -q app) /bin/bash
 
+clisync-update:
+    open https://bitbucket.org/t3uga/tuga-clisync/src/
+
 #############################
 # TYPO3
 #############################
