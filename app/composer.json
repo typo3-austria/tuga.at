@@ -1,0 +1,154 @@
+{
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://composer.typo3.org/"
+		},
+        {
+            "type": "git",
+            "url": "https://git.typo3.org/TYPO3CMS/Extensions/rx_shariff.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:DeploymentOfTypo3/MagallanesTasks.git"
+        },
+        {
+            "type": "git",
+            "url": "https://gitlab.sgalinski.de/typo3/lfeditor.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/helhum/typo3_console"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/georgringer/t3monitoring_client"
+        }
+	],
+	"name": "Typo3UserGroupAustria/website-tuga-at",
+	"description": "tuga.at TYPO3 CMS website",
+	"authors": [
+		{
+			"name": "Josef Glatz",
+			"email": "j.glatz@supseven.at",
+			"role": "Developer",
+			"homepage": "http://www.sup7even.digital"
+		},
+		{
+			"name": "Josef Glatz",
+			"email": "josefglatz@gmail.com",
+			"role": "Developer",
+			"homepage": "http://jousch.com"
+		},
+		{
+			"name": "Georg Ringer",
+			"email": "georg.ringer@gmail.com",
+			"role": "Developer",
+			"homepage": "http://www.ringer.it"
+		}
+	],
+	"license": "GPL-2.0",
+	"minimum-stability": "dev",
+	"config": {
+		"optimize-autoloader": true,
+		"secure-http": true,
+		"bin-dir": "."
+	},
+	"require": {
+		"typo3/cms": "7.6.*",
+		"typo3/cms-belog": "7.6.*",
+		"typo3/cms-beuser": "7.6.*",
+		"typo3/cms-context-help": "7.6.*",
+		"typo3/cms-fluid-styled-content": "7.6.*",
+		"typo3/cms-felogin": "7.6.*",
+		"typo3/cms-filelist": "7.6.*",
+		"typo3/cms-filemetadata": "7.6.*",
+		"typo3/cms-func": "7.6.*",
+		"typo3/cms-impexp": "7.6.*",
+		"typo3/cms-info": "7.6.*",
+		"typo3/cms-info-pagetsconfig": "7.6.*",
+		"typo3/cms-linkvalidator": "7.6.*",
+		"typo3/cms-lowlevel": "7.6.*",
+		"typo3/cms-recycler": "7.6.*",
+		"typo3/cms-reports": "7.6.*",
+		"typo3/cms-rsaauth": "7.6.*",
+		"typo3/cms-rtehtmlarea": "7.6.*",
+		"typo3/cms-scheduler": "7.6.*",
+		"typo3/cms-setup": "7.6.*",
+		"typo3/cms-taskcenter": "7.6.*",
+		"typo3/cms-tstemplate": "7.6.*",
+		"typo3/cms-viewpage": "7.6.*",
+		"typo3/cms-wizard-crpages": "7.6.*",
+		"typo3/cms-wizard-sortpages": "7.6.*",
+        "typo3-ter/static-info-tables": "^6.3.4",
+        "helhum/realurl": "^2.0.2",
+        "helhum/typo3-console": "dev-master",
+        "typo3-ter/autoloader": "^2.0.1",
+        "fluidtypo3/vhs": "^2.3.3",
+        "lochmueller/sourceopt": "dev-master",
+        "sgalinski/lfeditor": "dev-master",
+        "t3monitor/t3monitoring_client": "dev-master"
+	},
+	"require-dev": {},
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": "web"
+		},
+		"helhum/typo3-console": {
+			"install-binary": false,
+			"install-extension-dummy": false
+		}
+	},
+	"autoload": {
+		"classmap": [
+		],
+		"psr-4": {
+			"JosefGlatz\\Theme\\": "web/typo3conf/ext/theme/Classes",
+            "SUP7\\Theme\\": "web/typo3conf/ext/theme/Classes",
+            "SUP7\\Ccontent\\": "web/typo3conf/ext/ccontent/Classes"
+		}
+	},
+	"scripts": {
+		"clean-generated-files": [
+			"rm -rf ./web/typo3conf/PackageStates.php  || true"
+		],
+		"package-states": [
+			"./typo3cms install:generatepackagestates"
+		],
+		"folder-structure": [
+			"./typo3cms install:fixfolderstructure"
+		],
+		"setup-active-extensions": [
+			"./typo3cms extension:setupactive"
+		],
+		"toolchain-install": [
+			"./sgc-core/install.sh --local && cd ./web/typo3conf/ext/theme/ && npm install"
+		],
+		"toolchain-update": [
+			"cd ./web/typo3conf/ext/theme/ && npm install"
+		],
+		"toolchain-watch": [
+			"./sgc build && ./sgc"
+		],
+		"toolchain-watch-silent": [
+			"./sgc build && ./sgc -s"
+		],
+		"toolchain-watch-nobrowsersync": [
+			"./sgc build && ./sgc watch"
+		],
+		"toolchain-build": [
+			"./sgc build"
+		],
+		"php-cs-fixer": [
+			"php-cs-fixer fix --config-file ./Build/.php_cs"
+		],
+		"pre-deploy": [
+			"./sgc build"
+		],
+		"post-autoload-dump": [
+			"@package-states",
+			"@folder-structure"
+		]
+	}
+}

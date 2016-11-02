@@ -24,8 +24,12 @@ $EM_CONF[$_EXTKEY] = array(
     'CGLcompliance_note' => '',
     'constraints' => array(
         'depends' => array(
-            // todo clear dependencies
-            'ccontent' => '',
+
+        ),
+        'conflicts' => array(
+            'css_styled_content' => ''
+        ),
+        'suggests' => array(
             'realurl' => '2.0.2-0.0.0',
             'sourceopt' => '0.9.1-0.0.0',
             'static_info_tables' => '6.3.4-0.0.0',
@@ -34,11 +38,6 @@ $EM_CONF[$_EXTKEY] = array(
             'vhs' => '2.3.3-0.0.0',
             'scheduler' => '',
             'fluid_styled_content' => '',
-        ),
-        'conflicts' => array(
-            'css_styled_content' => ''
-        ),
-        'suggests' => array(
             'dd_googlesitemap' => '',
             'formhandler' => '',
             'gridelements' => '4.0.0-0.0.0',

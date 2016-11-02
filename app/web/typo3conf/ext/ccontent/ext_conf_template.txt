@@ -1,2 +1,0 @@
-# cat=basic/enable/101; type=boolean; label=Set PageTsConfig:If set, the Page TsConfig is selectable within page properties
-setPageTSconfig = 1
