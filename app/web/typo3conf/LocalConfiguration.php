@@ -24,6 +24,11 @@ return [
             'vhs' => 'a:0:{}',
         ],
     ],
+    'EXTCONF' => [
+        'lang' => [
+            'availableLanguages' => [],
+        ],
+    ],
     'FE' => [
         'loginSecurityLevel' => 'rsa',
     ],
