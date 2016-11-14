@@ -6,23 +6,7 @@
 		},
         {
             "type": "git",
-            "url": "https://git.typo3.org/TYPO3CMS/Extensions/rx_shariff.git"
-        },
-        {
-            "type": "git",
-            "url": "git@github.com:DeploymentOfTypo3/MagallanesTasks.git"
-        },
-        {
-            "type": "git",
             "url": "https://gitlab.sgalinski.de/typo3/lfeditor.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/helhum/typo3_console"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/georgringer/t3monitoring_client"
         }
 	],
 	"name": "Typo3UserGroupAustria/website-tuga-at",
@@ -55,7 +39,7 @@
 		"bin-dir": "."
 	},
 	"require": {
-		"typo3/cms": "7.6.*",
+		"typo3/cms-core": "7.6.*",
 		"typo3/cms-belog": "7.6.*",
 		"typo3/cms-beuser": "7.6.*",
 		"typo3/cms-context-help": "7.6.*",

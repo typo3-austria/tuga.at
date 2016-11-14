@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0fc91dce054158b96be5a200764cfdfa",
-    "content-hash": "fb1c6fa9bee31d1436138e7de69c5cc6",
+    "hash": "ff6d2bb4172129b6e44e877678484636",
+    "content-hash": "16e68deb29518f8fd436fea7f655f7d2",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
@@ -265,8 +265,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/helhum/typo3_console",
-                "reference": "a61d0d4df92cbe680074a1f51a0aef037bf9ab5d"
+                "url": "https://github.com/TYPO3-Console/typo3_console.git",
+                "reference": "519e51dc4a83b5ef69bbafcbc00737ddcc070a32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-Console/typo3_console/zipball/519e51dc4a83b5ef69bbafcbc00737ddcc070a32",
+                "reference": "519e51dc4a83b5ef69bbafcbc00737ddcc070a32",
+                "shasum": ""
             },
             "require": {
                 "ext-phar": "*",
@@ -316,43 +322,7 @@
                     ]
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Helhum\\Typo3Console\\Tests\\": "Tests/",
-                    "Helhum\\Typo3Console\\": "Resources/Private/CommandReference/src/",
-                    "TYPO3\\CMS\\Core\\Tests\\": ".Build/vendor/typo3/cms/typo3/sysext/core/Tests/"
-                }
-            },
-            "scripts": {
-                "set-version": [
-                    "Helhum\\Typo3Console\\Composer\\InstallerScripts::setVersion"
-                ],
-                "extension-copy-artifacts": [
-                    "cp -f Resources/Private/ExtensionArtifacts/ext_* ."
-                ],
-                "extension-create-libs": [
-                    "mkdir -p Libraries/temp",
-                    "[ -f $HOME/.composer/vendor/bin/phar-composer ] || composer global require clue/phar-composer",
-                    "if [ ! -f Libraries/symfony-process.phar ]; then cd Libraries/temp && composer require symfony/process=~2.7.0 && composer config classmap-authoritative true && composer config prepend-autoloader false && composer dump-autoload; fi",
-                    "[ -f Libraries/symfony-process.phar ] || $HOME/.composer/vendor/bin/phar-composer build Libraries/temp/ Libraries/symfony-process.phar",
-                    "chmod -x Libraries/*.phar",
-                    "rm -rf Libraries/temp"
-                ],
-                "extension-build": [
-                    "@extension-create-libs",
-                    "@extension-copy-artifacts"
-                ],
-                "extension-release": [
-                    "@extension-build",
-                    "rm Resources/Private/ExtensionArtifacts/ext_*",
-                    "rm -rf Tests/",
-                    "rm -rf Resources/Private/CommandReference/"
-                ],
-                "extension-clean": [
-                    "rm -rf Libraries",
-                    "rm -f ext_*"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
@@ -360,23 +330,20 @@
                 {
                     "name": "Helmut Hummel",
                     "email": "info@helhum.io",
-                    "role": "Developer",
-                    "homepage": "http://helhum.io"
+                    "homepage": "http://helhum.io",
+                    "role": "Developer"
                 }
             ],
             "description": "A reliable and powerful command line interface for TYPO3 CMS",
             "homepage": "http://insight.helhum.io/post/104528981610/about-the-beauty-and-power-of-typo3-console",
             "keywords": [
-                "TYPO3",
                 "cli",
                 "command",
                 "commandline",
-                "console"
+                "console",
+                "typo3"
             ],
-            "support": {
-                "issues": "https://github.com/TYPO3-Console/typo3_console/issues"
-            },
-            "time": "2016-11-01 14:48:47"
+            "time": "2016-11-02 09:42:14"
         },
         {
             "name": "helhum/typo3-console-plugin",
