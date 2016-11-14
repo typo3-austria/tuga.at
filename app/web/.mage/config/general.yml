@@ -1,7 +1,0 @@
-# global settings
-name: Deployment tuga.at
-email: mail@ringer.it
-notifications: false
-logging: true
-maxlogs: 1
-ssh_needs_tty: false
