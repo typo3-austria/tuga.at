@@ -107,7 +107,7 @@
 		"psr-4": {
 			"JosefGlatz\\Theme\\": "web/typo3conf/ext/theme/Classes",
 			"GeorgRinger\\References\\": "web/typo3conf/ext/references/Classes",
-			"ApacheSolrForTypo3\\SolrDisablesitehash\\": "web/typo3conf/ext/solr_disablesitehash/Classes/",
+			"ApacheSolrForTypo3\\SolrDisablesitehash\\": "web/typo3conf/ext/solr_disablesitehash/Classes",
             "SUP7\\Theme\\": "web/typo3conf/ext/theme/Classes",
             "SUP7\\Ccontent\\": "web/typo3conf/ext/ccontent/Classes"
 		}
