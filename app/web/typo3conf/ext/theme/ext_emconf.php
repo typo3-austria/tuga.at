@@ -44,6 +44,8 @@ $EM_CONF[$_EXTKEY] = array(
             'rlmp_language_detection' => '7.0.0-7.99.99',
             'rx_shariff' => '3.0.0-3.99.99',
             'sr_language_menu' => '6.3.0-6.3.99',
+            'solr' => '',
+            'solr_disablesitehash' => '',
             'yag' => '4.0.6-4.99.99',
 
         ),
