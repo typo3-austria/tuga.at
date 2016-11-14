@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dbdc1cdda07ba02f01c81c6726ac30c9",
-    "content-hash": "87383c22a35c3e0cb823990385c75879",
+    "hash": "0fc91dce054158b96be5a200764cfdfa",
+    "content-hash": "fb1c6fa9bee31d1436138e7de69c5cc6",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
@@ -893,12 +893,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "47766c4c81e6d7790a9e4f029747f9a00da5f64d"
+                "reference": "1479e38e23faa02475ad940f887a615eb1f188f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/47766c4c81e6d7790a9e4f029747f9a00da5f64d",
-                "reference": "47766c4c81e6d7790a9e4f029747f9a00da5f64d",
+                "url": "https://api.github.com/repos/symfony/console/zipball/1479e38e23faa02475ad940f887a615eb1f188f7",
+                "reference": "1479e38e23faa02475ad940f887a615eb1f188f7",
                 "shasum": ""
             },
             "require": {
@@ -945,7 +945,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-10-05 17:26:56"
+            "time": "2016-11-03 08:51:57"
         },
         {
             "name": "symfony/debug",
@@ -953,12 +953,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "8c29235936a47473af16fb91c7c4b7b193c5693c"
+                "reference": "d99867cf7b8a0b08e4ad6e1f130268bcb6a64888"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/8c29235936a47473af16fb91c7c4b7b193c5693c",
-                "reference": "8c29235936a47473af16fb91c7c4b7b193c5693c",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/d99867cf7b8a0b08e4ad6e1f130268bcb6a64888",
+                "reference": "d99867cf7b8a0b08e4ad6e1f130268bcb6a64888",
                 "shasum": ""
             },
             "require": {
@@ -1002,7 +1002,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-06 10:55:00"
+            "time": "2016-11-03 07:52:58"
         },
         {
             "name": "symfony/finder",
@@ -1010,12 +1010,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "6508ad72f6e192e5f3ff5d9299b1c62d71e838de"
+                "reference": "0e89934a55c762ed7aad55f707e946b82b7410e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/6508ad72f6e192e5f3ff5d9299b1c62d71e838de",
-                "reference": "6508ad72f6e192e5f3ff5d9299b1c62d71e838de",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/0e89934a55c762ed7aad55f707e946b82b7410e3",
+                "reference": "0e89934a55c762ed7aad55f707e946b82b7410e3",
                 "shasum": ""
             },
             "require": {
@@ -1051,7 +1051,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-10-27 09:13:40"
+            "time": "2016-11-03 07:44:55"
         },
         {
             "name": "symfony/process",
@@ -1108,12 +1108,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/georgringer/t3monitoring_client.git",
-                "reference": "3617d5e46e63e2b56c77266674201e602664457d"
+                "reference": "e21a6fa2a4a2023a075c3f864f8949169bb87e9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/georgringer/t3monitoring_client/zipball/3617d5e46e63e2b56c77266674201e602664457d",
-                "reference": "3617d5e46e63e2b56c77266674201e602664457d",
+                "url": "https://api.github.com/repos/georgringer/t3monitoring_client/zipball/e21a6fa2a4a2023a075c3f864f8949169bb87e9b",
+                "reference": "e21a6fa2a4a2023a075c3f864f8949169bb87e9b",
                 "shasum": ""
             },
             "require": {
@@ -1136,56 +1136,7 @@
                 "source": "https://github.com/georgringer/t3monitoring_client/tree/master",
                 "issues": "https://github.com/georgringer/t3monitoring_client/issues"
             },
-            "time": "2016-10-21 11:16:38"
-        },
-        {
-            "name": "typo3-ter/autoloader",
-            "version": "2.1.5",
-            "dist": {
-                "type": "t3x",
-                "url": "https://typo3.org/extensions/repository/download/autoloader/2.1.5/t3x/",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "php": ">= 5.5.0",
-                "typo3/cms-core": ">= 6.2.0, <= 8.99.99"
-            },
-            "replace": {
-                "autoloader": "self.version"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "psr-4": {
-                    "HDNET\\Autoloader\\": "Classes/",
-                    "WSDL\\": "Resources/Private/Contrib/vendor/piotrooo/wsdl-creator/src/WSDL/",
-                    "Ouzo\\": "Resources/Private/Contrib/vendor/letsdrink/ouzo-goodies/",
-                    "Zend\\Http\\": "Resources/Private/Contrib/vendor/zendframework/zend-http/src/",
-                    "Zend\\Server\\": "Resources/Private/Contrib/vendor/zendframework/zend-server/src/",
-                    "Zend\\Json\\": "Resources/Private/Contrib/vendor/zendframework/zend-json/src/",
-                    "Zend\\Uri\\": "Resources/Private/Contrib/vendor/zendframework/zend-uri/src/",
-                    "Zend\\Stdlib\\": "Resources/Private/Contrib/vendor/zendframework/zend-stdlib/src/",
-                    "Zend\\Loader\\": "Resources/Private/Contrib/vendor/zendframework/zend-loader/src/",
-                    "Zend\\EventManager\\": "Resources/Private/Contrib/vendor/zendframework/zend-eventmanager/src/",
-                    "Zend\\Escaper\\": "Resources/Private/Contrib/vendor/zendframework/zend-escaper/src/",
-                    "Zend\\Code\\": "Resources/Private/Contrib/vendor/zendframework/zend-code/src/",
-                    "Zend\\Validator\\": "Resources/Private/Contrib/vendor/zendframework/zend-validator/src/"
-                },
-                "exclude-from-classmap": [
-                    "/Resources/Private/Examples/",
-                    "/Resources/Private/Contrib/vendor/piotrooo/wsdl-creator/examples/"
-                ]
-            },
-            "authors": [
-                {
-                    "name": "Tim Lochmller",
-                    "email": "tim.lochmueller@hdnet.de",
-                    "company": "hdnet.de",
-                    "username": "spyker"
-                }
-            ],
-            "description": "Automatic components loading of ExtBase extensions to get more time for coffee in the company ;) This ext is not a PHP SPL autoloader or class loader - it is better! Loads CommandController, Xclass, Hooks, Aspects, FlexForms, Slots, TypoScript, TypeConverter, BackendLayouts and take care of createing needed templates, TCA configuration or translations at the right location.",
-            "time": "2016-09-09 22:04:43"
+            "time": "2016-11-08 10:48:21"
         },
         {
             "name": "typo3-ter/static-info-tables",

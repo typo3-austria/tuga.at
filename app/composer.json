@@ -83,7 +83,6 @@
         "typo3-ter/static-info-tables": "^6.3.4",
         "helhum/realurl": "^2.0.2",
         "helhum/typo3-console": "dev-master",
-        "typo3-ter/autoloader": "^2.0.1",
         "fluidtypo3/vhs": "^2.3.3",
         "lochmueller/sourceopt": "dev-master",
         "sgalinski/lfeditor": "dev-master",
