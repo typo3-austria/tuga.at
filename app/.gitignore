@@ -1,7 +1,10 @@
 # TYPO3 specific ignores
 /vendor
+/web/bin
 /web/index.php
 /web/typo3
+/web/typo3_src
+/web/typo3cms
 /web/typo3temp/**/*
 /web/typo3conf/PackageStates.php
 /web/typo3conf/temp_*.php
