@@ -49,7 +49,8 @@ class HierarchyViewHelper implements ViewHelper
             $pieces = explode('/', $item);
             $tmp = [];
             foreach ($pieces as $k => $piece) {
-                $tmp[] = '<li>' . htmlspecialchars($piece) . '</li>';
+                // escaping is done by solr later on
+                $tmp[] = '<li>' . ($piece) . '</li>';
             }
             $final[] = '<ol class="breadcrumb">' . implode(LF, $tmp) . '</ol>';
         }
