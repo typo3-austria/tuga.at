@@ -159,19 +159,6 @@ plugin.tx_solr {
                 label = finished - INTERNAL ;)
             }
 
-            agency {
-                field = agency_stringM
-                label = Agency
-                sortBy = alpha
-
-                xrenderingInstruction = TEXT
-                xrenderingInstruction {
-                    field = optionValue
-                    noTrimWrap = || |
-                    dataWrap = |({field:optionCount})
-                }
-            }
-
             county {
                 field = county_stringS
                 label = Bundesland
@@ -200,3 +187,19 @@ plugin.tx_solr {
         }
     }
 }
+[globalVar = TSFE : beUserLogin > 0]
+    plugin.tx_solr.search.faceting.facets {
+        agency {
+            field = agency_stringM
+            label = Agency
+            sortBy = alpha
+
+            xrenderingInstruction = TEXT
+            xrenderingInstruction {
+                field = optionValue
+                noTrimWrap = || |
+                dataWrap = |({field:optionCount})
+            }
+        }
+    }
+[global]
