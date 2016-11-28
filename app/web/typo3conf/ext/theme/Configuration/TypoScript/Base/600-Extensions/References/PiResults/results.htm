@@ -199,7 +199,7 @@
 				<!-- ###LOOP:RESULT_DOCUMENTS### begin -->
 				<!-- ###LOOP_CONTENT### -->
 				<div class="row results-entry">
-					<h3 class="results-topic">###RESULT_DOCUMENT.TITLE###</h3>
+					<h3 class="results-topic"><a href="###RESULT_DOCUMENT.URL###" target="_blank">###RESULT_DOCUMENT.TITLE###</a></h3>
 					<div class="col-xs-3">
 						<!-- ###IF:###RESULT_DOCUMENT.logo_stringS###|>|0### begin -->
 						<img src="http://tuga.at/###RESULT_DOCUMENT.logo_stringS###" style="max-width: 150px;" class="img-responsive" />
@@ -208,19 +208,13 @@
 
 					<div class="col-xs-9">
 					<div class="results-teaser">
-						###HIERARCHY:###RESULT_DOCUMENT######
-
-						###IF:###RESULT_DOCUMENT.county_stringS###|>|0###
-						<strong>Bundesland:</strong> ###RESULT_DOCUMENT.county_stringS###<br>
-						###IF:###RESULT_DOCUMENT.county_stringS###|>|0###
-
-						<p class="result-content">###RESULT_DOCUMENT.teaser_stringS###</p>
-
-						<div>
-							<a class="btn btn-default" href="###RESULT_DOCUMENT.URL###">Link</a>
+							###IF:###RESULT_DOCUMENT.county_stringS###|>|0###
+							<strong>Bundesland:</strong> ###RESULT_DOCUMENT.county_stringS###<br>
+							###IF:###RESULT_DOCUMENT.county_stringS###|>|0###
+							###HIERARCHY:###RESULT_DOCUMENT######
 						</div>
 					</div>
-					</div>
+					<div>###RESULT_DOCUMENT.teaser_stringS###</div>
 				</div>
 				<hr>
 				<!-- ###LOOP_CONTENT### -->
