@@ -62,8 +62,8 @@
 					<div class="facets">
 						<!-- ###SINGLE_FACET### begin -->
 						<div class="facet facet-###FACET.name### facet-type-###FACET.type###">
-							<h4 class="facet-label csc-header">###FACET.label###</h4>
-							<ul class="xnav xnav-sidebar facet-option-list">
+							<h4 class="facet-label facet-###FACET.label### csc-header">###FACET.label###</h4>
+							<ul class="facet-option-list">
 								<!-- ###SINGLE_FACET_OPTION### begin -->
 								<!-- ###LOOP:FACET_LINKS### begin -->
 								<!-- ###LOOP_CONTENT### -->
@@ -124,7 +124,7 @@
 			<div class="row">
 				<div class="col-md-8">
 					<!-- ###SOLR_SEARCH_FORM### begin -->
-					<div class="tx-solr-search-form">
+					<div class="tx-solr-search-form" style="display: none;">
 						###FORM.SUGGEST_URL###
 						<form id="tx-solr-search-form-pi-results" class="form-inline" action="###FORM.ACTION###" method="get" accept-charset="###FORM.ACCEPT-CHARSET###">
 							<input type="text" class="tx-solr-q form-control" name="q" value="###FORM.Q###" />
@@ -202,7 +202,7 @@
 					<h3 class="results-topic">###RESULT_DOCUMENT.TITLE###</h3>
 					<div class="col-xs-3">
 						<!-- ###IF:###RESULT_DOCUMENT.logo_stringS###|>|0### begin -->
-						<img src="###RESULT_DOCUMENT.logo_stringS###" style="max-width: 150px;" class="img-responsive" />
+						<img src="http://tuga.at/###RESULT_DOCUMENT.logo_stringS###" style="max-width: 150px;" class="img-responsive" />
 						<!-- ###IF:###RESULT_DOCUMENT.logo_stringS###|>|0### begin -->
 					</div>
 

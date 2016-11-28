@@ -1,7 +1,18 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:solr/Configuration/TypoScript/Solr/setup.txt">
 
 plugin.tx_solr {
-    cssFiles.results >
+    cssFiles {
+        results >
+        ui >
+    }
+    javascriptFiles {
+        ui >
+        suggest >
+        library >
+        faceting {
+            limitExpansion >
+        }
+    }
     enableDebugMode = 0
 
     search {
@@ -21,6 +32,9 @@ plugin.tx_solr {
         frequentSearches = 1
         sorting = 1
         faceting = 1
+        faceting {
+            limit = 100
+        }
         variants = 0
     }
 
@@ -147,11 +161,27 @@ plugin.tx_solr {
         frequentSearches >
         query.sortBy = title asc
 
+        results {
+            resultsHighlighting = 1
+            resultsPerPage = 50
+            resultsPerPageSwitchOptions = 50,100,200
+        }
+
         faceting.facets {
             type >
             special {
                 field = special_boolS
                 label = Highlight
+
+                renderingInstruction = CASE
+                renderingInstruction {
+                    key.field = optionValue
+                    true = TEXT
+                    true.value = ja
+                    false = TEXT
+                    false.value = nein
+                }
+                manualSortOrder = true,false
             }
 
             finished {
@@ -166,14 +196,14 @@ plugin.tx_solr {
             }
 
             category {
-                label = Categories
+                label = Kategorie
                 field = category_stringM
                 type = hierarchy
                 hierarchy = HMENU
                 hierarchy {
                     1 = TMENU
                     1 {
-                        wrap = <ul>|</ul>
+
                         #                        NO = 1
                         NO.wrapItemAndSub = <li>|</li>
                         #                        ACT < .NO
@@ -181,6 +211,7 @@ plugin.tx_solr {
                     }
 
                     2 < .1
+                    2.wrap = <ul>|</ul>
                     3 < .2
                 }
             }
