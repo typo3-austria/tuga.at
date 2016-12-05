@@ -205,7 +205,7 @@ plugin.tx_solr {
                     1 {
 
                         #                        NO = 1
-                        NO.wrapItemAndSub = <li>|</li>
+                        NO.wrapItemAndSub = <li class="facet-option ">|</li>
                         #                        ACT < .NO
                         #                        ACT.wrapItemAndSub = <li class="active">|</li>
                     }

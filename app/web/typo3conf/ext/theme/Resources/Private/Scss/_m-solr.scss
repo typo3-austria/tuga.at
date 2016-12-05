@@ -1,0 +1,28 @@
+.tx-solr {
+	margin-top: 40px;
+	.facets {
+		.facet {
+
+			.facet-label {
+
+			}
+			.facet-option-list {
+				list-style-type: none;
+				.facet-option {
+					a {
+						color: inherit;
+						&:focus,
+						&:hover {
+							color: $brand-primary;
+						}
+					}
+					a + .facet-result-count {
+						opacity: 0.4;
+						font-size: 0.8em;
+
+					}
+				}
+			}
+		}
+	}
+}
