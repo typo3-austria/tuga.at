@@ -777,13 +777,14 @@
             "source": {
                 "type": "git",
                 "url": "https://gitlab.sgalinski.de/typo3/lfeditor.git",
-                "reference": "6a5e4bca10b25a537e7eee53f53ac1c8cda4d747"
+                "reference": "007789c9f92c1bfd85e79d6f4cf4cb135767b2da"
             },
             "require": {
-                "typo3/cms-core": "*"
+                "typo3/cms-core": ">=7.6.12,<8.6.0"
             },
             "replace": {
-                "lfeditor": "self.version"
+                "lfeditor": "self.version",
+                "typo3-ter/lfeditor": "self.version"
             },
             "type": "typo3-cms-extension",
             "autoload": {
@@ -797,9 +798,10 @@
             "description": "Language File Editor",
             "homepage": "https://www.sgalinski.de",
             "support": {
-                "issues": "https://forge.typo3.org/projects/extension-lfeditor"
+                "issues": "https://forge.typo3.org/projects/extension-lfeditor",
+                "source": "https://gitlab.sgalinski.de/typo3/lfeditor/"
             },
-            "time": "2016-09-19 15:42:19"
+            "time": "2016-12-05 20:09:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -860,12 +862,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "a871ba00e0f604dceac64c56c27f99fbeaf4854e"
+                "reference": "9c7fe99ae3947d853dcc61efd9660e9cbad1d025"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/a871ba00e0f604dceac64c56c27f99fbeaf4854e",
-                "reference": "a871ba00e0f604dceac64c56c27f99fbeaf4854e",
+                "url": "https://api.github.com/repos/symfony/console/zipball/9c7fe99ae3947d853dcc61efd9660e9cbad1d025",
+                "reference": "9c7fe99ae3947d853dcc61efd9660e9cbad1d025",
                 "shasum": ""
             },
             "require": {
@@ -913,7 +915,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-15 23:02:12"
+            "time": "2016-12-05 08:41:28"
         },
         {
             "name": "symfony/debug",
