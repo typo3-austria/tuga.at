@@ -34,9 +34,9 @@
 			<!-- ###SOLR_SEARCH_FACETING### begin -->
 			<div id="tx-solr-faceting">
 				<!-- ###USED_FACETS### begin -->
-				<div id="tx-solr-facets-in-use" class="secondaryContentSection">
+				<div id="tx-solr-facets-in-use" class="secondaryContentSection solr-facets-in-use">
 					<div class="csc-header">
-						<h3 class="csc-firstHeader">###LLL:faceting_resultsNarrowedBy###</h3>
+						<h3 class="csc-firstHeader h4">###LLL:faceting_resultsNarrowedBy###</h3>
 					</div>
 					<ul>
 						<!-- ###LOOP:FACETS_IN_USE### begin -->
@@ -55,7 +55,7 @@
 				<!-- ###USED_FACETS### end -->
 
 				<!-- ###AVAILABLE_FACETS### begin -->
-				<div id="tx-solr-facets-available" class="secondaryContentSection">
+				<div id="tx-solr-facets-available" class="secondaryContentSection solr-facets-available">
 					<div class="csc-header">
 						<h3 class="csc-firstHeader">###LLL:faceting_narrowSearch###</h3>
 					</div>
@@ -122,20 +122,8 @@
 	<div class="col-md-8">
 		<div id="tx-solr-search">
 			<div class="row">
-				<div class="col-md-8">
 					<!-- ###SOLR_SEARCH_FORM### begin -->
-					<div class="tx-solr-search-form" style="display: none;">
-						###FORM.SUGGEST_URL###
-						<form id="tx-solr-search-form-pi-results" class="form-inline" action="###FORM.ACTION###" method="get" accept-charset="###FORM.ACCEPT-CHARSET###">
-							<input type="text" class="tx-solr-q form-control" name="q" value="###FORM.Q###" />
-							<input type="hidden" name="id" value="###FORM.ACTION_ID###" />
-							<input type="hidden" name="###FORM.ACTION_LANGUAGE_PARAMETER###" value="###FORM.ACTION_LANGUAGE###" />
-							<input type="submit" class="btn btn-primary" value="###LLL:submit###" />
-
-							###FORM.HIDDEN_PARAMETER_FIELDS###
-						</form>
 						<!--###FORM.DEBUG_QUERY###-->
-					</div>
 					<!-- ###SOLR_SEARCH_FORM### end -->
 
 
@@ -162,8 +150,7 @@
 					</div>
 
 					<!-- ###SOLR_SEARCH_ERRORS### end -->
-
-				</div>
+				<div class="col-md-8"></div>
 				<div class="col-md-4">
 					<div id="tx-solr-pagination">
 						<!-- ###SOLR_SEARCH_RESULTSPERPAGESWITCH### begin -->
@@ -190,7 +177,7 @@
 			<!-- ###SOLR_SEARCH_RESULTS### begin -->
 
 
-			<div>
+			<div class="resultrange">
 						<!--###RESULTS.FOUND###-->
 						###RESULTS.RANGE###
 			</div>
