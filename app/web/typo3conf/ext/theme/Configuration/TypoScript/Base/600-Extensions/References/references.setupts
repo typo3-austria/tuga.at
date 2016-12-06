@@ -204,10 +204,18 @@ plugin.tx_solr {
                     1 = TMENU
                     1 {
 
-                        #                        NO = 1
                         NO.wrapItemAndSub = <li class="facet-option ">|</li>
-                        #                        ACT < .NO
-                        #                        ACT.wrapItemAndSub = <li class="active">|</li>
+                        NO {
+                            stdWrap.cObject = TEXT
+                            stdWrap.cObject {
+                                field = facetKey
+                            }
+                            after.cObject = TEXT
+                            after.cObject {
+                                field = numberOfResults
+                                noTrimWrap = |<span class="facet-result-count"> (|)</span>|
+                            }
+                        }
                     }
 
                     2 < .1
