@@ -4,11 +4,39 @@
 		.facet {
 
 			.facet-label {
-
+				margin-top: 25px;
+				margin-bottom: 15px;
+				&::after {
+					margin-top: 9px;
+					content: '';
+					display: block;
+					height: 1px;
+					width: 100%;
+					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+83&1+0,0.54+41 */
+					background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(126,126,126,0.54) 41%, rgba(255,255,255,0.54) 83%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(126,126,126,0.54) 41%,rgba(255,255,255,0.54) 83%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(126,126,126,0.54) 41%,rgba(255,255,255,0.54) 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#8affffff',GradientType=1 ); /* IE6-9 */
+				}
 			}
 			.facet-option-list {
 				list-style-type: none;
+				padding-left: 0;
+				margin-left:10px;
 				.facet-option {
+					margin-bottom: 6px;
+					ul {
+						list-style-type: none;
+						padding-left: 15px;
+						.facet-option {
+							ul {
+								padding-left: 15px;
+							}
+						}
+					}
+					a + ul {
+						margin-top: 6px;
+					}
 					a {
 						color: inherit;
 						&:focus,
@@ -24,5 +52,27 @@
 				}
 			}
 		}
+	}
+
+	// Box zur Darstellung aktiver Filter
+	.solr-facets-in-use {
+		h3 {
+
+		}
+		ul {
+			li {
+				a {
+
+				}
+				&.facets-remove-all {
+					a {
+
+					}
+				}
+			}
+		}
+	}
+	.solr-facets-available {
+
 	}
 }
